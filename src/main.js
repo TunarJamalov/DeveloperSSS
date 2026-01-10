@@ -557,8 +557,6 @@ const LandingPage = () => {
              </div>
         </div>
 
-        ${ToolOfTheWeek()}
-
         <!-- Bento Grid Categories: z-10 ensures it stays BELOW search -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl w-full mx-auto relative z-10 px-4 pb-20 flex-1">
             ${categories.map(cat => `
@@ -716,6 +714,8 @@ const GlobalResourcesPage = () => {
                 <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">${t('globalResources')}</h1>
                 <p class="text-xl text-gray-400">Hand-picked tools & resources for developers.</p>
             </div>
+
+            ${ToolOfTheWeek()}
 
             <div class="space-y-16">
                 ${globalResourcesData.map(section => `
