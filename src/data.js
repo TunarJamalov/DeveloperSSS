@@ -1,15 +1,18 @@
+// Languages
 export const languages = [
     { code: 'en', name: 'English', flag: '🇬🇧' },
     { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
     { code: 'az', name: 'Azərbaycan', flag: '🇦🇿' },
 ];
 
+// Countries
 export const countries = [
     { code: 'GLOBAL', name: 'Global', flag: '🌍' },
     { code: 'TR', name: 'Turkey', flag: '🇹🇷' },
     { code: 'AZ', name: 'Azerbaijan', flag: '🇦🇿' },
 ];
 
+// UI
 export const ui = {
     en: {
         welcome: "Welcome",
@@ -56,7 +59,7 @@ export const ui = {
         globalResources: "Ümumi Resurslar",
         faqTitle: "Tez-tez Verilən Suallar",
         faqSubtitle: "Proqramlaşdırma və təhlükəsizlik haqqında ümumi suallar.",
-        hallOfFame: "Onur Siyahısı",
+        hallOfFame: "Şərəf Siyahısı",
         glossary: "Terminlər Sözlüyü",
         toolOfTheWeek: "Həftənin Aləti",
         viewTool: "Alətə Bax",
@@ -64,6 +67,7 @@ export const ui = {
     }
 };
 
+// Categories
 export const categories = [
     {
         id: 'web-dev',
@@ -164,6 +168,7 @@ export const categories = [
 // Initial Empty Data Structure
 export const contentData = {};
 
+// Fill Data Structure
 categories.forEach(cat => {
     cat.subCategories.forEach(sub => {
         contentData[sub.id] = {
@@ -175,11 +180,12 @@ categories.forEach(cat => {
     });
 });
 
-// --- 🚀 VERİ GİRİŞ ALANI ---
-// Kendi verilerine aşağıdaki şablonları kopyalayarak ekleyebilirsin.
-// Her id (örn: 'frontend', 'cyber-security') için veri girebilirsin.
+// --- 🚀 DATA ENTRY AREA ---
+// You can add your own data by copying the following templates.
+// You can enter data for each ID (e.g., 'frontend', 'cyber-security').
+
 contentData['android'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Giriş ve Kurulum", items: ["Android Studio Kurulumu", "JDK & SDK Yönetimi", "Emülatör (AVD) Ayarları"], status: "start" },
@@ -213,25 +219,25 @@ contentData['android'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // YouTube & Eğitim
+            // YouTube & Education
             { type: 'course', title: 'Android Basics with Compose', url: 'https://developer.android.com/courses/android-basics-compose/course', desc: 'Google\'ın kendi hazırladığı, sertifikalı ve ücretsiz efsanevi başlangıç kursu.', lang: 'en' },
             { type: 'youtube', title: 'Philipp Lackner', url: 'https://youtube.com/@PhilippLackner', desc: 'Modern Android (Kotlin/Compose) üzerine dünyadaki en iyi ve en güncel kanal.', lang: 'en' },
             { type: 'youtube', title: 'Stevdza-San', url: 'https://youtube.com/@StevdzaSan', desc: 'Görsel ağırlıklı, hızlı ve pratik Android dersleri.', lang: 'en' },
             { type: 'course', title: 'Atıl Samancıoğlu', url: 'https://www.udemy.com/user/atilsamancioglu/', desc: 'Udemy\'de Türkçe Android eğitimi denince akla gelen ilk isim.', lang: 'tr' },
 
-            // Dokümantasyon & Araçlar
+            // Documentation & Tools
             { type: 'doc', title: 'Android Developer Docs', url: 'https://developer.android.com/docs', desc: 'Android\'in resmi kutsal kitabı. Her şey burada.', lang: 'en' },
             { type: 'tool', title: 'Android Studio', url: 'https://developer.android.com/studio', desc: 'Android geliştirmek için Google\'ın resmi IDE\'si.', lang: 'global' },
             { type: 'tool', title: 'Kotlin Playground', url: 'https://play.kotlinlang.org', desc: 'Android Studio kurmadan tarayıcıda Kotlin kodu yazıp test edin.', lang: 'global' },
-            { type: 'tool', title: 'Firebase', url: 'https://firebase.google.com', desc: 'Backend yazmadan Auth, Veritabanı ve Bildiriş işlemleri için Google servisi.', lang: 'global' },
+            { type: 'tool', title: 'Firebase', url: 'https://firebase.google.com', desc: 'Backend yazmadan Auth, Veritabanı ve Bildirim işlemleri için Google servisi.', lang: 'global' },
             { type: 'roadmap', title: 'Roadmap.sh', url: 'https://roadmap.sh/android', desc: 'Android geliştirici yol haritası.', lang: 'en' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Armut", "Teknokent İlanları"],
@@ -250,7 +256,7 @@ contentData['android'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -334,7 +340,7 @@ contentData['android'] = {
 };
 
 contentData['devops'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temeller (Ön Koşul)", items: ["Linux Terminal (Bash)", "Ağ Bilgisi (DNS, HTTP, OSI)", "Git & Versiyon Kontrol", "Vim/Nano Editörleri"], status: "start" },
@@ -368,7 +374,7 @@ contentData['devops'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
             // YouTube
@@ -377,19 +383,19 @@ contentData['devops'] = {
             { type: 'youtube', title: 'Jeff Geerling', url: 'https://youtube.com/@JeffGeerling', desc: 'Ansible ve Raspberry Pi/Server yönetimi üzerine efsanevi içerikler.', lang: 'en' },
             { type: 'youtube', title: 'DevOps Toolkit', url: 'https://youtube.com/@DevOpsToolkit', desc: 'Modern DevOps araçlarını (ArgoCD, K8s) inceleyen ileri seviye kanal.', lang: 'en' },
 
-            // Dokümantasyon & Kitap
+            // Documentation & Books
             { type: 'doc', title: 'Kubernetes Docs', url: 'https://kubernetes.io/docs/', desc: 'K8s öğrenmek için en doğru ve güncel kaynak.', lang: 'global' },
             { type: 'doc', title: 'The Phoenix Project', url: 'https://itrevolution.com/book/the-phoenix-project/', desc: 'DevOps kültürünü ve mantığını anlatan, roman tadında efsanevi bir kitap.', lang: 'en' },
             { type: 'doc', title: 'Google SRE Book', url: 'https://sre.google/books/', desc: 'Google\'ın sistemleri nasıl ayakta tuttuğunu anlatan ücretsiz başyapıt.', lang: 'en' },
 
-            // Araçlar
+            // Tools
             { type: 'tool', title: 'Killer.sh', url: 'https://killer.sh', desc: 'CKA (Kubernetes) sertifikası sınav simülatörü. Zor ama öğretici.', lang: 'en' },
             { type: 'tool', title: 'Terraform Registry', url: 'https://registry.terraform.io', desc: 'Hazır altyapı kodları bulabileceğiniz kütüphane.', lang: 'global' },
             { type: 'roadmap', title: 'Roadmap.sh (DevOps)', url: 'https://roadmap.sh/devops', desc: 'DevOps uzmanlığı için görsel yol haritası.', lang: 'en' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "DevOps Türkiye (Discord/Slack)"],
@@ -408,7 +414,7 @@ contentData['devops'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -492,7 +498,7 @@ contentData['devops'] = {
 };
 
 contentData['cyber-security'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temeller (Olmazsa Olmaz)", items: ["Ağ Bilgisi (OSI, TCP/IP, DNS)", "Linux Komut Satırı (CLI)", "Temel Python/Bash Scripting", "Sanal Makineler (VirtualBox)"], status: "start" },
@@ -526,21 +532,21 @@ contentData['cyber-security'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // Eğitim Platformları
+            // Education Platforms
             { type: 'course', title: 'TryHackMe', url: 'https://tryhackme.com', desc: 'Siber güvenliği oyunlaştırarak öğreten, yeni başlayanlar için en iyi platform.', lang: 'global' },
             { type: 'course', title: 'HackTheBox', url: 'https://www.hackthebox.com', desc: 'Gerçekçi lab ortamları sunan, orta ve ileri seviye için sızma testi platformu.', lang: 'global' },
             { type: 'course', title: 'PortSwigger Academy', url: 'https://portswigger.net/web-security', desc: 'Web güvenliği (Burp Suite) öğrenmek için dünyanın en iyi ücretsiz kaynağı.', lang: 'en' },
 
-            // YouTube Kanalları
+            // YouTube Channels
             { type: 'youtube', title: 'NetworkChuck', url: 'https://youtube.com/@NetworkChuck', desc: 'Ağ, Linux ve hack konularını çok enerjik anlatan kanal.', lang: 'en' },
             { type: 'youtube', title: 'John Hammond', url: 'https://youtube.com/@_JohnHammond', desc: 'CTF çözümleri ve malware analizi üzerine harika içerikler.', lang: 'en' },
             { type: 'youtube', title: 'Can Değer', url: 'https://youtube.com/@CanDeger', desc: 'Türkiye\'nin siber güvenlik duayeni. Kariyer ve teknik sohbetler.', lang: 'tr' },
             { type: 'youtube', title: 'LiveOverflow', url: 'https://youtube.com/@LiveOverflow', desc: 'Hacking mantığını ve derin teknik detayları (Minecraft hackleri dahil) anlatır.', lang: 'en' },
 
-            // Araçlar & Listeler
+            // Tools & Lists
             { type: 'tool', title: 'Kali Linux', url: 'https://www.kali.org', desc: 'Siber güvenlikçilerin İsviçre çakısı olan işletim sistemi.', lang: 'global' },
             { type: 'doc', title: 'OWASP Top 10', url: 'https://owasp.org/www-project-top-ten/', desc: 'Web uygulamalarındaki en kritik 10 güvenlik açığı listesi.', lang: 'global' },
             { type: 'tool', title: 'GTFOBins', url: 'https://gtfobins.github.io', desc: 'Linux sistemlerde yetki yükseltmek için kullanılan komutlar listesi.', lang: 'en' },
@@ -548,7 +554,7 @@ contentData['cyber-security'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Vizyoner Genç (Savunma Sanayi)"],
@@ -567,7 +573,7 @@ contentData['cyber-security'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -651,7 +657,7 @@ contentData['cyber-security'] = {
 };
 
 contentData['big-data'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temeller", items: ["Linux Terminali & Bash Scripting", "İleri Seviye SQL", "Programlama (Python veya Scala)", "JVM Mantığı (Java Virtual Machine)"], status: "start" },
@@ -685,10 +691,10 @@ contentData['big-data'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // Kitap & Okuma
+            // Books & Reading
             { type: 'doc', title: 'Designing Data-Intensive Applications', url: 'https://dataintensive.net', desc: 'Martin Kleppmann\'ın yazdığı, bu işin "Kutsal Kitabı". Her veri mühendisi okumalı.', lang: 'en' },
             { type: 'doc', title: 'Apache Spark Docs', url: 'https://spark.apache.org/docs/latest/', desc: 'Büyük veri işlemenin kralı olan Spark\'ın resmi belgeleri.', lang: 'en' },
 
@@ -697,14 +703,14 @@ contentData['big-data'] = {
             { type: 'youtube', title: 'Marc Lamberti', url: 'https://youtube.com/@marclamberti', desc: 'Airflow ve Data Engineering üzerine çok detaylı teknik videolar.', lang: 'en' },
             { type: 'youtube', title: 'Data Engineering (FreeCodeCamp)', url: 'https://www.youtube.com/watch?v=qWru-b6m030', desc: '3 saatlik devasa başlangıç kursu.', lang: 'en' },
 
-            // Araçlar
+            // Tools
             { type: 'tool', title: 'Databricks Community', url: 'https://community.cloud.databricks.com', desc: 'Spark ve Big Data öğrenmek için ücretsiz bulut ortamı.', lang: 'global' },
             { type: 'tool', title: 'Confluent Cloud', url: 'https://confluent.cloud', desc: 'Kafka öğrenmek için en kolay, yönetilen (managed) platform.', lang: 'global' },
             { type: 'roadmap', title: 'Roadmap.sh (Data Engineer)', url: 'https://roadmap.sh/data-engineer', desc: 'Veri Mühendisliği için görsel yol haritası.', lang: 'en' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Bankacılık & E-Ticaret"],
@@ -723,7 +729,7 @@ contentData['big-data'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -792,8 +798,9 @@ contentData['big-data'] = {
         }
     ]
 };
+
 contentData['deep-learning'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Sinir Ağları Temelleri", items: ["Nöronlar & Perceptrons", "Aktivasyon Fonksiyonları (ReLU, Sigmoid)", "Loss Functions & Backpropagation", "Optimizers (Adam, SGD)"], status: "start" },
@@ -824,16 +831,16 @@ contentData['deep-learning'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // Kurslar & YouTube
+            // Courses & YouTube
             { type: 'course', title: 'Deep Learning Specialization', url: 'https://www.coursera.org/specializations/deep-learning', desc: 'Andrew Ng tarafından hazırlanan, bu alanın "üniversite diploması" sayılan kurs serisi.', lang: 'en' },
             { type: 'course', title: 'Fast.ai', url: 'https://course.fast.ai', desc: 'Jeremy Howard\'ın "kod yazarak öğren" mantığıyla hazırladığı efsanevi pratik kurs.', lang: 'en' },
             { type: 'youtube', title: 'Andrej Karpathy', url: 'https://youtube.com/@AndrejKarpathy', desc: 'Eski Tesla AI direktöründen, "Neural Networks from Scratch" gibi başyapıt videolar.', lang: 'en' },
             { type: 'youtube', title: '3Blue1Brown', url: 'https://youtube.com/@3blue1brown', desc: 'Sinir ağlarının matematiğini görsel şölenle anlatan kanal.', lang: 'en' },
 
-            // Dokümantasyon & Araçlar
+            // Documentation & Tools
             { type: 'doc', title: 'PyTorch Tutorials', url: 'https://pytorch.org/tutorials/', desc: 'Meta\'nın geliştirdiği ve araştırmacıların favorisi olan kütüphanenin resmi dersleri.', lang: 'en' },
             { type: 'tool', title: 'Papers with Code', url: 'https://paperswithcode.com', desc: 'En son akademik makalelerin ve onların kodlarının bulunduğu hazine.', lang: 'en' },
             { type: 'tool', title: 'Hugging Face', url: 'https://huggingface.co', desc: 'Transformer modellerinin ve açık kaynak yapay zekanın kalbi.', lang: 'global' },
@@ -842,7 +849,7 @@ contentData['deep-learning'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Teknokent (Aselsan/Havelsan/TUSAŞ)", "AI Startups"],
@@ -861,7 +868,7 @@ contentData['deep-learning'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -930,8 +937,9 @@ contentData['deep-learning'] = {
         }
     ]
 };
+
 contentData['ml'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Matematiksel Temeller", items: ["Lineer Cebir (Matrisler)", "Kalkülüs (Gradient Descent)", "İstatistik & Olasılık", "Vektör Uzayları"], status: "start" },
@@ -959,16 +967,16 @@ contentData['ml'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // Kurslar & YouTube
-            { type: 'course', title: 'Andrew Ng - Machine Learning', url: 'https://www.coursera.org/specializations/machine-learning-introduction', desc: 'Bu alanın babası Andrew Ng\'den sertifikalı efsanevi başlangıç kursu.', lang: 'en' },
+            // Courses & YouTube
+            { type: 'course', title: 'Andrew Ng - Machine Learning', url: 'https://www.coursera.org/specializations/machine-learning-introduction', desc: 'This is the father of this field Andrew Ng\'den sertifikalı efsanevi başlangıç kursu.', lang: 'en' },
             { type: 'course', title: 'Fast.ai', url: 'https://www.fast.ai', desc: 'Pratik odaklı, kod yazarak öğreten dünyanın en iyi ücretsiz Deep Learning kursu.', lang: 'en' },
             { type: 'youtube', title: 'Two Minute Papers', url: 'https://youtube.com/@TwoMinutePapers', desc: 'En yeni AI makalelerini ve gelişmeleri harika görsellerle anlatan kanal.', lang: 'en' },
             { type: 'youtube', title: 'Murat Yücedağ', url: 'https://youtube.com/@MuratYucedag', desc: 'Türkçe Python ve Yapay Zeka dersleri için kapsamlı bir kaynak.', lang: 'tr' },
 
-            // Dokümantasyon & Araçlar
+            // Documentation & Tools
             { type: 'doc', title: 'PyTorch Docs', url: 'https://pytorch.org', desc: 'Facebook (Meta) tarafından geliştirilen, araştırmacıların favori kütüphanesi.', lang: 'en' },
             { type: 'doc', title: 'Scikit-Learn', url: 'https://scikit-learn.org', desc: 'Klasik makine öğrenmesi algoritmaları için ana kütüphane.', lang: 'en' },
             { type: 'tool', title: 'Hugging Face', url: 'https://huggingface.co', desc: 'Hazır LLM modelleri (GPT, Llama vb.) ve veri setleri için AI\'ın GitHub\'ı.', lang: 'global' },
@@ -977,7 +985,7 @@ contentData['ml'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Teknokent Savunma Sanayi"],
@@ -996,7 +1004,7 @@ contentData['ml'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -1065,8 +1073,9 @@ contentData['ml'] = {
         }
     ]
 };
+
 contentData['data-science'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Matematik ve İstatistik", items: ["Lineer Cebir", "Olasılık ve İstatistik", "Kalkülüs (Türev/İntegral Temelleri)", "Hipotez Testleri"], status: "start" },
@@ -1094,7 +1103,7 @@ contentData['data-science'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
             // YouTube
@@ -1102,12 +1111,12 @@ contentData['data-science'] = {
             { type: 'youtube', title: 'Veri Bilimi Okulu', url: 'https://youtube.com/@VeriBilimiOkulu', desc: 'Türkçe veri bilimi, makine öğrenmesi ve yapay zeka kaynakları.', lang: 'tr' },
             { type: 'youtube', title: 'Krish Naik', url: 'https://youtube.com/@krishnaik06', desc: 'Sektör odaklı pratik veri bilimi ve mülakat hazırlık dersleri.', lang: 'en' },
 
-            // Kurs & Platform
+            // Courses
             { type: 'course', title: 'Kaggle', url: 'https://www.kaggle.com/learn', desc: 'Veri bilimcilerin oyun alanı. Ücretsiz mikro kurslar, veri setleri ve yarışmalar.', lang: 'en' },
             { type: 'course', title: 'Machine Learning Specialization', url: 'https://www.coursera.org/specializations/machine-learning-introduction', desc: 'Andrew Ng\'nin (Yapay zekanın babası) hazırladığı efsanevi başlangıç kursu.', lang: 'en' },
             { type: 'course', title: 'Patika.dev Veri Bilimi', url: 'https://www.patika.dev', desc: 'Türkçe ve projeli veri bilimi bootcamp\'leri.', lang: 'tr' },
 
-            // Araçlar
+            // Tools
             { type: 'tool', title: 'Google Colab', url: 'https://colab.research.google.com', desc: 'Kurulum yapmadan tarayıcıda Python kodu çalıştırın (Ücretsiz GPU verir).', lang: 'global' },
             { type: 'tool', title: 'Anaconda', url: 'https://www.anaconda.com', desc: 'Veri bilimi kütüphanelerini yönetmek için en popüler paket yöneticisi.', lang: 'global' },
             { type: 'tool', title: 'Hugging Face', url: 'https://huggingface.co', desc: 'Hazır yapay zeka modelleri ve veri setleri için dünyanın en büyük deposu.', lang: 'en' },
@@ -1115,7 +1124,7 @@ contentData['data-science'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Datacamp Jobs"],
@@ -1134,7 +1143,7 @@ contentData['data-science'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -1203,8 +1212,9 @@ contentData['data-science'] = {
         }
     ]
 };
+
 contentData['cross-platform'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Teknoloji Seçimi", items: ["Flutter (Dart Dili)", "React Native (JavaScript/TypeScript)", ".NET MAUI (C#)"], status: "start" },
@@ -1238,7 +1248,7 @@ contentData['cross-platform'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
             // Flutter
@@ -1251,13 +1261,13 @@ contentData['cross-platform'] = {
             { type: 'youtube', title: 'William Candillon', url: 'https://youtube.com/@wcandillon', desc: 'React Native animasyonlarının (Can it be done in React Native?) kralı.', lang: 'en' },
             { type: 'tool', title: 'Expo', url: 'https://expo.dev', desc: 'React Native geliştirmeyi inanılmaz kolaylaştıran araç seti.', lang: 'global' },
 
-            // Genel
-            { type: 'roadmap', title: 'Roadmap.sh (Flutter)', url: 'https://roadmap.sh/flutter', desc: 'Adım adım Flutter yol haritası.', lang: 'en' },
-            { type: 'roadmap', title: 'Roadmap.sh (React Native)', url: 'https://roadmap.sh/react-native', desc: 'Adım adım React Native yol haritası.', lang: 'en' }
+            // General
+            { type: 'roadmap', title: 'Roadmap.sh (Flutter)', url: 'https://roadmap.sh/flutter', desc: 'Step by step Flutter roadmap.', lang: 'en' },
+            { type: 'roadmap', title: 'Roadmap.sh (React Native)', url: 'https://roadmap.sh/react-native', desc: 'Step by step React Native roadmap.', lang: 'en' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Armut", "Startup İlanları"],
@@ -1276,7 +1286,7 @@ contentData['cross-platform'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -1345,8 +1355,9 @@ contentData['cross-platform'] = {
         }
     ]
 };
+
 contentData['ios'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Ekosisteme Giriş", items: ["macOS Kullanımı", "Xcode Kurulumu & Arayüzü", "Apple Developer Program Nedir?"], status: "start" },
@@ -1380,16 +1391,16 @@ contentData['ios'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // YouTube & Kurslar
+            // YouTube & Courses
             { type: 'course', title: '100 Days of SwiftUI', url: 'https://www.hackingwithswift.com/100/swiftui', desc: 'Paul Hudson\'ın efsanevi, ücretsiz ve günlük planlı kursu. iOS\'un kutsal kitabı.', lang: 'en' },
             { type: 'youtube', title: 'Swiftful Thinking', url: 'https://youtube.com/@SwiftfulThinking', desc: 'Nick Sarno. Özellikle SwiftUI ve MVVM mimarisi için dünyadaki en iyi anlatım.', lang: 'en' },
             { type: 'youtube', title: 'Sean Allen', url: 'https://youtube.com/@seanallen', desc: 'Kariyer tavsiyeleri ve Swift üzerine popüler içerikler.', lang: 'en' },
             { type: 'course', title: 'Angela Yu iOS Course', url: 'https://www.udemy.com', desc: 'Udemy\'nin en popüler başlangıç kursu (UIKit ve SwiftUI karışık).', lang: 'en' },
 
-            // Dokümantasyon & Araçlar
+            // Documentation & Tools
             { type: 'doc', title: 'Apple Developer Docs', url: 'https://developer.apple.com/documentation/', desc: 'Apple\'ın resmi dokümantasyonu. Her şeyin kaynağı.', lang: 'en' },
             { type: 'doc', title: 'Human Interface Guidelines', url: 'https://developer.apple.com/design/human-interface-guidelines/', desc: 'Apple tasarım kuralları. Tasarımcı olmasanız bile okumalısınız.', lang: 'global' },
             { type: 'tool', title: 'SF Symbols', url: 'https://developer.apple.com/sf-symbols/', desc: 'Apple\'ın uygulamanızda kullanabileceğiniz binlerce ücretsiz ikonu.', lang: 'global' },
@@ -1398,7 +1409,7 @@ contentData['ios'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "iOS Developer TR (Slack/Discord)"],
@@ -1417,7 +1428,7 @@ contentData['ios'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -1499,8 +1510,9 @@ contentData['ios'] = {
         }
     ]
 };
+
 contentData['frontend'] = {
-    // 1. YOL HARİTASI (ROADMAP) - Genişletilmiş ve AZ Dili Eklenmiş
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "İnternetin Temelleri", items: ["DNS & Hosting Nedir?", "HTTP/HTTPS & SSL", "Tarayıcılar Nasıl Çalışır?", "Domain Yönetimi"], status: "start" },
@@ -1537,7 +1549,7 @@ contentData['frontend'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES) - Yeni Araçlar Eklendi
+    // 2. RESOURCES
     resources: {
         items: [
             // YouTube
@@ -1546,13 +1558,13 @@ contentData['frontend'] = {
             { type: 'youtube', title: 'Kevin Powell', url: 'https://youtube.com/@kevinpowell', desc: 'CSS\'in kralı. Tasarımı koda dökme uzmanı.', lang: 'en' },
             { type: 'youtube', title: 'Fireship', url: 'https://youtube.com/@Fireship', desc: 'Teknolojileri 100 saniyede anlatan hızlı ve güncel kanal.', lang: 'en' },
 
-            // Dokümantasyon & Eğitim
+            // Documentation & Education
             { type: 'doc', title: 'MDN Web Docs', url: 'https://developer.mozilla.org', desc: 'Web teknolojileri için ana sözlük (İncil).', lang: 'global' },
             { type: 'doc', title: 'React.dev', url: 'https://react.dev', desc: 'React\'in yeni ve interaktif resmi dokümantasyonu.', lang: 'en' },
             { type: 'course', title: 'FreeCodeCamp', url: 'https://www.freecodecamp.org', desc: 'Ücretsiz sertifikalı eğitim kampı.', lang: 'en' },
             { type: 'course', title: 'Patika.dev', url: 'https://www.patika.dev', desc: 'Türkçe, ücretsiz ve bootcamp imkanlı platform.', lang: 'tr' },
 
-            // Araçlar (Tools)
+            // Tools
             { type: 'tool', title: 'Can I Use?', url: 'https://caniuse.com', desc: 'Hangi CSS/JS özelliğinin hangi tarayıcıda çalıştığını görün.', lang: 'global' },
             { type: 'tool', title: 'UIverse', url: 'https://uiverse.io', desc: 'Hazır, açık kaynaklı CSS buton ve kart tasarımları.', lang: 'global' },
             { type: 'tool', title: 'Realtime Colors', url: 'https://realtimecolors.com', desc: 'Renk paletlerini gerçek bir web sitesi üzerinde test edin.', lang: 'global' },
@@ -1560,7 +1572,7 @@ contentData['frontend'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY) - Güncellendi
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Youthall", "PeakUp", "Armut (Freelance)"],
@@ -1579,8 +1591,7 @@ contentData['frontend'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ) - Tamamen Yenilendi ve Çoklu Dil Yapısına Geçildi
-    // Artık her bir obje içinde 3 dil barındırıyor, böylece dil değişimi kolaylaşır.
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -1980,7 +1991,7 @@ contentData['frontend'] = {
 };
 
 contentData['backend'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "İnternet & İşletim Sistemi", items: ["HTTP/HTTPS, DNS Nasıl Çalışır?", "Linux Terminal Komutları", "Process Management", "Thread & Concurrency"], status: "start" },
@@ -2017,21 +2028,21 @@ contentData['backend'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // YouTube Kanalları
+            // YouTube Channels
             { type: 'youtube', title: 'Hussein Nasser', url: 'https://youtube.com/@hnasr', desc: 'Backend mühendisliği üzerine dünyadaki en iyi teknik kanal (Database, Protocol vs).', lang: 'en' },
             { type: 'youtube', title: 'Gençay Yıldız', url: 'https://youtube.com/@GencayYildiz', desc: '.NET Core ve Backend mimarisi üzerine harika Türkçe içerikler.', lang: 'tr' },
             { type: 'youtube', title: 'Traversy Media', url: 'https://youtube.com/@TraversyMedia', desc: 'Node.js, Python ve PHP için proje bazlı harika anlatımlar.', lang: 'en' },
             { type: 'youtube', title: 'Be the Better Dev', url: 'https://youtube.com/@BetheBetterDev', desc: 'Sistem tasarımı ve Cloud mimarisi üzerine odaklı.', lang: 'en' },
 
-            // Dokümantasyon & Kurs
+            // Documentation & Courses
             { type: 'doc', title: 'PostgreSQL Docs', url: 'https://www.postgresql.org/docs/', desc: 'Dünyanın en gelişmiş açık kaynak veritabanı dokümantasyonu.', lang: 'global' },
             { type: 'course', title: 'Full Stack Open', url: 'https://fullstackopen.com', desc: 'Helsinki Üniversitesi\'nin ücretsiz, efsanevi Node.js ve React kursu.', lang: 'en' },
             { type: 'doc', title: 'Redis Docs', url: 'https://redis.io/docs/', desc: 'Caching ve hızlı veri yönetimi için başucu kaynağı.', lang: 'global' },
 
-            // Araçlar (Tools)
+            // Tools
             { type: 'tool', title: 'Postman', url: 'https://www.postman.com', desc: 'API\'lerinizi test etmek ve dökümante etmek için 1 numaralı araç.', lang: 'global' },
             { type: 'tool', title: 'Docker Hub', url: 'https://hub.docker.com', desc: 'Hazır veritabanı ve servis imajlarını bulabileceğiniz depo.', lang: 'global' },
             { type: 'tool', title: 'Supabase', url: 'https://supabase.com', desc: 'Backend kurmadan veritabanı ve Auth işlemlerini halleden Firebase alternatifi.', lang: 'global' },
@@ -2039,7 +2050,7 @@ contentData['backend'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Armut (Freelance)", "Remoteok.io"],
@@ -2058,7 +2069,7 @@ contentData['backend'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -2432,8 +2443,9 @@ contentData['backend'] = {
         }
     ]
 };
+
 contentData['fullstack'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temellerin Birleşimi", items: ["HTML/CSS/JS İleri Seviye", "HTTP & REST API Mantığı", "Git & GitHub Akışı"], status: "start" },
@@ -2467,27 +2479,27 @@ contentData['fullstack'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // YouTube & Eğitim
+            // YouTube & Education
             { type: 'course', title: 'The Odin Project', url: 'https://www.theodinproject.com', desc: 'Full Stack öğrenmek için dünyanın en iyi ücretsiz, proje bazlı açık kaynak müfredatı.', lang: 'en' },
             { type: 'course', title: 'Full Stack Open', url: 'https://fullstackopen.com', desc: 'Modern React, Redux, Node.js, MongoDB ve GraphQL üzerine Helsinki Üniversitesi kursu.', lang: 'en' },
             { type: 'youtube', title: 'Web Dev Simplified', url: 'https://youtube.com/@WebDevSimplified', desc: 'Karmaşık Full-stack konseptlerini basitleştiren harika kanal.', lang: 'en' },
             { type: 'youtube', title: 'Codevolution', url: 'https://youtube.com/@Codevolution', desc: 'React, Next.js ve Backend teknolojileri için detaylı Hint ekolü eğitimleri.', lang: 'en' },
 
-            // Dokümantasyon & Stack
+            // Documentation & Stack
             { type: 'doc', title: 'Next.js Docs', url: 'https://nextjs.org/docs', desc: 'Modern Full-stack geliştirmenin standardı haline gelen framework dokümantasyonu.', lang: 'en' },
             { type: 'tool', title: 'T3 Stack', url: 'https://create.t3.gg', desc: 'Next.js, TypeScript ve Tailwind ile tip güvenli (type-safe) geliştirme yığını.', lang: 'en' },
 
-            // Araçlar
+            // Tools
             { type: 'tool', title: 'Vercel', url: 'https://vercel.com', desc: 'Full-stack uygulamalarınızı saniyeler içinde yayınlayabileceğiniz platform.', lang: 'global' },
             { type: 'tool', title: 'Neon DB', url: 'https://neon.tech', desc: 'Serverless PostgreSQL veritabanı. Hızlı ve ölçeklenebilir.', lang: 'global' },
             { type: 'roadmap', title: 'Roadmap.sh', url: 'https://roadmap.sh/full-stack', desc: 'Full Stack geliştirici olmak için görsel yol haritası.', lang: 'en' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Armut", "Missions"],
@@ -2506,7 +2518,7 @@ contentData['fullstack'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -2588,8 +2600,9 @@ contentData['fullstack'] = {
         }
     ]
 };
+
 contentData['cloud'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temeller", items: ["Bulut Nedir? (IaaS, PaaS, SaaS)", "Sanallaştırma Mantığı", "Ağ Temelleri (IP, DNS, VPN)", "Linux CLI"], status: "start" },
@@ -2623,7 +2636,7 @@ contentData['cloud'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
             // YouTube
@@ -2631,23 +2644,23 @@ contentData['cloud'] = {
             { type: 'youtube', title: 'Tech with Lucy', url: 'https://youtube.com/@TechWithLucy', desc: 'AWS kariyeri ve sertifikasyon süreçleri için harika rehber.', lang: 'en' },
             { type: 'youtube', title: 'Stephane Maarek', url: 'https://www.udemy.com/user/stephanemaarek/', desc: 'AWS sertifikası alacaksanız Udemy\'deki 1 numaralı eğitmen.', lang: 'en' },
 
-            // Dokümantasyon & Platform
+            // Documentation & Platform
             { type: 'doc', title: 'AWS Documentation', url: 'https://docs.aws.amazon.com', desc: 'Sektörün en kapsamlı dokümantasyonu. Her şeyin kaynağı.', lang: 'en' },
             { type: 'doc', title: 'Microsoft Learn', url: 'https://learn.microsoft.com', desc: 'Azure öğrenmek için Microsoft\'un ücretsiz, interaktif eğitim platformu.', lang: 'global' },
             { type: 'tool', title: 'A Cloud Guru', url: 'https://acloudguru.com', desc: 'Bulut öğrenmenin Netflix\'i. Ücretli ama en iyi platform.', lang: 'en' },
 
-            // Araçlar
+            // Tools
             { type: 'tool', title: 'AWS Free Tier', url: 'https://aws.amazon.com/free', desc: '12 ay boyunca birçok servisi ücretsiz kullanabileceğiniz başlangıç paketi.', lang: 'global' },
             { type: 'tool', title: 'Terraform Registry', url: 'https://registry.terraform.io', desc: 'Altyapı kodları için kütüphane.', lang: 'global' },
             { type: 'roadmap', title: 'Roadmap.sh (DevOps/Cloud)', url: 'https://roadmap.sh/devops', desc: 'Bulut mühendisliği yol haritası.', lang: 'en' },
 
-            // Projeler
+            // Projects
             { type: 'roadmap', title: 'Cloud Resume Challenge', url: 'https://cloudresumechallenge.dev', desc: 'Bulut yetkinliklerinizi kanıtlamanız için hazırlanan efsanevi proje.', lang: 'global' },
             { type: 'doc', title: 'SSS Lunizz Guide', url: 'https://sss.lunizz.com', desc: 'Cloud Resume Challenge için Türkçe rehber ve kaynaklar.', lang: 'tr' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Remote iş ilanları"],
@@ -2666,7 +2679,7 @@ contentData['cloud'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -2748,8 +2761,9 @@ contentData['cloud'] = {
         }
     ]
 };
+
 contentData['ai-engineering'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temeller", items: ["Python (İleri Seviye)", "API Kullanımı (REST)", "Vektör Matematiği Temelleri"], status: "start" },
@@ -2780,7 +2794,7 @@ contentData['ai-engineering'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
             { type: 'course', title: 'DeepLearning.AI', url: 'https://www.deeplearning.ai/short-courses/', desc: 'Andrew Ng\'den Prompt Engineering ve LLM üzerine ücretsiz, sertifikalı kısa kurslar.', lang: 'en' },
@@ -2792,7 +2806,7 @@ contentData['ai-engineering'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Teknokent AI Startupları", "Bankalar"],
@@ -2811,7 +2825,7 @@ contentData['ai-engineering'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -2854,8 +2868,9 @@ contentData['ai-engineering'] = {
         }
     ]
 };
+
 contentData['network'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Giriş ve Terimler", items: ["Ağ (Network) Nedir?", "Domain (Alan Adı)", "Hosting & Sunucu", "Subdomain", "NS (Name Server)"], status: "start" },
@@ -2886,25 +2901,25 @@ contentData['network'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // Kullanıcının verdiği kaynaklar
+            // User Resources
             { type: 'doc', title: 'NS (Name Server) Nedir?', url: 'https://isimkayit.com/index.php/knowledgebase/166/NS-Name-Server-Nedir.html', desc: 'Aradaki bağlantıyı kuran sunucular hakkında bilgi.', lang: 'tr' },
             { type: 'doc', title: 'Bridge (Köprü) Nedir?', url: 'http://yusufgokkaya.com/en/active-directory-nedir/', desc: 'Ağ köprüleme mantığı üzerine detaylı yazı.', lang: 'tr' },
             { type: 'doc', title: 'Hub Nedir?', url: 'https://www.geeksforgeeks.org/basics-computer-networking/', desc: 'Ağ temelleri ve donanımlar hakkında İngilizce kaynak.', lang: 'en' },
             { type: 'doc', title: 'OSI Katmanları', url: 'https://bidb.itu.edu.tr/seyir-defteri/blog/2013/09/07/osi-katmanlar%C4%B1', desc: 'İTÜ Bilgi İşlem Daire Başkanlığından OSI modeli anlatımı.', lang: 'tr' },
-            { type: 'doc', title: 'Port Numaraları', url: 'https://tr.wikipedia.org/wiki/TCP_ve_UDP_ba%C4%9Flant%C4%B1_noktas%C4%B1_numaralar%C4%B1_listesi', desc: 'Hangi uygulama hangi portu kullanır listesi.', lang: 'tr' },
+            { type: 'doc', title: 'Port Numaraları', url: 'https://tr.wikipedia.org/wiki/TCP_ve_UDP_ba%C4%9flant%C4%B1_noktas%C4%B1_numaralar%C4%B1_listesi', desc: 'Hangi uygulama hangi portu kullanır listesi.', lang: 'tr' },
             { type: 'doc', title: 'IP Sınıf Aralıkları', url: 'https://www.ugureskici.com/notlarim-makalelerim/ip-sinif-araliklari', desc: 'IP v4 sınıfları ve aralıkları tablosu.', lang: 'tr' },
 
-            // Video Oynatma Listeleri
+            // YouTube Playlists
             { type: 'youtube', title: 'IBM Technology', url: 'https://youtube.com/playlist?list=PLOspHqNVtKAA_5N3pI49wkH4WsTkeZ_iQ', desc: 'IBM tarafından hazırlanan kapsamlı ağ temelleri eğitimi.', lang: 'en' },
             { type: 'youtube', title: 'NetworkChuck CCNA', url: 'https://youtu.be/pDn2u65rQbQ', desc: 'Network öğrenmenin en eğlenceli yolu. Mutlaka izleyin.', lang: 'en' },
             { type: 'youtube', title: 'Fırat Boyan', url: 'https://www.firatboyan.com/ip-ve-subnetting-kavrami.aspx', desc: 'IP ve Subnetting kavramı üzerine Türkçe teknik makale.', lang: 'tr' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "ISP Firmaları (Türk Telekom, Superonline)"],
@@ -2923,7 +2938,7 @@ contentData['network'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -2992,8 +3007,9 @@ contentData['network'] = {
         }
     ]
 };
+
 contentData['game-programming'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Temeller", items: ["Algoritma Mantığı", "Temel Matematik (Vektörler/Trigonometri)", "C# veya C++ Dili", "Git Versiyon Kontrol"], status: "start" },
@@ -3024,7 +3040,7 @@ contentData['game-programming'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
             // YouTube
@@ -3033,7 +3049,7 @@ contentData['game-programming'] = {
             { type: 'youtube', title: 'Unreal Sensei', url: 'https://youtube.com/@UnrealSensei', desc: 'Unreal Engine 5 ve Blueprints öğrenmek için en iyi kaynaklardan biri.', lang: 'en' },
             { type: 'youtube', title: 'Sercan Altun', url: 'https://youtube.com/@SercanAltun', desc: 'Türkçe Unity ve Hyper-casual oyun geliştirme üzerine pratik içerikler.', lang: 'tr' },
 
-            // Dokümantasyon & Araçlar
+            // Documentation & Tools
             { type: 'doc', title: 'Unity Learn', url: 'https://learn.unity.com', desc: 'Unity\'nin kendi hazırladığı ücretsiz, sertifikalı eğitim platformu.', lang: 'en' },
             { type: 'doc', title: 'Unreal Engine Docs', url: 'https://docs.unrealengine.com', desc: 'Unreal Engine için resmi kullanım kılavuzu.', lang: 'en' },
             { type: 'tool', title: 'Blender', url: 'https://www.blender.org', desc: 'Kendi 3D modellerinizi yapabileceğiniz ücretsiz ve açık kaynak devasa araç.', lang: 'global' },
@@ -3042,7 +3058,7 @@ contentData['game-programming'] = {
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Kariyer.net", "Indie Game Grupları"],
@@ -3061,7 +3077,7 @@ contentData['game-programming'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -3145,7 +3161,7 @@ contentData['game-programming'] = {
 };
 
 contentData['graphics-programming'] = {
-    // 1. YOL HARİTASI (ROADMAP)
+    // 1. ROADMAP
     roadmap: {
         tr: [
             { title: "Olmazsa Olmazlar", items: ["C++ (İleri Seviye)", "Lineer Cebir (Matrisler/Vektörler)", "Trigonometri", "GPU Mimarisi Mantığı"], status: "start" },
@@ -3179,28 +3195,28 @@ contentData['graphics-programming'] = {
         ]
     },
 
-    // 2. KAYNAKLAR (RESOURCES)
+    // 2. RESOURCES
     resources: {
         items: [
-            // Klasikler & Web
+            // Classics & Web
             { type: 'doc', title: 'LearnOpenGL.com', url: 'https://learnopengl.com', desc: 'Grafik programlamanın "Kutsal Kitabı". Adım adım her şeyi öğreten efsanevi site.', lang: 'en' },
             { type: 'tool', title: 'Shadertoy', url: 'https://www.shadertoy.com', desc: 'Tarayıcıda shader yazıp test edebileceğiniz, başkalarının kodlarını inceleyebileceğiniz platform.', lang: 'global' },
             { type: 'doc', title: 'Real-Time Rendering (Book)', url: 'https://www.realtimerendering.com', desc: 'Sektörün standart ders kitabı. Teorik bilgi için bir numara.', lang: 'en' },
 
-            // YouTube Kanalları
+            // YouTube Playlists
             { type: 'youtube', title: 'The Cherno', url: 'https://youtube.com/@TheCherno', desc: 'Kendi oyun motorunu (Hazel) yazarken OpenGL ve C++ anlatan harika seri.', lang: 'en' },
             { type: 'youtube', title: 'Acerola', url: 'https://youtube.com/@Acerola_t', desc: 'Grafik efektlerinin (Shaders) matematiğini eğlenceli ve derinlemesine anlatan kanal.', lang: 'en' },
             { type: 'youtube', title: 'Sebastian Lague', url: 'https://youtube.com/@SebastianLague', desc: 'Kodlama maceraları, Ray Tracing ve prosedürel üretim üzerine görsel şölen.', lang: 'en' },
             { type: 'youtube', title: 'Cem Yuksel', url: 'https://youtube.com/@cem_yuksel', desc: 'Utah Üniversitesi profesöründen Türkçe/İngilizce grafik dersleri.', lang: 'tr' },
 
-            // Araçlar
+            // Tools
             { type: 'tool', title: 'RenderDoc', url: 'https://renderdoc.org', desc: 'Grafik programcıları için vazgeçilmez "Frame Debugger" aracı.', lang: 'global' },
             { type: 'tool', title: 'Vulkan Tutorial', url: 'https://vulkan-tutorial.com', desc: 'Vulkan öğrenmek isteyen cesur geliştiriciler için başlangıç rehberi.', lang: 'en' },
             { type: 'roadmap', title: 'Roadmap.sh (C++)', url: 'https://roadmap.sh/cpp', desc: 'Bu işin temeli olan C++ için yol haritası.', lang: 'en' }
         ]
     },
 
-    // 3. İŞ İMKANLARI (JOBS & SALARY)
+    // 3. JOBS & SALARY
     jobs: {
         TR: {
             platforms: ["LinkedIn", "Teknokent (Savunma Sanayi)", "Oyun Stüdyoları"],
@@ -3219,7 +3235,7 @@ contentData['graphics-programming'] = {
         }
     },
 
-    // 4. SIKÇA SORULAN SORULAR (FAQ)
+    // 4. FAQ
     faq: [
         {
             id: 1,
@@ -3290,7 +3306,7 @@ contentData['graphics-programming'] = {
 };
 
 
-// 3. GENEL SSS VERİLERİ (Global FAQ Page)
+// 3. GLOBAL FAQ DATA
 export const globalFaqData = [
     {
         category: { en: 'General Software & Career', tr: 'Genel Yazılım ve Kariyer', az: 'Ümumi Proqramlaşdırma və Karyera' },
@@ -3512,7 +3528,7 @@ export const globalFaqData = [
     }
 ];
 
-// 4. GLOBAL RESURSLAR (Global Resources Page)
+// 4. GLOBAL RESOURCES
 export const globalResourcesData = [
     // 🤖 AI & LLM
     {
@@ -3675,6 +3691,7 @@ export const globalResourcesData = [
     }
 ];
 
+// 5. GLOSSARY
 export const glossary = [
     {
         term: "API (Application Programming Interface)",
@@ -4218,6 +4235,7 @@ export const glossary = [
     }
 ];
 
+// 6. TOOL OF THE WEEK
 export const toolOfTheWeek = {
     id: "notion",
     title: "Notion",
