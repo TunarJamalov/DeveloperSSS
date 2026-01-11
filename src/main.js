@@ -1,9 +1,13 @@
 import './style.css'
 import { inject } from '@vercel/analytics'
+import { injectSpeedInsights } from '@vercel/speed-insights'
 import { languages, countries, ui, categories, contentData, globalFaqData, globalResourcesData, glossary, toolOfTheWeek } from './data.js'
 
 // Initialize Vercel Analytics
 inject();
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
 
 // State
 const state = {
