@@ -117,13 +117,9 @@ const Navbar = () => {
         </div>
 
         <div class="flex items-center gap-3">
-            <button onclick="window.toggleCountry()" class="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-colors text-sm border border-white/5 bg-white/5">
-                <span>${currentFlag}</span>
-                <span class="hidden sm:inline font-medium text-gray-300">${state.country}</span>
-            </button>
-            <button onclick="window.toggleLang()" class="flex items-center gap-2 px-3 py-1.5 rounded-lg hover:bg-white/5 transition-colors text-sm border border-white/5 bg-white/5">
-                <span>${currentLangFlag}</span>
-                <span class="hidden sm:inline font-medium text-gray-300">${state.lang.toUpperCase()}</span>
+            <button onclick="window.toggleLang()" class="flex items-center gap-2 px-3 py-1.5 rounded-xl hover:bg-white/10 transition-all text-sm border border-white/10 bg-white/5 shadow-inner group">
+                <span class="text-base group-hover:scale-110 transition-transform">${currentLangFlag}</span>
+                <span class="font-bold text-gray-200">${state.lang.toUpperCase()}</span>
             </button>
         </div>
     </header>
@@ -161,8 +157,8 @@ const Sidebar = () => {
 
 const MobileMenu = () => {
     return `
-    <div onclick="window.toggleMobileMenu()" class="lg:hidden fixed inset-0 bg-black/80 z-[60] backdrop-blur-sm transition-opacity ${state.isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}"></div>
-    <aside class="lg:hidden fixed top-0 bottom-0 left-0 w-3/4 max-w-sm bg-dark-900 border-r border-white/10 z-[70] transform transition-transform duration-300 ease-in-out ${state.isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} overflow-y-auto">
+    <div onclick="window.toggleMobileMenu()" class="lg:hidden fixed inset-0 bg-black/80 z-[60] backdrop-blur-sm transition-opacity ${state.isMobileMenuOpen ? 'opacity-100 placeholder:pointer-events-auto' : 'opacity-0 pointer-events-none'}"></div>
+    <aside class="lg:hidden fixed inset-y-0 left-0 w-[85%] max-w-xs bg-dark-900 border-r border-white/10 z-[70] transform transition-transform duration-300 ease-out ${state.isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} overflow-y-auto shadow-2xl">
         <div class="p-4 border-b border-white/10 flex items-center justify-between sticky top-0 bg-dark-900 z-10">
             <div class="flex items-center gap-2">
                 <img src="/logo.png" class="w-8 h-8 rounded-lg" alt="Logo">
@@ -173,6 +169,14 @@ const MobileMenu = () => {
         <nav class="p-4 space-y-6">
             <!-- Global Links -->
             <div class="space-y-2">
+                <button onclick="window.toggleLang()" class="w-full flex items-center justify-between px-4 py-3 rounded-xl border border-white/10 bg-white/5 text-white font-bold hover:bg-white/10 transition-all mb-4">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl">${languages.find(l => l.code === state.lang)?.flag}</span>
+                        <span>${state.lang.toUpperCase()}</span>
+                    </div>
+                    <span class="text-xs text-gray-500 uppercase tracking-widest">${t('back') === 'Back' ? 'Change' : 'Dəyiş'} →</span>
+                </button>
+
                 <button onclick="window.navigateTo('faq'); window.toggleMobileMenu()" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl border border-white/5 bg-white/5 text-gray-300 font-medium hover:text-white transition-colors ${state.view === 'faq' ? 'border-brand-purple/50 bg-brand-purple/10 text-brand-purple' : ''}">
                     <span class="text-lg">📋</span> ${t('globalFaq')}
                 </button>
@@ -557,19 +561,21 @@ const LandingPage = () => {
              </div>
         </div>
 
-        <!-- Bento Grid Categories: z-10 ensures it stays BELOW search -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-7xl w-full mx-auto relative z-10 px-4 pb-20 flex-1">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 pb-20 max-w-7xl mx-auto relative z-10 w-full">
             ${categories.map(cat => `
                 <div onclick="window.navigateToCategory('${cat.id}')" 
-                     class="glass-card group cursor-pointer hover:-translate-y-1 relative overflow-hidden h-40 flex flex-col justify-end p-5 border-white/5 hover:border-white/20 hover:bg-white/5">
+                     class="glass-card group cursor-pointer hover:-translate-y-1 relative overflow-hidden flex flex-col p-6 border-white/5 hover:border-white/20 hover:bg-white/5 min-h-[160px]">
                     
-                    <div class="absolute top-4 right-4 text-3xl opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-500">${cat.icon}</div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-500">${cat.icon}</div>
+                        <div class="w-1 h-12 rounded-full bg-gradient-to-b ${cat.color} opacity-20 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
                     
                     <div class="relative z-10">
-                        <h3 class="font-bold text-white mb-1 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:${cat.color} transition-all">
+                        <h3 class="font-bold text-lg text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:${cat.color} transition-all">
                             ${getLocalizedContent(cat.title)}
                         </h3>
-                         <p class="text-xs text-gray-500 line-clamp-1 group-hover:text-gray-400 transition-colors">
+                         <p class="text-xs text-gray-400 line-clamp-2 leading-relaxed">
                             ${getLocalizedContent(cat.desc)}
                         </p>
                     </div>
@@ -1131,6 +1137,9 @@ const CategoryDetail = () => {
 
         <main class="flex-1 w-full flex flex-col min-w-0">
             <div class="p-4 md:p-12 max-w-5xl mx-auto flex-1 w-full">
+                <button onclick="window.navigateTo('home')" class="flex items-center gap-2 text-gray-500 hover:text-white mb-8 transition-colors group text-sm font-medium">
+                    <span class="group-hover:-translate-x-1 transition-transform">←</span> ${t('back')}
+                </button>
                 <div class="mb-10 animate-fade-in">
                     <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mb-2">
                         <span class="p-2 rounded-lg bg-white/5 text-2xl border border-white/10 shadow-inner">${cat.icon}</span>
@@ -1240,7 +1249,14 @@ window.toggleLang = () => {
     const currentIndex = languages.findIndex(l => l.code === state.lang);
     const nextIndex = (currentIndex + 1) % languages.length;
     state.lang = languages[nextIndex].code;
+
+    // Sync country with language if applicable
+    if (state.lang === 'tr') state.country = 'TR';
+    else if (state.lang === 'az') state.country = 'AZ';
+    else state.country = 'GLOBAL';
+
     localStorage.setItem('dsss_lang', state.lang);
+    localStorage.setItem('dsss_country', state.country);
     render();
 }
 

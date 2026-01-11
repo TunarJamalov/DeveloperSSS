@@ -25,7 +25,8 @@ export const ui = {
         hallOfFame: "Hall of Fame",
         glossary: "Dev Glossary",
         toolOfTheWeek: "Tool of the Week",
-        viewTool: "View Tool"
+        viewTool: "View Tool",
+        back: "Back"
     },
     tr: {
         welcome: "Hoş Geldiniz",
@@ -41,7 +42,8 @@ export const ui = {
         hallOfFame: "Onur Listesi",
         glossary: "Yazılım Sözlüğü",
         toolOfTheWeek: "Haftanın Aracı",
-        viewTool: "Aracı İncele"
+        viewTool: "Aracı İncele",
+        back: "Geri"
     },
     az: {
         welcome: "Xoş Gəlmisiniz",
@@ -57,7 +59,8 @@ export const ui = {
         hallOfFame: "Onur Siyahısı",
         glossary: "Terminlər Sözlüyü",
         toolOfTheWeek: "Həftənin Aləti",
-        viewTool: "Alətə Bax"
+        viewTool: "Alətə Bax",
+        back: "Geri"
     }
 };
 
