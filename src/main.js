@@ -7,6 +7,9 @@ import { languages, countries, ui, categories, contentData, globalFaqData, globa
 inject();
 injectSpeedInsights();
 
+// Initialize Vercel Speed Insights
+injectSpeedInsights();
+
 // State
 const state = {
     lang: localStorage.getItem('dsss_lang') || 'en', // Default to EN
