@@ -2601,7 +2601,75 @@ contentData['fullstack'] = {
                 en: "It used to be hard. Now with Vercel, Netlify, or Railway, your site goes live the moment you push to GitHub. DevOps is a plus, but not mandatory at start."
             }
         }
-    ]
+    ],
+
+     interview: [
+    {
+        id: 1,
+        q: {
+            tr: "RESTful API ve GraphQL arasındaki fark nedir?",
+            az: "RESTful API və GraphQL arasındakı fərq nədir?",
+            en: "Difference between RESTful API and GraphQL?"
+        },
+        a: {
+            tr: "REST belirli endpoint'ler üzerinden sabit veri döner. GraphQL tek bir endpoint üzerinden sadece talep edilen veriyi (over-fetching'i önleyerek) döner.",
+            az: "REST müəyyən endpoint-lər vasitəsilə sabit məlumat qaytarır. GraphQL tək bir endpoint üzərindən yalnız tələb olunan məlumatı (over-fetching-in qarşısını alaraq) qaytarır.",
+            en: "REST returns fixed data via multiple endpoints. GraphQL uses a single endpoint to return only the specific data requested, preventing over-fetching."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "SQL ve NoSQL veritabanları arasındaki temel farklar nelerdir?",
+            az: "SQL və NoSQL verilənlər bazaları arasındakı əsas fərqlər nələrdir?",
+            en: "Main differences between SQL and NoSQL databases?"
+        },
+        a: {
+            tr: "SQL (ilişkisel) tablolar ve şemalar kullanır, ACID uyumludur. NoSQL (doküman tabanlı vb.) esnek yapıdadır ve büyük ölçekli verilerde yatay genişleme (scaling) sağlar.",
+            az: "SQL (əlaqəli) cədvəl və sxemlərdən istifadə edir, ACID uyğundur. NoSQL (sənəd əsaslı və s.) elastik struktura malikdir və böyük həcmli məlumatlarda üfüqi böyüməni təmin edir.",
+            en: "SQL (relational) uses tables/schemas and is ACID compliant. NoSQL (document-based, etc.) is flexible and excels at horizontal scaling for large data sets."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Authentication ve Authorization farkı nedir?",
+            az: "Authentication (Kimlik doğrulama) və Authorization (Səlahiyyət) fərqi nədir?",
+            en: "Difference between Authentication and Authorization?"
+        },
+        a: {
+            tr: "Authentication, kullanıcının kim olduğunu doğrular (Giriş yapma). Authorization, kullanıcının hangi kaynaklara erişim izni olduğunu kontrol eder (Yetki).",
+            az: "Authentication istifadəçinin kim olduğunu təsdiqləyir (Giriş). Authorization isə istifadəçinin hansı resurslara giriş icazəsinin olduğunu yoxlayır (Səlahiyyət).",
+            en: "Authentication verifies who the user is (Login). Authorization determines what resources the user has permission to access (Permissions)."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Microservices ve Monolit mimari farkı nedir?",
+            az: "Microservices və Monolit memarlıq fərqi nədir?",
+            en: "Difference between Microservices and Monolithic architecture?"
+        },
+        a: {
+            tr: "Monolit'te tüm uygulama tek bir birimdir. Microservices'te uygulama küçük, bağımsız ve birbirleriyle haberleşen servis parçalarına bölünmüştür.",
+            az: "Monolitdə bütün proqram tək bir blokdur. Microservices-də isə proqram kiçik, müstəqil və bir-biri ilə əlaqə saxlayan servis hissələrinə bölünmüşdür.",
+            en: "In Monolithic, the app is a single unit. In Microservices, the app is split into small, independent services that communicate with each other."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "ORP (Object-Relational Mapping) nedir?",
+            az: "ORM (Object-Relational Mapping) nədir?",
+            en: "What is ORM (Object-Relational Mapping)?"
+        },
+        a: {
+            tr: "Veritabanı tablolarını kod tarafında sınıflar (class) olarak temsil etmemizi ve SQL yazmadan veritabanı işlemleri yapmamızı sağlayan tekniktir (Örn: Sequelize, Entity Framework).",
+            az: "Verilənlər bazası cədvəllərini kod tərəfində siniflər (class) kimi təmsil etməyə və SQL yazmadan bazada əməliyyatlar aparmağa imkan verən texnikadır.",
+            en: "A technique that lets you query and manipulate data from a database using an object-oriented paradigm (e.g., Sequelize, Entity Framework) instead of raw SQL."
+        }
+    }
+]
 
 };
 
