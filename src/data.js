@@ -2669,6 +2669,45 @@ contentData['fullstack'] = {
             en: "A technique that lets you query and manipulate data from a database using an object-oriented paradigm (e.g., Sequelize, Entity Framework) instead of raw SQL."
         }
     }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { tr: "Kişisel Portfolyo & Blog", az: "Şəxsi Portfolyo və Bloq", en: "Personal Portfolio & Blog" },
+        desc: { tr: "Admin paneli üzerinden yazı eklenebilen dinamik bir portfolyo sitesi.", az: "Admin paneli vasitəsilə məqalə əlavə edilə bilən dinamik portfolyo saytı.", en: "A dynamic portfolio site with an admin panel to manage blog posts." },
+        tech: ["React/Vue", "Node.js", "MongoDB", "Tailwind CSS"],
+        features: { 
+            tr: ["Markdown desteği", "İletişim formu (EmailJS)", "Responsive tasarım"], 
+            az: ["Markdown dəstəyi", "Əlaqə forması", "Responsive dizayn"], 
+            en: ["Markdown support", "Contact form integration", "Responsive design"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { tr: "E-Ticaret Platformu (MVP)", az: "E-Ticarət Platforması (MVP)", en: "E-commerce Platform (MVP)" },
+        desc: { tr: "Ürün listeleme, sepet yönetimi ve ödeme entegrasyonu içeren kapsamlı uygulama.", az: "Məhsul siyahısı, səbət idarəetməsi və ödəniş inteqrasiyası olan tətbiq.", en: "Full app featuring product listings, cart management, and payment integration." },
+        tech: ["Next.js", "Express", "PostgreSQL (Prisma)", "Stripe API"],
+        features: { 
+            tr: ["JWT Authentication", "Stripe ile ödeme", "Arama ve Filtreleme"], 
+            az: ["JWT Auth", "Stripe ödəniş sistemi", "Axtarış və Filtrləmə"], 
+            en: ["JWT Authentication", "Stripe payment", "Search & Filtering"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { tr: "SaaS Proje Yönetim Aracı", az: "SaaS Layihə İdarəetmə Aləti", en: "SaaS Project Management Tool" },
+        desc: { tr: "Trello veya Jira benzeri, ekiplerin gerçek zamanlı işbirliği yaptığı platform.", az: "Trello və ya Jira bənzəri, komandaların real-vaxtda əməkdaşlıq etdiyi platform.", en: "Trello/Jira-like platform for real-time team collaboration." },
+        tech: ["TypeScript", "Next.js", "Socket.io", "Redis", "Docker"],
+        features: { 
+            tr: ["Sürükle-bırak (Drag & Drop) kanban", "Real-time bildirimler", "Rol bazlı yetkilendirme (RBAC)"], 
+            az: ["Sürüklə-burax kanban", "Real-time bildirişlər", "Rol əsaslı icazələr"], 
+            en: ["Drag & Drop Kanban boards", "Real-time notifications", "Role-based access control"] 
+        }
+    }
 ]
 
 };
