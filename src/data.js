@@ -654,7 +654,46 @@ contentData['cyber-security'] = {
                 en: "Look for the 'Chipset', not the brand. You need support for 'Monitor Mode' and 'Packet Injection'. (e.g., Atheros AR9271)."
             }
         }
-    ]
+    ],
+
+    projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { tr: "Brute-Force Log Analiz Aracı", az: "Brute-Force Log Analiz Aləti", en: "Brute-Force Log Analyzer" },
+        desc: { tr: "Sistem loglarını tarayarak şüpheli giriş denemelerini tespit eden script.", az: "Sistem loqlarını skan edərək şübhəli giriş cəhdlərini aşkar edən skript.", en: "A script that scans system logs to detect suspicious login attempts." },
+        tech: ["Python", "Regex", "Linux Logs"],
+        features: { 
+            tr: ["Başarısız giriş tespiti", "IP bazlı raporlama", "E-posta uyarı sistemi"], 
+            az: ["Uğursuz giriş təyini", "IP əsaslı hesabat", "E-poçt xəbərdarlığı"], 
+            en: ["Failed login detection", "IP-based reporting", "Email alerting"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { tr: "Zafiyet Tarayıcı (Vulnerability Scanner)", az: "Zəiflik Skaneri", en: "Vulnerability Scanner" },
+        desc: { tr: "Hedef web sitelerindeki açık portları ve yaygın güvenlik açıklarını (XSS, SQLi) tarayan araç.", az: "Hədəf saytlarda açıq portları və yaygın boşluqları (XSS, SQLi) skan edən alət.", en: "Tool that scans target websites for open ports and common vulnerabilities like XSS and SQLi." },
+        tech: ["Python/Go", "Nmap API", "Requests/HTTP", "BeautifulSoup"],
+        features: { 
+            tr: ["Port tarama", "Payload enjeksiyonu", "HTML rapor çıktısı"], 
+            az: ["Port skanlama", "Payload inyeksiyası", "HTML hesabat çıxışı"], 
+            en: ["Port scanning", "Payload injection", "HTML report generation"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { tr: "Bal Küpü (Honeypot) & IDS", az: "Honeypot və IDS Sistemi", en: "Honeypot & IDS System" },
+        desc: { tr: "Saldırganları yanıltmak için sahte servisler sunan ve aktiviteleri izleyen gelişmiş sistem.", az: "Hücum edənləri aldatmaq üçün saxta servislər yaradan və aktivliyi izləyən sistem.", en: "Advanced system that deploys decoy services to mislead attackers and monitor their activity." },
+        tech: ["Docker", "ELK Stack (Elasticsearch, Logstash, Kibana)", "Suricata/Snort"],
+        features: { 
+            tr: ["Gerçek zamanlı trafik analizi", "Dashboard görselleştirme", "Otomatik IP engelleme"], 
+            az: ["Real-time trafik analizi", "Dashboard vizuallaşdırma", "Avtomatik IP bloklama"], 
+            en: ["Real-time traffic analysis", "Visual dashboards", "Automated IP blocking"] 
+        }
+    }
+]
 };
 
 contentData['big-data'] = {
