@@ -12,7 +12,7 @@ export const countries = [
     { code: 'AZ', name: 'Azerbaijan', flag: '🇦🇿' },
 ];
 
-// UI
+// UI Hello World!
 export const ui = {
     en: {
         welcome: "Welcome",
@@ -654,7 +654,46 @@ contentData['cyber-security'] = {
                 en: "Look for the 'Chipset', not the brand. You need support for 'Monitor Mode' and 'Packet Injection'. (e.g., Atheros AR9271)."
             }
         }
-    ]
+    ],
+
+    projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { tr: "Brute-Force Log Analiz Aracı", az: "Brute-Force Log Analiz Aləti", en: "Brute-Force Log Analyzer" },
+        desc: { tr: "Sistem loglarını tarayarak şüpheli giriş denemelerini tespit eden script.", az: "Sistem loqlarını skan edərək şübhəli giriş cəhdlərini aşkar edən skript.", en: "A script that scans system logs to detect suspicious login attempts." },
+        tech: ["Python", "Regex", "Linux Logs"],
+        features: { 
+            tr: ["Başarısız giriş tespiti", "IP bazlı raporlama", "E-posta uyarı sistemi"], 
+            az: ["Uğursuz giriş təyini", "IP əsaslı hesabat", "E-poçt xəbərdarlığı"], 
+            en: ["Failed login detection", "IP-based reporting", "Email alerting"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { tr: "Zafiyet Tarayıcı (Vulnerability Scanner)", az: "Zəiflik Skaneri", en: "Vulnerability Scanner" },
+        desc: { tr: "Hedef web sitelerindeki açık portları ve yaygın güvenlik açıklarını (XSS, SQLi) tarayan araç.", az: "Hədəf saytlarda açıq portları və yaygın boşluqları (XSS, SQLi) skan edən alət.", en: "Tool that scans target websites for open ports and common vulnerabilities like XSS and SQLi." },
+        tech: ["Python/Go", "Nmap API", "Requests/HTTP", "BeautifulSoup"],
+        features: { 
+            tr: ["Port tarama", "Payload enjeksiyonu", "HTML rapor çıktısı"], 
+            az: ["Port skanlama", "Payload inyeksiyası", "HTML hesabat çıxışı"], 
+            en: ["Port scanning", "Payload injection", "HTML report generation"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { tr: "Bal Küpü (Honeypot) & IDS", az: "Honeypot və IDS Sistemi", en: "Honeypot & IDS System" },
+        desc: { tr: "Saldırganları yanıltmak için sahte servisler sunan ve aktiviteleri izleyen gelişmiş sistem.", az: "Hücum edənləri aldatmaq üçün saxta servislər yaradan və aktivliyi izləyən sistem.", en: "Advanced system that deploys decoy services to mislead attackers and monitor their activity." },
+        tech: ["Docker", "ELK Stack (Elasticsearch, Logstash, Kibana)", "Suricata/Snort"],
+        features: { 
+            tr: ["Gerçek zamanlı trafik analizi", "Dashboard görselleştirme", "Otomatik IP engelleme"], 
+            az: ["Real-time trafik analizi", "Dashboard vizuallaşdırma", "Avtomatik IP bloklama"], 
+            en: ["Real-time traffic analysis", "Visual dashboards", "Automated IP blocking"] 
+        }
+    }
+]
 };
 
 contentData['big-data'] = {
@@ -2601,7 +2640,114 @@ contentData['fullstack'] = {
                 en: "It used to be hard. Now with Vercel, Netlify, or Railway, your site goes live the moment you push to GitHub. DevOps is a plus, but not mandatory at start."
             }
         }
-    ]
+    ],
+
+     interview: [
+    {
+        id: 1,
+        q: {
+            tr: "RESTful API ve GraphQL arasındaki fark nedir?",
+            az: "RESTful API və GraphQL arasındakı fərq nədir?",
+            en: "Difference between RESTful API and GraphQL?"
+        },
+        a: {
+            tr: "REST belirli endpoint'ler üzerinden sabit veri döner. GraphQL tek bir endpoint üzerinden sadece talep edilen veriyi (over-fetching'i önleyerek) döner.",
+            az: "REST müəyyən endpoint-lər vasitəsilə sabit məlumat qaytarır. GraphQL tək bir endpoint üzərindən yalnız tələb olunan məlumatı (over-fetching-in qarşısını alaraq) qaytarır.",
+            en: "REST returns fixed data via multiple endpoints. GraphQL uses a single endpoint to return only the specific data requested, preventing over-fetching."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "SQL ve NoSQL veritabanları arasındaki temel farklar nelerdir?",
+            az: "SQL və NoSQL verilənlər bazaları arasındakı əsas fərqlər nələrdir?",
+            en: "Main differences between SQL and NoSQL databases?"
+        },
+        a: {
+            tr: "SQL (ilişkisel) tablolar ve şemalar kullanır, ACID uyumludur. NoSQL (doküman tabanlı vb.) esnek yapıdadır ve büyük ölçekli verilerde yatay genişleme (scaling) sağlar.",
+            az: "SQL (əlaqəli) cədvəl və sxemlərdən istifadə edir, ACID uyğundur. NoSQL (sənəd əsaslı və s.) elastik struktura malikdir və böyük həcmli məlumatlarda üfüqi böyüməni təmin edir.",
+            en: "SQL (relational) uses tables/schemas and is ACID compliant. NoSQL (document-based, etc.) is flexible and excels at horizontal scaling for large data sets."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Authentication ve Authorization farkı nedir?",
+            az: "Authentication (Kimlik doğrulama) və Authorization (Səlahiyyət) fərqi nədir?",
+            en: "Difference between Authentication and Authorization?"
+        },
+        a: {
+            tr: "Authentication, kullanıcının kim olduğunu doğrular (Giriş yapma). Authorization, kullanıcının hangi kaynaklara erişim izni olduğunu kontrol eder (Yetki).",
+            az: "Authentication istifadəçinin kim olduğunu təsdiqləyir (Giriş). Authorization isə istifadəçinin hansı resurslara giriş icazəsinin olduğunu yoxlayır (Səlahiyyət).",
+            en: "Authentication verifies who the user is (Login). Authorization determines what resources the user has permission to access (Permissions)."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Microservices ve Monolit mimari farkı nedir?",
+            az: "Microservices və Monolit memarlıq fərqi nədir?",
+            en: "Difference between Microservices and Monolithic architecture?"
+        },
+        a: {
+            tr: "Monolit'te tüm uygulama tek bir birimdir. Microservices'te uygulama küçük, bağımsız ve birbirleriyle haberleşen servis parçalarına bölünmüştür.",
+            az: "Monolitdə bütün proqram tək bir blokdur. Microservices-də isə proqram kiçik, müstəqil və bir-biri ilə əlaqə saxlayan servis hissələrinə bölünmüşdür.",
+            en: "In Monolithic, the app is a single unit. In Microservices, the app is split into small, independent services that communicate with each other."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "ORP (Object-Relational Mapping) nedir?",
+            az: "ORM (Object-Relational Mapping) nədir?",
+            en: "What is ORM (Object-Relational Mapping)?"
+        },
+        a: {
+            tr: "Veritabanı tablolarını kod tarafında sınıflar (class) olarak temsil etmemizi ve SQL yazmadan veritabanı işlemleri yapmamızı sağlayan tekniktir (Örn: Sequelize, Entity Framework).",
+            az: "Verilənlər bazası cədvəllərini kod tərəfində siniflər (class) kimi təmsil etməyə və SQL yazmadan bazada əməliyyatlar aparmağa imkan verən texnikadır.",
+            en: "A technique that lets you query and manipulate data from a database using an object-oriented paradigm (e.g., Sequelize, Entity Framework) instead of raw SQL."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { tr: "Kişisel Portfolyo & Blog", az: "Şəxsi Portfolyo və Bloq", en: "Personal Portfolio & Blog" },
+        desc: { tr: "Admin paneli üzerinden yazı eklenebilen dinamik bir portfolyo sitesi.", az: "Admin paneli vasitəsilə məqalə əlavə edilə bilən dinamik portfolyo saytı.", en: "A dynamic portfolio site with an admin panel to manage blog posts." },
+        tech: ["React/Vue", "Node.js", "MongoDB", "Tailwind CSS"],
+        features: { 
+            tr: ["Markdown desteği", "İletişim formu (EmailJS)", "Responsive tasarım"], 
+            az: ["Markdown dəstəyi", "Əlaqə forması", "Responsive dizayn"], 
+            en: ["Markdown support", "Contact form integration", "Responsive design"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { tr: "E-Ticaret Platformu (MVP)", az: "E-Ticarət Platforması (MVP)", en: "E-commerce Platform (MVP)" },
+        desc: { tr: "Ürün listeleme, sepet yönetimi ve ödeme entegrasyonu içeren kapsamlı uygulama.", az: "Məhsul siyahısı, səbət idarəetməsi və ödəniş inteqrasiyası olan tətbiq.", en: "Full app featuring product listings, cart management, and payment integration." },
+        tech: ["Next.js", "Express", "PostgreSQL (Prisma)", "Stripe API"],
+        features: { 
+            tr: ["JWT Authentication", "Stripe ile ödeme", "Arama ve Filtreleme"], 
+            az: ["JWT Auth", "Stripe ödəniş sistemi", "Axtarış və Filtrləmə"], 
+            en: ["JWT Authentication", "Stripe payment", "Search & Filtering"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { tr: "SaaS Proje Yönetim Aracı", az: "SaaS Layihə İdarəetmə Aləti", en: "SaaS Project Management Tool" },
+        desc: { tr: "Trello veya Jira benzeri, ekiplerin gerçek zamanlı işbirliği yaptığı platform.", az: "Trello və ya Jira bənzəri, komandaların real-vaxtda əməkdaşlıq etdiyi platform.", en: "Trello/Jira-like platform for real-time team collaboration." },
+        tech: ["TypeScript", "Next.js", "Socket.io", "Redis", "Docker"],
+        features: { 
+            tr: ["Sürükle-bırak (Drag & Drop) kanban", "Real-time bildirimler", "Rol bazlı yetkilendirme (RBAC)"], 
+            az: ["Sürüklə-burax kanban", "Real-time bildirişlər", "Rol əsaslı icazələr"], 
+            en: ["Drag & Drop Kanban boards", "Real-time notifications", "Role-based access control"] 
+        }
+    }
+]
 
 };
 
