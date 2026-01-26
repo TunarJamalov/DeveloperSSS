@@ -336,7 +336,270 @@ contentData['android'] = {
                 en: "KMP allows sharing Kotlin code (business logic) between Android and iOS. It has a very bright future and should be learned at an advanced level."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Kotlin'de 'Null Safety' nasıl çalışır?",
+            az: "Kotlin-də 'Null Safety' necə işləyir?",
+            en: "How does Null Safety work in Kotlin?"
+        },
+        a: {
+            tr: "Değişkenler varsayılan olarak null olamaz. Null olabilecek değişkenler '?' ile tanımlanır. Bu, NullPointerException (NPE) hatalarını derleme zamanında önler.",
+            az: "Dəyişənlər susmaya görə null ola bilməz. Null ola biləcək dəyişənlər '?' ilə təyin edilir. Bu, NullPointerException (NPE) xətalarının qarşısını hələ kod yazılarkən alır.",
+            en: "Variables are non-nullable by default. Nullable variables are defined with '?'. This prevents NullPointerException at compile time."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Activity Yaşam Döngüsü (Lifecycle) aşamaları nelerdir?",
+            az: "Activity Yaşam Döngüsü (Lifecycle) mərhələləri nələrdir?",
+            en: "What are the Activity Lifecycle stages?"
+        },
+        a: {
+            tr: "onCreate, onStart, onResume, onPause, onStop, onDestroy ve onRestart.",
+            az: "onCreate, onStart, onResume, onPause, onStop, onDestroy və onRestart.",
+            en: "The stages are: onCreate, onStart, onResume, onPause, onStop, onDestroy, and onRestart."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Fragment nedir ve neden kullanılır?",
+            az: "Fragment nədir və nə üçün istifadə olunur?",
+            en: "What is a Fragment and why use it?"
+        },
+        a: {
+            tr: "Activity içinde çalışan modüler bir kullanıcı arayüzü parçasıdır. Yeniden kullanılabilir ekran bölümleri oluşturmayı sağlar.",
+            az: "Activity daxilində çalışan modulyar istifadəçi interfeysi hissəsidir. Təkrar istifadə edilə bilən ekran bölmələri yaratmağa imkan verir.",
+            en: "A modular portion of a user interface within an activity. It enables reusable UI components and multi-pane layouts."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "ViewModel'in amacı nedir?",
+            az: "ViewModel-in məqsədi nədir?",
+            en: "What is the purpose of ViewModel?"
+        },
+        a: {
+            tr: "UI ile ilgili verileri saklamak ve yönetmek için kullanılır. Ekran döndürme gibi yapılandırma değişikliklerinde verilerin kaybolmasını önler.",
+            az: "UI ilə bağlı məlumatları saxlamaq və idarə etmək üçün istifadə olunur. Ekranın döndərilməsi kimi hallarda məlumatların itməsinin qarşısını alır.",
+            en: "Designed to store and manage UI-related data in a lifecycle-conscious way, allowing data to survive configuration changes like screen rotations."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Coroutines nedir?",
+            az: "Coroutines nədir?",
+            en: "What are Coroutines?"
+        },
+        a: {
+            tr: "Asenkron işlemleri (ağ istekleri, veritabanı) basitleştiren, ana iş parçacığını (Main Thread) bloklamadan çalışan hafif iş parçacıklarıdır.",
+            az: "Asinxron əməliyyatları (şəbəkə sorğuları, verilənlər bazası) sadələşdirən, ana thread-i bloklamadan çalışan yüngül iş parçacıqlarıdır.",
+            en: "Lightweight threads for asynchronous programming that simplify long-running tasks without blocking the main thread."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Jetpack Compose ve XML farkı nedir?",
+            az: "Jetpack Compose və XML fərqi nədir?",
+            en: "Jetpack Compose vs XML?"
+        },
+        a: {
+            tr: "XML imperatiftir (View hiyerarşisi). Jetpack Compose ise modern, deklaratif bir UI kütüphanesidir; arayüz kodla tanımlanır ve durum (state) değiştikçe güncellenir.",
+            az: "XML imperativdir. Jetpack Compose isə müasir, deklarativ UI kitabxanasıdır; interfeys kodla təsvir edilir və vəziyyət (state) dəyişdikcə yenilənir.",
+            en: "XML is an imperative UI approach. Jetpack Compose is a modern declarative toolkit that builds UI by calling composable functions."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "LiveData ve StateFlow farkı nedir?",
+            az: "LiveData və StateFlow fərqi nədir?",
+            en: "Difference between LiveData and StateFlow?"
+        },
+        a: {
+            tr: "LiveData yaşam döngüsüne duyarlıdır (Lifecycle-aware). StateFlow ise Kotlin Flow tabanlıdır, varsayılan değer gerektirir ve daha geniş operatör desteğine sahiptir.",
+            az: "LiveData lifecycle-a duyarlıdır. StateFlow isə Kotlin Flow əsaslıdır, başlanğıc dəyər tələb edir və daha geniş operator dəstəyinə malikdir.",
+            en: "LiveData is lifecycle-aware but Android-bound. StateFlow is a pure Kotlin Flow that requires an initial state and offers better operators."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Dependency Injection (Hilt/Dagger) neden gereklidir?",
+            az: "Dependency Injection (Hilt/Dagger) niyə lazımdır?",
+            en: "Why is Dependency Injection necessary?"
+        },
+        a: {
+            tr: "Sınıflar arasındaki bağımlılığı azaltır (Loose coupling). Kodun test edilebilirliğini ve bakımını kolaylaştırır.",
+            az: "Klaslar arasındakı asılılığı azaldır. Kodun test edilməsini və idarə olunmasını asanlaşdırır.",
+            en: "It promotes loose coupling, improves code reusability, and makes unit testing much easier by injecting mock dependencies."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Intent nedir ve türleri nelerdir?",
+            az: "Intent nədir və növləri hansılardır?",
+            en: "What is an Intent and its types?"
+        },
+        a: {
+            tr: "Bileşenler arası iletişimi sağlar. Explicit (Açık): Hedef bileşen bellidir. Implicit (Kapalı): Eylem belirtilir, sistem uygun uygulamayı bulur.",
+            az: "Komponentlər arası əlaqəni təmin edir. Explicit (Açıq): Hədəf bəllidir. Implicit (Qapalı): Tapşırıq qeyd edilir, sistem uyğun tətbiqi tapır.",
+            en: "An abstract description of an operation to be performed. Explicit targets a specific component; Implicit asks the system to find an app for an action."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Room Database nedir?",
+            az: "Room Database nədir?",
+            en: "What is Room Database?"
+        },
+        a: {
+            tr: "SQLite üzerinde bir soyutlama katmanıdır. Daha güvenli, kolay ve performanslı bir veritabanı yönetimi sağlar.",
+            az: "SQLite üzərində bir təbəqədir. Daha təhlükəsiz, asan və performanslı bir verilənlər bazası idarəetməsini təmin edir.",
+            en: "A persistence library that provides an abstraction layer over SQLite to allow fluent database access while harnessing the full power of SQLite."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "WorkManager ne zaman kullanılır?",
+            az: "WorkManager nə vaxt istifadə olunur?",
+            en: "When to use WorkManager?"
+        },
+        a: {
+            tr: "Uygulama kapalı olsa bile mutlaka çalışması gereken (deferrable) arka plan görevleri için kullanılır (Örn: Veri senkronizasyonu).",
+            az: "Tətbiq bağlı olsa belə mütləq yerinə yetirilməli olan arxa plan tapşırıqları üçün istifadə olunur (Məs: Məlumat sinxronizasiyası).",
+            en: "For background tasks that need to run reliably even if the app exits or the device restarts, such as syncing data or uploading logs."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Service nedir?",
+            az: "Service nədir?",
+            en: "What is a Service?"
+        },
+        a: {
+            tr: "Kullanıcı arayüzü olmayan, arka planda uzun süren işlemler yapmak için kullanılan bileşendir (Örn: Müzik çalma).",
+            az: "İstifadəçi interfeysi olmayan, arxa planda uzun müddətli işləri görmək üçün istifadə olunan komponentdir (Məs: Musiqi oxutmaq).",
+            en: "An application component that can perform long-running operations in the background without a user interface."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Retrofit nedir?",
+            az: "Retrofit nədir?",
+            en: "What is Retrofit?"
+        },
+        a: {
+            tr: "Android için popüler bir HTTP istemcisidir. REST API isteklerini kolayca Java/Kotlin arayüzlerine dönüştürür.",
+            az: "Android üçün məşhur bir HTTP müştərisidir. REST API sorğularını asanlıqla Java/Kotlin interfeyslərinə çevirir.",
+            en: "A type-safe HTTP client for Android and Java, used to communicate with web services and handle API requests easily."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "ViewBinding ve DataBinding farkı nedir?",
+            az: "ViewBinding və DataBinding fərqi nədir?",
+            en: "Difference between ViewBinding and DataBinding?"
+        },
+        a: {
+            tr: "ViewBinding sadece görünümlere erişim sağlar. DataBinding ise XML içinde mantıksal işlemler ve veri bağlama yapılmasına izin verir.",
+            az: "ViewBinding yalnız vizual elementlərə müraciət üçün istifadə olunur. DataBinding isə XML daxilində məntiqi əməliyyatlar və data bağlamağa imkan verir.",
+            en: "ViewBinding is only for replacing findViewById. DataBinding allows binding data directly to UI components inside XML files."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Lazy Column nedir (Compose)?",
+            az: "Lazy Column nədir (Compose)?",
+            en: "What is a Lazy Column in Compose?"
+        },
+        a: {
+            tr: "UIKit'teki UITableView veya Android XML'deki RecyclerView gibidir. Sadece ekranda görünen öğeleri oluşturur, performansı artırır.",
+            az: "XML-dəki RecyclerView kimidir. Yalnız ekranda görünən elementləri yaradır və yaddaşa qənaət edir.",
+            en: "A vertically scrolling list that only composes and lays out the items that are currently visible on the screen, similar to RecyclerView."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Companion Object nedir?",
+            az: "Companion Object nədir?",
+            en: "What is a Companion Object?"
+        },
+        a: {
+            tr: "Bir sınıfın örneğini (instance) oluşturmadan, içindeki metodlara veya değişkenlere erişmemizi sağlayan yapıdır (Static benzeri).",
+            az: "Bir klasın nüsxəsini yaratmadan, daxilindəki metodlara və ya dəyişənlərə müraciət etməyə imkan verən strukturdur (Static-ə bənzəyir).",
+            en: "An object tied to a class that allows accessing its members without instantiating the class, similar to static members in Java."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Android'de 'Context' nedir?",
+            az: "Android-də 'Context' nədir?",
+            en: "What is Context in Android?"
+        },
+        a: {
+            tr: "Uygulamanın o anki durumuna erişim sağlayan, kaynaklara (resources) ve sistem servislerine ulaşmamıza yarayan köprüdür.",
+            az: "Tətbiqin cari vəziyyətinə müraciət etməyi təmin edən, resurslara və sistem xidmətlərinə çatmağa yarayan körpüdür.",
+            en: "An interface to global information about an application environment; used to access resources, databases, and system-level services."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Proguard/R8 nedir?",
+            az: "Proguard/R8 nədir?",
+            en: "What is Proguard/R8?"
+        },
+        a: {
+            tr: "Kodu küçültmek, optimize etmek ve karıştırmak (obfuscation) için kullanılır. Uygulama boyutunu azaltır ve tersine mühendisliği zorlaştırır.",
+            az: "Kodu kiçiltmək, optimallaşdırmaq və qarışdırmaq (obfuscation) üçün istifadə olunur. Tətbiq ölçüsünü azaldır və kodun oğurlanmasını çətinləşdirir.",
+            en: "Tools that shrink, optimize, and obfuscate your code to reduce app size and make reverse engineering more difficult."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "Clean Architecture katmanları nelerdir?",
+            az: "Clean Architecture təbəqələri nələrdir?",
+            en: "What are Clean Architecture layers?"
+        },
+        a: {
+            tr: "Genellikle 3 katmandır: Presentation (UI), Domain (Business Logic/UseCases) ve Data (Repositories/API/DB).",
+            az: "Adətən 3 təbəqədən ibarətdir: Presentation (UI), Domain (Biznes məntiqi) və Data (API və verilənlər bazası).",
+            en: "Typically divided into: Presentation (UI), Domain (Business Logic), and Data (Data sources like API and DB)."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Sealed Class nedir?",
+            az: "Sealed Class nədir?",
+            en: "What is a Sealed Class?"
+        },
+        a: {
+            tr: "Kısıtlı bir sınıf hiyerarşisi tanımlar. Enum'a benzer ama her alt sınıfın farklı parametreleri ve durumu olabilir. 'When' ile kullanımı güvenlidir.",
+            az: "Məhdud bir klas iyerarxiyası yaradır. Enum-a bənzəyir, lakin hər alt klasın fərqli parametrləri ola bilər. 'When' bloku ilə istifadəsi çox əlverişlidir.",
+            en: "Used to represent restricted class hierarchies. Each subclass can have its own properties, making it more powerful than Enums for handling states."
+        }
+    }
+]
 };
 
 
@@ -656,6 +919,269 @@ contentData['cyber-security'] = {
         }
     ],
 
+interview: [
+    {
+        id: 1,
+        q: {
+            tr: "CIA Üçlüsü (Confidentiality, Integrity, Availability) nedir?",
+            az: "CIA Triadası (Məxfilik, Bütövlük, Əlçatanlıq) nədir?",
+            en: "What is the CIA Triad?"
+        },
+        a: {
+            tr: "Bilgi güvenliğinin üç temel direğidir: Gizlilik (verinin yetkisiz erişime kapalı olması), Bütünlük (verinin değiştirilmemiş olması) ve Erişilebilirlik (verinin ihtiyaç duyulduğunda ulaşılabilir olması).",
+            az: "İnformasiya təhlükəsizliyinin üç əsas sütunudur: Məxfilik (yetkisiz girişin qarşısının alınması), Bütövlük (məlumatın dəyişdirilməməsi) və Əlçatanlıq (ehtiyac duyulduqda məlumatın əldə edilməsi).",
+            en: "The three pillars of info-sec: Confidentiality (preventing unauthorized access), Integrity (ensuring data isn't altered), and Availability (ensuring data is accessible when needed)."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Phishing (Oltalama) saldırısı nedir?",
+            az: "Phishing (Fişinq) hücumu nədir?",
+            en: "What is a Phishing attack?"
+        },
+        a: {
+            tr: "Saldırganın güvenilir bir kurum gibi davranarak (e-posta veya sahte site üzerinden) kullanıcı şifrelerini veya kredi kartı bilgilerini çalmaya çalışmasıdır.",
+            az: "Hücumçunun özünü etibarlı bir qurum kimi təqdim edərək (e-poçt və ya saxta sayt vasitəsilə) istifadəçi şifrələrini və ya kredit kartı məlumatlarını oğurlamağa çalışmasıdır.",
+            en: "A social engineering attack where an attacker poses as a trusted entity to steal sensitive data like login credentials or credit card numbers."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "IDS ve IPS arasındaki fark nedir?",
+            az: "IDS və IPS arasındakı fərq nədir?",
+            en: "Difference between IDS and IPS?"
+        },
+        a: {
+            tr: "IDS (Intrusion Detection System) saldırıyı sadece tespit eder ve uyarır. IPS (Intrusion Prevention System) ise saldırıyı tespit eder ve otomatik olarak durdurur.",
+            az: "IDS (Müdaxiləni Müəyyən Etmə Sistemi) hücumu yalnız aşkar edir və xəbərdarlıq edir. IPS (Müdaxilənin Qarşısını Alma Sistemi) isə hücumu aşkar edir və avtomatik dayandırır.",
+            en: "IDS (Intrusion Detection System) only monitors and alerts about threats. IPS (Intrusion Prevention System) monitors, alerts, and actively takes steps to block the threat."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Salting (Tuzlama) nedir?",
+            az: "Salting nədir?",
+            en: "What is Salting?"
+        },
+        a: {
+            tr: "Şifreler özetlenmeden (hashing) önce her şifreye eklenen rastgele veridir. Rainbow table saldırılarını engellemek için kullanılır.",
+            az: "Şifrələr hash olunmazdan əvvəl hər şifrəyə əlavə edilən təsadüfi məlumatdır. Rainbow table hücumlarının qarşısını almaq üçün istifadə olunur.",
+            en: "Adding unique, random characters to a password before hashing it to protect against pre-computed hash attacks like Rainbow Tables."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Brute Force saldırısı nedir?",
+            az: "Brute Force (Kobud qüvvə) hücumu nədir?",
+            en: "What is a Brute Force attack?"
+        },
+        a: {
+            tr: "Bir şifreyi kırmak için tüm olası kombinasyonların sistematik olarak denenmesidir. Güçlü şifreler ve hesap kilitleme ile önlenir.",
+            az: "Bir şifrəni qırmaq üçün bütün mümkün kombinasiyaların sistemli şəkildə sınanmasıdır. Güclü şifrələr və hesabın bloklanması ilə qarşısı alınır.",
+            en: "A trial-and-error method used to guess login credentials or encryption keys by trying every possible combination."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "XSS (Cross-Site Scripting) nedir?",
+            az: "XSS (Cross-Site Scripting) nədir?",
+            en: "What is XSS?"
+        },
+        a: {
+            tr: "Saldırganın web sayfasına kötü amaçlı JavaScript kodu enjekte etmesi ve bu kodun diğer kullanıcıların tarayıcısında çalışmasıdır.",
+            az: "Hücumçunun veb səhifəsinə zərərli JavaScript kodu yerləşdirməsi və bu kodun digər istifadəçilərin brauzerində işləməsidir.",
+            en: "A vulnerability where an attacker injects malicious scripts into a trusted website, which then execute in the victim's browser."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Privilege Escalation (Yetki Yükseltme) nedir?",
+            az: "Privilege Escalation (Səlahiyyət artırılması) nədir?",
+            en: "What is Privilege Escalation?"
+        },
+        a: {
+            tr: "Bir kullanıcının sistemde sahip olduğundan daha yüksek (admin/root) yetkilere sahip olmaya çalışmasıdır.",
+            az: "Bir istifadəçinin sistemdə sahib olduğundan daha yüksək (admin/root) səlahiyyətlər əldə etməyə çalışmasıdır.",
+            en: "The act of gaining unauthorized access to elevated rights, permissions, or privileges beyond what is assigned to a user."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "HoneyPot (Bal Küpü) nedir?",
+            az: "HoneyPot nədir?",
+            en: "What is a Honeypot?"
+        },
+        a: {
+            tr: "Saldırganları kandırmak ve hareketlerini izlemek için bilerek zafiyetli bırakılmış sahte bir sistem veya veritabanıdır.",
+            az: "Hücumçuları aldatmaq və hərəkətlərini izləmək üçün qəsdən zəifliklərlə buraxılmış saxta sistem və ya verilənlər bazasıdır.",
+            en: "A decoy system set up to gather intelligence on attackers by lure them into a controlled environment."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "DDoS saldırısı nedir?",
+            az: "DDoS hücumu nədir?",
+            en: "What is a DDoS attack?"
+        },
+        a: {
+            tr: "Bir web sitesini veya servisi, birden fazla kaynaktan yoğun trafik göndererek erişilemez hale getirme girişimidir.",
+            az: "Bir veb saytı və ya xidməti bir çox mənbədən gələn trafiklə yükləyərək onu əlçatmaz hala gətirmək cəhdidir.",
+            en: "Distributed Denial of Service; an attempt to crash a server or network by overwhelming it with a flood of internet traffic."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "VPN nedir ve nasıl çalışır?",
+            az: "VPN nədir və necə işləyir?",
+            en: "What is a VPN and how does it work?"
+        },
+        a: {
+            tr: "İnternet üzerinde şifreli bir tünel oluşturarak kullanıcının gerçek IP adresini gizleyen ve veri iletimini güvenli hale getiren teknolojidir.",
+            az: "İnternet üzərində şifrəli bir tunel yaradaraq istifadəçinin real IP ünvanını gizləyən və məlumat ötürülməsini təhlükəsiz edən texnologiyadır.",
+            en: "Virtual Private Network; it creates an encrypted connection over a less secure network, hiding your IP and securing your data."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "Zero-Day (Sıfırıncı Gün) zafiyeti nedir?",
+            az: "Zero-Day (Sıfırıncı gün) boşluğu nədir?",
+            en: "What is a Zero-Day vulnerability?"
+        },
+        a: {
+            tr: "Yazılım geliştiricisi tarafından henüz bilinmeyen veya yaması (patch) yayınlanmamış olan güvenlik açığıdır.",
+            az: "Proqram təminatçısı tərəfindən hələ bilinməyən və ya yaması (patch) çıxarılmamış təhlükəsizlik boşluğudur.",
+            en: "A software security flaw that is unknown to the vendor and for which no patch has yet been released."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Penetrasyon (Sızma) Testi nedir?",
+            az: "Penetrasiya (Sızma) testi nədir?",
+            en: "What is a Penetration Test?"
+        },
+        a: {
+            tr: "Bir sistemin güvenliğini ölçmek için etik bir şekilde yapılan yetkili saldırı simülasyonudur.",
+            az: "Bir sistemin təhlükəsizliyini yoxlamaq üçün etik şəkildə həyata keçirilən icazəli hücum simulyasiyasıdır.",
+            en: "An authorized simulated cyberattack on a computer system, performed to evaluate the security of the system."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Ransomware (Fidye Yazılımı) nedir?",
+            az: "Ransomware (Fidyə proqramı) nədir?",
+            en: "What is Ransomware?"
+        },
+        a: {
+            tr: "Kurbanın dosyalarını şifreleyen ve erişim için fidye talep eden zararlı yazılımdır.",
+            az: "Qurbanın fayllarını şifrələyən və yenidən giriş üçün fidyə tələb edən zərərli proqram növüdür.",
+            en: "A type of malware that encrypts a victim's files, with the attacker demanding a ransom to restore access."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "SOC (Security Operations Center) nedir?",
+            az: "SOC nədir?",
+            en: "What is a SOC?"
+        },
+        a: {
+            tr: "Bir organizasyonun güvenlik durumunu 7/24 izleyen, siber saldırıları tespit eden ve yanıtlayan merkezi birimdir.",
+            az: "Bir təşkilatın təhlükəsizlik vəziyyətini 24/7 izləyən, kiberhücumları aşkar edən və reaksiya verən mərkəzi bölmədir.",
+            en: "A centralized unit that monitors an organization's security posture 24/7, detecting and responding to cybersecurity incidents."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Red Team ve Blue Team farkı nedir?",
+            az: "Red Team və Blue Team fərqi nədir?",
+            en: "Red Team vs Blue Team?"
+        },
+        a: {
+            tr: "Red Team saldırı simülasyonu yapar (saldırgan rolü), Blue Team ise sistemleri savunur ve saldırıları durdurmaya çalışır.",
+            az: "Red Team hücum simulyasiyası edir (hücumçu rolu), Blue Team isə sistemləri müdafiə edir və hücumların qarşısını alır.",
+            en: "Red Team acts as the adversary (attacking), while Blue Team is responsible for defending and responding to attacks."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "2FA (İki Faktörlü Doğrulama) neden önemlidir?",
+            az: "2FA (İki faktorlu təsdiqləmə) niyə vacibdir?",
+            en: "Why is 2FA important?"
+        },
+        a: {
+            tr: "Sadece şifre yeterli değildir; ikinci bir doğrulama katmanı (SMS, App kodu) ekleyerek hesap güvenliğini büyük ölçüde artırır.",
+            az: "Yalnız şifrə kifayət deyil; ikinci bir təsdiqləmə qatı (SMS, tətbiq kodu) əlavə edərək hesabın təhlükəsizliyini əhəmiyyətli dərəcədə artırır.",
+            en: "It adds an extra layer of security, making it much harder for attackers to gain access even if they have your password."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Man-in-the-Middle (MitM) saldırısı nedir?",
+            az: "MitM (Ortadakı adam) hücumu nədir?",
+            en: "What is a MitM attack?"
+        },
+        a: {
+            tr: "Saldırganın iki taraf arasındaki iletişimi gizlice dinlemesi veya veriyi değiştirmesidir (Örn: Halka açık Wi-Fi saldırıları).",
+            az: "Hücumçunun iki tərəf arasındakı ünsiyyəti gizlicə dinləməsi və ya məlumatı dəyişdirməsidir.",
+            en: "An attack where the perpetrator positions themselves between two parties to eavesdrop or alter communication."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Symmetric vs Asymmetric Encryption farkı?",
+            az: "Simmetrik və Asimmetrik şifrələmə fərqi?",
+            en: "Symmetric vs Asymmetric Encryption?"
+        },
+        a: {
+            tr: "Simetrikte tek anahtar (key) kullanılır. Asimetrikte ise biri şifrelemek (Public), diğeri çözmek (Private) için iki farklı anahtar kullanılır.",
+            az: "Simmetrikdə tək açar istifadə olunur. Asimmetrikdə isə biri şifrələmək (Public), digəri şifri açmaq (Private) üçün iki fərqli açar istifadə olunur.",
+            en: "Symmetric uses one key for both encryption and decryption. Asymmetric uses a public key to encrypt and a private key to decrypt."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "DMZ (Demilitarized Zone) nedir?",
+            az: "DMZ nədir?",
+            en: "What is a DMZ?"
+        },
+        a: {
+            tr: "İç ağ ile dış ağ (İnternet) arasında bulunan, dışarıya açık servislerin (Web sunucusu gibi) yer aldığı tampon bölgedir.",
+            az: "Daxili şəbəkə ilə xarici şəbəkə (İnternet) arasında yerləşən, kənara açıq xidmətlərin (Veb server kimi) olduğu bufer zonadır.",
+            en: "A sub-network that exposes an organization's external-facing services to the internet while keeping the rest of the network private."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Hashing ve Encryption arasındaki fark nedir?",
+            az: "Hashing və Şifrələmə arasındakı fərq nədir?",
+            en: "Difference between Hashing and Encryption?"
+        },
+        a: {
+            tr: "Şifreleme çift yönlüdür (Geri çözülebilir). Hashing tek yönlüdür; veri bir kez özetlendikten sonra orijinal haline geri döndürülemez.",
+            az: "Şifrələmə iki tərəflidir (geri qaytarıla bilər). Hashing tək tərəflidir; məlumat bir dəfə hash olunduqdan sonra orijinal halına qaytarıla bilməz.",
+            en: "Encryption is two-way (can be decrypted). Hashing is one-way; once data is hashed, it cannot be reversed to its original form."
+        }
+    }
+],
+
     projects: [
     {
         id: 1,
@@ -836,7 +1362,140 @@ contentData['big-data'] = {
                 en: "Kafka is a real-time data pipeline. It is used to transport millions of data points (logs, clicks) instantly without loss. It is the nervous system of Big Data."
             }
         }
-    ]
+    ],
+
+    big_data_interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Big Data'nın 5V'si nedir?",
+            az: "Big Data-nın 5V-si nədir?",
+            en: "What are the 5Vs of Big Data?"
+        },
+        a: {
+            tr: "Volume (Hacim), Velocity (Hız), Variety (Çeşitlilik), Veracity (Doğruluk) ve Value (Değer).",
+            az: "Volume (Həcm), Velocity (Sürət), Variety (Müxtəliflik), Veracity (Dürüstlük) və Value (Dəyər).",
+            en: "Volume, Velocity, Variety, Veracity, and Value."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Hadoop Ecosystem nedir?",
+            az: "Hadoop Ecosystem nədir?",
+            en: "What is the Hadoop Ecosystem?"
+        },
+        a: {
+            tr: "Büyük veri setlerini dağıtık olarak depolamak (HDFS) ve işlemek (MapReduce) için kullanılan açık kaynaklı bir framework topluluğudur.",
+            az: "Böyük məlumat setlərini paylanmış şəkildə saxlamaq (HDFS) və emal etmək (MapReduce) üçün istifadə olunan açıq mənbəli platformadır.",
+            en: "An open-source framework that allows for the distributed processing of large data sets across clusters of computers."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "HDFS (Hadoop Distributed File System) nasıl çalışır?",
+            az: "HDFS (Hadoop Distributed File System) necə işləyir?",
+            en: "How does HDFS work?"
+        },
+        a: {
+            tr: "Verileri bloklara böler ve farklı düğümlere (DataNodes) kopyalayarak saklar. NameNode ise bu verilerin nerede olduğunu yönetir.",
+            az: "Məlumatları bloklara bölür və fərqli qovşaqlarda (DataNodes) kopyalayaraq saxlayır. NameNode isə bu məlumatların harada olduğunu idarə edir.",
+            en: "It breaks data into blocks and distributes them across clusters. It uses a Master-Slave architecture with NameNode and DataNodes."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Apache Spark'ın MapReduce'tan farkı nedir?",
+            az: "Apache Spark-ın MapReduce-dan fərqi nədir?",
+            en: "What is the difference between Apache Spark and MapReduce?"
+        },
+        a: {
+            tr: "Spark veriyi bellek içinde (in-memory) işler, bu yüzden MapReduce'tan (disk bazlı) çok daha hızlıdır.",
+            az: "Spark məlumatı operativ yaddaş daxilində (in-memory) emal edir, buna görə də MapReduce-dan (disk əsaslı) qat-qat sürətlidir.",
+            en: "Spark processes data in-memory, making it significantly faster than the disk-based MapReduce."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "RDD (Resilient Distributed Dataset) nedir?",
+            az: "RDD (Resilient Distributed Dataset) nədir?",
+            en: "What is RDD?"
+        },
+        a: {
+            tr: "Spark'ın temel veri yapısıdır. Hata toleranslıdır ve verilerin paralel olarak işlenmesini sağlar.",
+            az: "Spark-ın əsas məlumat strukturudur. Xətalara qarşı davamlıdır və məlumatların paralel emalını təmin edir.",
+            en: "The fundamental data structure of Spark. It is an immutable, fault-tolerant collection of objects distributed across a cluster."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Apache Kafka nedir?",
+            az: "Apache Kafka nədir?",
+            en: "What is Apache Kafka?"
+        },
+        a: {
+            tr: "Gerçek zamanlı veri akışlarını (data streams) yüksek performansla toplamak ve iletmek için kullanılan bir mesajlaşma sistemidir.",
+            az: "Real zamanlı məlumat axınlarını (data streams) yüksək performansla toplamaq və ötürmək üçün istifadə olunan mesajlaşma sistemidir.",
+            en: "A distributed streaming platform used for building real-time data pipelines and streaming apps."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "NoSQL veritabanı türleri nelerdir?",
+            az: "NoSQL verilənlər bazası növləri hansılardır?",
+            en: "What are the types of NoSQL databases?"
+        },
+        a: {
+            tr: "Key-Value (Redis), Document (MongoDB), Column-family (Cassandra) ve Graph (Neo4j).",
+            az: "Key-Value (Redis), Document (MongoDB), Column-family (Cassandra) və Graph (Neo4j).",
+            en: "Key-Value, Document-based, Column-family, and Graph databases."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Data Lake ve Data Warehouse farkı nedir?",
+            az: "Data Lake və Data Warehouse fərqi nədir?",
+            en: "Difference between Data Lake and Data Warehouse?"
+        },
+        a: {
+            tr: "Data Lake ham ve işlenmemiş veriyi saklar. Data Warehouse ise işlenmiş, yapılandırılmış veriyi analiz için depolar.",
+            az: "Data Lake xam və emal olunmamış məlumatı saxlayır. Data Warehouse isə strukturlaşdırılmış və analizə hazır məlumatı saxlayır.",
+            en: "A Data Lake stores raw, unstructured data. A Data Warehouse stores processed, structured data for reporting and analysis."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "ETL (Extract, Transform, Load) süreci nedir?",
+            az: "ETL (Extract, Transform, Load) prosesi nədir?",
+            en: "What is the ETL process?"
+        },
+        a: {
+            tr: "Veriyi kaynaktan çekme, dönüştürme (temizleme, formatlama) ve hedef sisteme yükleme sürecidir.",
+            az: "Məlumatı mənbədən götürmə, dəyişdirmə (təmizləmə, formatlama) və hədəf sistemə yükləmə prosesidir.",
+            en: "The process of extracting data from sources, transforming it into a usable format, and loading it into a destination system."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Partitioning ve Sharding farkı nedir?",
+            az: "Partitioning və Sharding fərqi nədir?",
+            en: "Difference between Partitioning and Sharding?"
+        },
+        a: {
+            tr: "Partitioning veriyi aynı sunucu içinde böler. Sharding ise veriyi farklı fiziksel sunuculara dağıtır.",
+            az: "Partitioning məlumatı eyni server daxilində bölür. Sharding isə məlumatı fərqli fiziki serverlərə paylayır.",
+            en: "Partitioning splits data within a single server. Sharding distributes data across multiple physical machines."
+        }
+    }
+]
 };
 
 contentData['deep-learning'] = {
@@ -975,7 +1634,140 @@ contentData['deep-learning'] = {
                 en: "It's the inability to fully understand how DL models make decisions. Explaining 'why' a decision was made among billions of parameters is hard."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Yapay Sinir Ağları (ANN) nasıl çalışır?",
+            az: "Süni Sinir Şəbəkələri (ANN) necə işləyir?",
+            en: "How do Artificial Neural Networks (ANN) work?"
+        },
+        a: {
+            tr: "Giriş katmanı, gizli katmanlar ve çıkış katmanından oluşur. Veri ileri yayılım (forward propagation) ile iletilir ve hata geri yayılım (backpropagation) ile optimize edilir.",
+            az: "Giriş, gizli və çıxış təbəqələrindən ibarətdir. Məlumat irəli ötürülmə ilə ötürülür və xəta geri ötürülmə (backpropagation) alqoritmi ilə optimallaşdırılır.",
+            en: "Consists of input, hidden, and output layers. Data moves through forward propagation, and weights are updated via backpropagation to minimize error."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Aktivasyon Fonksiyonu (ReLU, Sigmoid, Softmax) neden kullanılır?",
+            az: "Aktivasiya Funksiyası (ReLU, Sigmoid, Softmax) nə üçün istifadə olunur?",
+            en: "Why are Activation Functions used?"
+        },
+        a: {
+            tr: "Ağa doğrusal olmayan (non-linear) özellikler kazandırmak için kullanılır. Bu sayede ağ karmaşık ilişkileri öğrenebilir.",
+            az: "Şəbəkəyə xətti olmayan xüsusiyyətlər qazandırmaq üçün istifadə olunur. Bu sayədə şəbəkə mürəkkəb asılılıqları öyrənə bilir.",
+            en: "They introduce non-linearity to the network, allowing it to learn complex patterns that a simple linear model cannot."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Backpropagation (Geri Yayılım) nedir?",
+            az: "Backpropagation (Geri ötürülmə) nədir?",
+            en: "What is Backpropagation?"
+        },
+        a: {
+            tr: "Modelin yaptığı hatayı çıkıştan girişe doğru yayarak, ağırlıkların (weights) Gradyan İnişi ile güncellenmesini sağlayan temel eğitim algoritmasıdır.",
+            az: "Modelin etdiyi xətanı çıxışdan girişə doğru yayaraq, çəki əmsallarının (weights) Gradient Descent ilə yenilənməsini təmin edən təlim alqoritmidir.",
+            en: "The central algorithm for training neural networks, calculating the gradient of the loss function with respect to the weights."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "CNN (Convolutional Neural Networks) nerelerde kullanılır?",
+            az: "CNN (Konvolüsyonel Sinir Şəbəkələri) harada istifadə olunur?",
+            en: "Where are CNNs used?"
+        },
+        a: {
+            tr: "Özellikle görüntü işleme (image processing), nesne tanıma ve video analizinde kullanılır. Mekansal özellikleri yakalamada çok başarılıdır.",
+            az: "Xüsusilə təsvirlərin emalı (image processing), obyektlərin tanınması və video analizində istifadə olunur. Məkansal xüsusiyyətləri tutmaqda çox uğurludur.",
+            en: "Primarily used in computer vision tasks like image classification, object detection, and facial recognition due to their ability to capture spatial features."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "RNN ve LSTM arasındaki fark nedir?",
+            az: "RNN və LSTM arasındakı fərq nədir?",
+            en: "Difference between RNN and LSTM?"
+        },
+        a: {
+            tr: "RNN kısa süreli belleğe sahiptir ve uzun dizilerde 'vanishing gradient' sorunu yaşar. LSTM ise özel kapı (gate) mekanizmasıyla uzun vadeli bilgileri saklayabilir.",
+            az: "RNN qısamüddətli yaddaşa malikdir və uzun ardıcıllıqlarda 'vanishing gradient' problemi yaşayır. LSTM isə xüsusi qapı (gate) mexanizmi ilə uzunmüddətli məlumatları saxlaya bilir.",
+            en: "RNNs struggle with long-term dependencies (vanishing gradient). LSTMs solve this using 'gates' to regulate the flow of information over long sequences."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Vanishing Gradient (Kaybolan Gradyan) problemi nedir?",
+            az: "Vanishing Gradient (Yox olan qradient) problemi nədir?",
+            en: "What is the Vanishing Gradient problem?"
+        },
+        a: {
+            tr: "Derin ağlarda geriye doğru gidildikçe gradyanların çok küçülmesi ve eğitimin durma noktasına gelmesidir. ReLU kullanımı bu sorunu azaltır.",
+            az: "Dərin şəbəkələrdə geri qayıtdıqca qradientlərin həddindən artıq kiçilməsi və təlimin dayanma dərəcəsinə çatmasıdır. ReLU istifadəsi bu problemi azaldır.",
+            en: "Occurs when gradients become extremely small during backpropagation, preventing weights from changing and halting the learning process."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Transfer Learning nedir?",
+            az: "Transfer Learning nədir?",
+            en: "What is Transfer Learning?"
+        },
+        a: {
+            tr: "Önceden büyük bir veri setinde eğitilmiş bir modeli (örn: ResNet, BERT), kendi daha küçük veri setimiz için özelleştirip kullanma tekniğidir.",
+            az: "Əvvəlcədən böyük bir məlumat setində öyrədilmiş modeli (məs: ResNet, BERT), özümüzün daha kiçik məlumat setimiz üçün yenidən tənzimləyib istifadə etməkdir.",
+            en: "The practice of reusing a pre-trained model on a new, related task, significantly reducing the amount of data and time needed for training."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Dropout katmanı ne işe yarar?",
+            az: "Dropout təbəqəsi nə işə yarayır?",
+            en: "What is the purpose of a Dropout layer?"
+        },
+        a: {
+            tr: "Eğitim sırasında bazı nöronları rastgele devre dışı bırakarak ağın belirli nöronlara aşırı bağımlı olmasını engeller ve overfitting'i azaltır.",
+            az: "Təlim zamanı bəzi neyronları təsadüfi olaraq söndürərək şəbəkənin müəyyən neyronlardan asılı olmasını əngəlləyir və overfitting-i azaldır.",
+            en: "A regularization technique where randomly selected neurons are ignored during training to prevent overfitting."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Transformer mimarisi ve Attention mekanizması nedir?",
+            az: "Transformer arxitekturası və Attention mexanizmi nədir?",
+            en: "What is Transformer architecture and Attention mechanism?"
+        },
+        a: {
+            tr: "Dizideki her kelimenin diğer tüm kelimelerle olan ilişkisini (önemini) hesaplayan bir yapıdır. Modern NLP (ChatGPT vb.) modellerinin temelidir.",
+            az: "Ardıcıllıqdakı hər bir sözün digər bütün sözlərlə olan əlaqəsini (əhəmiyyətini) hesablayan strukturdur. Müasir NLP modellərinin əsasıdır.",
+            en: "The foundation of modern NLP. It uses self-attention to weight the significance of different parts of the input data regardless of distance."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Generative AI (Üretken YZ) nedir?",
+            az: "Generative AI (Yaradıcı SY) nədir?",
+            en: "What is Generative AI?"
+        },
+        a: {
+            tr: "Mevcut verilerden öğrenerek yeni ve özgün içerikler (metin, resim, ses, kod) üretebilen yapay zeka sistemleridir (Örn: GANs, Diffusion Models, LLMs).",
+            az: "Mövcud məlumatlardan öyrənərək yeni və orijinal məzmunlar (mətn, şəkil, səs, kod) yarada bilən süni intellekt sistemləridir.",
+            en: "AI systems capable of generating new content like text, images, or audio by learning patterns from existing data."
+        }
+    }
+]
 };
 
 contentData['ml'] = {
@@ -1111,7 +1903,140 @@ contentData['ml'] = {
                 en: "Training the model is 20% of the work. Deploying, monitoring, and updating it is 80%. Companies want engineers who can take models to production, not just build them."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Parametrik ve Parametrik Olmayan modeller arasındaki fark nedir?",
+            az: "Parametrik və Parametrik Olmayan modellər arasındakı fərq nədir?",
+            en: "Difference between Parametric and Non-parametric models?"
+        },
+        a: {
+            tr: "Parametrik modeller verinin belirli bir dağılıma sahip olduğunu varsayar (örn: Lineer Regresyon). Parametrik olmayanlar ise veri hakkında güçlü varsayımlarda bulunmaz (örn: KNN, Karar Ağaçları).",
+            az: "Parametrik modellər məlumatın müəyyən bir paylanmaya (distribution) sahib olduğunu fərz edir. Parametrik olmayanlar isə məlumat haqqında güclü fərziyyələr yürütmür.",
+            en: "Parametric models assume a specific functional form for the data (e.g., Linear Regression). Non-parametric models do not make strong assumptions (e.g., KNN)."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "L1 (Lasso) ve L2 (Ridge) Regularization farkı nedir?",
+            az: "L1 (Lasso) və L2 (Ridge) Regularization fərqi nədir?",
+            en: "Difference between L1 and L2 Regularization?"
+        },
+        a: {
+            tr: "L1, katsayıları sıfıra çekerek özellik seçimi (feature selection) yapabilir. L2 katsayıları küçültür ama sıfıra eşitlemez. İkisi de overfitting'i önlemek içindir.",
+            az: "L1 bəzi əmsalları sıfıra endirərək parametr seçimi edir. L2 əmsalları kiçildir amma tam sıfır etmir. Hər ikisi overfitting-in qarşısını almaq üçündür.",
+            en: "L1 can shrink coefficients to zero (performing feature selection). L2 shrinks them towards zero but never exactly zero. Both prevent overfitting."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "K-Nearest Neighbors (KNN) algoritmasında 'K' nasıl seçilir?",
+            az: "KNN alqoritmində 'K' necə seçilir?",
+            en: "How to choose 'K' in KNN?"
+        },
+        a: {
+            tr: "K genelde çapraz doğrulama (cross-validation) ile seçilir. Küçük K gürültüye duyarlıdır (overfit), büyük K ise modeli çok basitleştirir (underfit).",
+            az: "K adətən cross-validation ilə seçilir. Kiçik K səs-küyə qarşı həssasdır (overfit), böyük K isə modeli həddindən artıq sadələşdirir (underfit).",
+            en: "K is usually chosen via cross-validation. Small K is sensitive to noise (overfit), while large K makes the model too simple (underfit)."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Ensemble Learning (Topluluk Öğrenme) nedir?",
+            az: "Ensemble Learning (Ansambl Öyrənmə) nədir?",
+            en: "What is Ensemble Learning?"
+        },
+        a: {
+            tr: "Birden fazla zayıf modeli birleştirerek daha güçlü ve doğru bir tahmin modeli oluşturma tekniğidir (Örn: Random Forest, Gradient Boosting).",
+            az: "Bir neçə zəif modeli birləşdirərək daha güclü və dəqiq bir təxmin modeli yaratmaq texnikasıdır.",
+            en: "A technique that combines multiple weak models to create a stronger, more accurate prediction model."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Support Vector Machines (SVM) 'Kernel Trick' nedir?",
+            az: "SVM-də 'Kernel Trick' nədir?",
+            en: "What is the Kernel Trick in SVM?"
+        },
+        a: {
+            tr: "Veriyi daha yüksek boyutlu bir uzaya taşıyarak, doğrusal olmayan verileri ayrıştırılabilir hale getirmek için kullanılan matematiksel bir fonksiyondur.",
+            az: "Məlumatı daha yüksək ölçülü sahəyə keçirərək, xətti olmayan məlumatları bir-birindən ayırmaq üçün istifadə olunan riyazi funksiyadır.",
+            en: "A method used to transform non-linear data into a higher-dimensional space where it becomes linearly separable."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Gradient Boosting nasıl çalışır?",
+            az: "Gradient Boosting necə işləyir?",
+            en: "How does Gradient Boosting work?"
+        },
+        a: {
+            tr: "Modeller sıralı (sequential) olarak eklenir. Her yeni model, bir önceki modelin yaptığı hataları (artıkları) tahmin etmeye ve düzeltmeye odaklanır.",
+            az: "Modellər ardıcıl olaraq əlavə edilir. Hər yeni model özündən əvvəlkinin etdiyi xətaları təxmin etməyə və onları düzəltməyə fokuslanır.",
+            en: "It builds models sequentially, where each new model attempts to correct the errors (residuals) of the previous models."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Principal Component Analysis (PCA) nedir?",
+            az: "PCA (Əsas Komponent Analizi) nədir?",
+            en: "What is PCA?"
+        },
+        a: {
+            tr: "Verideki bilgiyi koruyarak boyut sayısını azaltmak için kullanılan bir boyutsallık azaltma (dimensionality reduction) yöntemidir.",
+            az: "Məlumatdakı vacib hissələri qoruyaraq ölçülərin sayını azaltmaq üçün istifadə olunan ölçü azaltma metodudur.",
+            en: "A dimensionality reduction technique that transforms a large set of variables into a smaller one while retaining most of the information."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Imbalanced Dataset (Dengesiz Veri) sorunu nasıl çözülür?",
+            az: "Balanssız məlumat seti problemi necə həll olunur?",
+            en: "How to handle Imbalanced Datasets?"
+        },
+        a: {
+            tr: "Azınlık sınıfı çoğaltarak (Oversampling/SMOTE), çoğunluk sınıfı azaltarak (Undersampling) veya farklı metrikler (F1-Score) kullanarak.",
+            az: "Azlıq təşkil edən sinfi süni artıraraq (SMOTE), çoxluq təşkil edəni azaldaraq və ya Accuracy yerinə F1-Score kimi metrikalara baxaraq.",
+            en: "Using techniques like Oversampling (SMOTE), Undersampling, or choosing appropriate metrics like F1-Score instead of Accuracy."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Cost Function (Maliyet Fonksiyonu) nedir?",
+            az: "Cost Function (Maliyyət funksiyası) nədir?",
+            en: "What is a Cost Function?"
+        },
+        a: {
+            tr: "Modelin tahminleri ile gerçek değerler arasındaki farkı ölçen fonksiyondur. Amaç bu fonksiyonu minimize etmektir (Örn: Mean Squared Error).",
+            az: "Modelin təxminləri ilə real dəyərlər arasındakı fərqi ölçən funksiyadır. Məqsəd bu funksiyanın dəyərini minimuma endirməkdir.",
+            en: "A function that measures the performance of a model by calculating the error between predicted and actual values."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Reinforcement Learning (Pekiştirmeli Öğrenme) nedir?",
+            az: "Reinforcement Learning nədir?",
+            en: "What is Reinforcement Learning?"
+        },
+        a: {
+            tr: "Bir ajanın çevreyle etkileşime girerek ödül mekanizması sayesinde en iyi stratejiyi deneme-yanılma yoluyla öğrenmesidir.",
+            az: "Bir agentin ətraf mühitlə əlaqəyə girərək mükafat mexanizmi vasitəsilə ən yaxşı strategiyanı sınaq-yanılma yolu ilə öyrənməsidir.",
+            en: "A type of machine learning where an agent learns to make decisions by performing actions in an environment to maximize rewards."
+        }
+    }
+]
 };
 
 contentData['data-science'] = {
@@ -1250,7 +2175,270 @@ contentData['data-science'] = {
                 en: "Yes. ChatGPT can write code but can't clean messy data, access private company data for strategy, or guarantee mathematical accuracy. AI is an assistant."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Supervised ve Unsupervised Learning farkı nedir?",
+            az: "Supervised və Unsupervised Learning fərqi nədir?",
+            en: "Difference between Supervised and Unsupervised Learning?"
+        },
+        a: {
+            tr: "Supervised: Etiketlenmiş veri kullanılır (Girdi-Çıktı belli). Unsupervised: Etiketlenmemiş veri kullanılır, sistem veri içindeki gizli yapıları/grupları bulur.",
+            az: "Supervised: Etiketlənmiş məlumat istifadə olunur (Giriş-Çıxış bəllidir). Unsupervised: Etiketlənməmiş məlumat istifadə olunur, sistem daxili qruplaşmaları özü tapır.",
+            en: "Supervised learning uses labeled data to train models. Unsupervised learning finds hidden patterns or structures in unlabeled data."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Overfitting (Aşırı Öğrenme) nedir?",
+            az: "Overfitting (Həddindən artıq öyrənmə) nədir?",
+            en: "What is Overfitting?"
+        },
+        a: {
+            tr: "Modelin eğitim verisini ezberlemesi ve yeni gelen verilerde başarısız olmasıdır. Model karmaşıklığı çok yüksek olduğunda ortaya çıkar.",
+            az: "Modelin təlim məlumatlarını əzbərləməsi və yeni məlumatlarda uğursuz olmasıdır. Modelin mürəkkəbliyi çox yüksək olduqda baş verir.",
+            en: "A modeling error that occurs when a function is too closely fit to a limited set of data points, failing to generalize to new data."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Bias-Variance Tradeoff nedir?",
+            az: "Bias-Variance Tradeoff nədir?",
+            en: "What is the Bias-Variance Tradeoff?"
+        },
+        a: {
+            tr: "Modelin hatasını minimize etmek için düşük bias (doğruluk) ve düşük variance (tutarlılık) arasındaki dengedir.",
+            az: "Modelin xətasını minimuma endirmək üçün aşağı bias (doğruluq) və aşağı variance (ardıcıllıq) arasındakı tarazlıqdır.",
+            en: "The balance between a model's ability to minimize errors from erroneous assumptions (bias) and sensitivity to fluctuations in the training set (variance)."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "P-value nedir?",
+            az: "P-value nədir?",
+            en: "What is a P-value?"
+        },
+        a: {
+            tr: "Hipotez testlerinde sonucun istatistiksel olarak anlamlı olup olmadığını belirlemek için kullanılır. Genelde 0.05'ten küçük olması anlamlı kabul edilir.",
+            az: "Hipotez testlərində nəticənin statistik olaraq əhəmiyyətli olub-olmadığını müəyyən etmək üçün istifadə olunur. Adətən 0.05-dən kiçik olması əhəmiyyətli sayılır.",
+            en: "A statistical measure that helps determine the significance of results. A value less than 0.05 typically suggests strong evidence against the null hypothesis."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Confusion Matrix (Karmaşıklık Matrisi) nedir?",
+            az: "Confusion Matrix nədir?",
+            en: "What is a Confusion Matrix?"
+        },
+        a: {
+            tr: "Sınıflandırma modelinin performansını ölçmek için kullanılan; True Positive, True Negative, False Positive ve False Negative değerlerini gösteren tablodur.",
+            az: "Təsnifat modelinin performansını ölçmək üçün istifadə olunan; True Positive, True Negative, False Positive və False Negative dəyərlərini göstərən cədvəldir.",
+            en: "A table used to describe the performance of a classification model by comparing predicted values with actual labels."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Normalization ve Standardization farkı nedir?",
+            az: "Normalization və Standardization fərqi nədir?",
+            en: "Difference between Normalization and Standardization?"
+        },
+        a: {
+            tr: "Normalization veriyi 0-1 arasına sıkıştırır. Standardization ise veriyi ortalaması 0, standart sapması 1 olacak şekilde dönüştürür.",
+            az: "Normalization məlumatı 0-1 aralığına sıxışdırır. Standardization isə məlumatın ortalamasını 0, standart yayılmasını 1 edəcək şəkildə dəyişir.",
+            en: "Normalization scales data to a range of [0, 1]. Standardization scales data to have a mean of 0 and a standard deviation of 1."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Random Forest nasıl çalışır?",
+            az: "Random Forest necə işləyir?",
+            en: "How does Random Forest work?"
+        },
+        a: {
+            tr: "Birden fazla Karar Ağacı'nın (Decision Tree) bir araya gelerek çoğunluk oyuyla karar verdiği bir topluluk (ensemble) öğrenme yöntemidir.",
+            az: "Bir neçə Qərar Ağacının (Decision Tree) bir araya gələrək səs çoxluğu ilə qərar verdiyi bir ansambl (ensemble) öyrənmə metodudur.",
+            en: "An ensemble learning method that operates by constructing multiple decision trees and outputting the class that is the mode of the classes."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Linear Regression varsayımları nelerdir?",
+            az: "Linear Regression fərziyyələri nələrdir?",
+            en: "What are the assumptions of Linear Regression?"
+        },
+        a: {
+            tr: "Doğrusallık, Bağımsızlık, Normallik ve Eşit Varyans (Homoscedasticity).",
+            az: "Xəttilik (Linearity), Müstəqillik (Independence), Normallik və Bərabər Varyans (Homoscedasticity).",
+            en: "Linearity, Independence, Normality of residuals, and Homoscedasticity (constant variance of errors)."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Missing Data (Eksik Veri) nasıl ele alınır?",
+            az: "Missing Data (Əskik məlumat) necə idarə olunur?",
+            en: "How to handle Missing Data?"
+        },
+        a: {
+            tr: "Eksik veriler silinebilir, ortalama/medyan ile doldurulabilir (Imputation) veya tahminleme modelleriyle tamamlanabilir.",
+            az: "Əskik məlumatlar silinə bilər, orta/median dəyərlə doldurula bilər (Imputation) və ya təxmin modelləri ilə tamamlana bilər.",
+            en: "By deleting rows, imputing values using mean/median/mode, or using algorithms that handle missing values internally."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "A/B Testi nedir?",
+            az: "A/B Testi nədir?",
+            en: "What is A/B Testing?"
+        },
+        a: {
+            tr: "İki farklı senaryonun (A ve B) performansını karşılaştırmak için kullanılan istatistiksel bir deney yöntemidir.",
+            az: "İki fərqli ssenarinin (A və B) performansını müqayisə etmək üçün istifadə olunan statistik təcrübə metodudur.",
+            en: "A statistical way of comparing two versions of a variable to determine which one performs better."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "Gradient Descent nedir?",
+            az: "Gradient Descent nədir?",
+            en: "What is Gradient Descent?"
+        },
+        a: {
+            tr: "Bir fonksiyonun (genelde maliyet fonksiyonu) minimum değerini bulmak için kullanılan bir optimizasyon algoritmasıdır.",
+            az: "Bir funksiyanın (adətən maliyyət funksiyası) minimum dəyərini tapmaq üçün istifadə olunan optimallaşdırma alqoritmidir.",
+            en: "An optimization algorithm used to minimize a cost function by iteratively moving in the direction of steepest descent."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Curse of Dimensionality (Boyutun Laneti) nedir?",
+            az: "Curse of Dimensionality nədir?",
+            en: "What is the Curse of Dimensionality?"
+        },
+        a: {
+            tr: "Öznitelik (feature) sayısı arttıkça verinin seyrelmesi ve modellerin performansının düşmesi durumudur.",
+            az: "Giriş parametrlərinin (feature) sayı artdıqca məlumatın seyrəlməsi və modellərin performansının düşməsi vəziyyətidir.",
+            en: "Issues that arise when analyzing data in high-dimensional spaces that do not occur in low-dimensional settings."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "ROC-AUC eğrisi neyi ifade eder?",
+            az: "ROC-AUC əyrisi nəyi ifadə edir?",
+            en: "What does the ROC-AUC curve represent?"
+        },
+        a: {
+            tr: "Sınıflandırma modelinin farklı eşik değerlerindeki performansını gösterir. AUC değeri 1'e yaklaştıkça modelin başarısı artar.",
+            az: "Təsnifat modelinin fərqli limit dəyərlərindəki performansını göstərir. AUC 1-ə yaxınlaşdıqca model daha uğurlu sayılır.",
+            en: "A graph showing the performance of a classification model at all thresholds. AUC measures the entire two-dimensional area under the ROC curve."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "Deep Learning ve Machine Learning farkı?",
+            az: "Deep Learning və Machine Learning fərqi?",
+            en: "Deep Learning vs Machine Learning?"
+        },
+        a: {
+            tr: "ML daha yapısal verilerle ve manuel öznitelik mühendisliğiyle çalışır. DL, yapay sinir ağlarını kullanır ve büyük veride öznitelikleri kendi öğrenir.",
+            az: "ML daha çox strukturlaşmış məlumatlar və əllə düzəldilən parametrlərlə işləyir. DL süni sinir şəbəkələrindən istifadə edir və böyük məlumatda parametrləri özü öyrənir.",
+            en: "ML involves manual feature extraction, while DL (Deep Learning) uses neural networks to automatically learn features from large data."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Outlier (Aykırı Değer) tespiti nasıl yapılır?",
+            az: "Outlier (Kənar dəyər) aşkar edilməsi necə olur?",
+            en: "How to detect Outliers?"
+        },
+        a: {
+            tr: "Z-skoru, IQR (Interquartile Range) yöntemi veya Box-plot grafikleri kullanılarak tespit edilebilir.",
+            az: "Z-score, IQR (Interquartile Range) metodu və ya Box-plot qrafikləri vasitəsilə aşkar edilə bilər.",
+            en: "Outliers can be detected using Z-score, IQR method, or visualization tools like Box-plots."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Cross-Validation neden yapılır?",
+            az: "Cross-Validation niyə edilir?",
+            en: "Why use Cross-Validation?"
+        },
+        a: {
+            tr: "Modelin veriye aşırı uyum (overfitting) sağlamadığından emin olmak ve farklı veri setlerinde nasıl performans göstereceğini ölçmek için.",
+            az: "Modelin overfitting edib-etmədiyini yoxlamaq və fərqli məlumat setlərində necə performans göstərəcəyini ölçmək üçün.",
+            en: "To assess how the results of a statistical analysis will generalize to an independent data set and to prevent overfitting."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Precision ve Recall farkı nedir?",
+            az: "Precision və Recall fərqi nədir?",
+            en: "Difference between Precision and Recall?"
+        },
+        a: {
+            tr: "Precision: Pozitif tahminlerin ne kadarının doğru olduğu. Recall: Gerçek pozitiflerin ne kadarının doğru tahmin edildiği.",
+            az: "Precision: Müsbət təxminlərin nə qədərinin doğru olduğu. Recall: Real müsbət halların nə qədərinin doğru təxmin edildiyi.",
+            en: "Precision is the ratio of correctly predicted positive observations to the total predicted positives. Recall is the ratio to all actual positives."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Correlation ve Causation farkı nedir?",
+            az: "Correlation və Causation fərqi nədir?",
+            en: "Correlation vs Causation?"
+        },
+        a: {
+            tr: "Korelasyon iki değişkenin birlikte hareket etmesidir. Nedensellik (Causation) ise birinin diğerine sebep olmasıdır. Korelasyon nedensellik gerektirmez.",
+            az: "Korelyasiya iki dəyişənin birlikdə hərəkət etməsidir. Səbəbiyyət (Causation) isə birinin digərinə səbəb olmasıdır. Korelyasiya səbəbiyyət demək deyil.",
+            en: "Correlation means variables change together, but causation means one variable specifically causes the other to change."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "K-Means kümeleme nasıl çalışır?",
+            az: "K-Means klasterləşmə necə işləyir?",
+            en: "How does K-Means clustering work?"
+        },
+        a: {
+            tr: "Veriyi birbirine en yakın özelliklere sahip K adet gruba ayırır. Her grup merkezine (centroid) olan uzaklığa göre atama yapar.",
+            az: "Məlumatı bir-birinə yaxın xüsusiyyətlərinə görə K sayda qrupa ayırır. Hər qrupun mərkəzinə (centroid) olan məsafəyə görə təyin edilir.",
+            en: "An unsupervised algorithm that groups data points into K clusters by minimizing the distance between points and their cluster centroid."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Bagging ve Boosting farkı nedir?",
+            az: "Bagging və Boosting fərqi nədir?",
+            en: "Difference between Bagging and Boosting?"
+        },
+        a: {
+            tr: "Bagging (Random Forest): Ağaçlar paralel çalışır. Boosting (XGBoost): Ağaçlar sıralı çalışır, her ağaç bir öncekinin hatasını düzeltmeye odaklanır.",
+            az: "Bagging: Ağaclar paralel işləyir. Boosting: Ağaclar ardıcıl işləyir, hər bir yeni ağac əvvəlkinin səhvini düzəltməyə çalışır.",
+            en: "Bagging builds independent models in parallel. Boosting builds sequential models where each model learns from the errors of the previous one."
+        }
+    }
+]
 };
 
 contentData['cross-platform'] = {
@@ -1393,7 +2581,270 @@ contentData['cross-platform'] = {
                 en: "Flutter and RN consume a lot of RAM due to emulators. Any PC with min 16GB RAM and SSD works. Mac (M1/M2) offers the best performance."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Cross-platform vs Native: Farkı nedir?",
+            az: "Cross-platform və Native arasındakı fərq nədir?",
+            en: "Difference between Cross-platform and Native?"
+        },
+        a: {
+            tr: "Native tek bir platform (Swift/Kotlin) için yazılır. Cross-platform (Flutter/RN) tek bir kod tabanıyla hem iOS hem Android'de çalışır, maliyet ve zaman tasarrufu sağlar.",
+            az: "Native tək bir platforma (Swift/Kotlin) üçün yazılır. Cross-platform isə tək bir kod bazası ilə həm iOS, həm də Android-də işləyir, vaxta və xərclərə qənaət edir.",
+            en: "Native is built for one platform. Cross-platform uses a single codebase for both iOS and Android, saving time and resources."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Flutter'da 'Widget' kavramı nedir?",
+            az: "Flutter-də 'Widget' anlayışı nədir?",
+            en: "What is a Widget in Flutter?"
+        },
+        a: {
+            tr: "Flutter'da her şey bir widget'tır. Ekrandaki butonlardan tutun, hizalamaya ve temaya kadar her yapı taşı bir widget olarak tanımlanır.",
+            az: "Flutter-də hər şey widget-dir. Ekrandakı düymələrdən tutmuş, düzləndirmə və mövzuya qədər hər bir struktur elementi widget sayılır.",
+            en: "In Flutter, everything is a widget. From UI elements like buttons to layout properties like padding, every building block is a widget."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Stateless ve Stateful Widget farkı nedir?",
+            az: "Stateless və Stateful Widget fərqi nədir?",
+            en: "Stateless vs Stateful Widget?"
+        },
+        a: {
+            tr: "Stateless: Değişmeyen, sabit arayüzler için kullanılır. Stateful: Kullanıcı etkileşimiyle değişen, durumu (state) olan yapılar için kullanılır.",
+            az: "Stateless: Dəyişməyən, sabit interfeyslər üçündür. Stateful: İstifadəçi ilə əlaqə zamanı dəyişən, vəziyyəti (state) olan elementlər üçündür.",
+            en: "Stateless widgets are immutable and don't change. Stateful widgets can maintain and update their state over time."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "React Native'de 'Bridge' (Köprü) mantığı nedir?",
+            az: "React Native-də 'Bridge' (Körpü) məntiqi nədir?",
+            en: "What is the Bridge in React Native?"
+        },
+        a: {
+            tr: "JavaScript kodu ile Native modüller (Java/Swift) arasındaki iletişimi sağlayan yapıdır. Veriler JSON olarak bu köprü üzerinden aktarılır.",
+            az: "JavaScript kodu ilə Native modullar arasındakı əlaqəni təmin edən mexanizmdir. Məlumatlar JSON formatında bu körpü vasitəsilə ötürülür.",
+            en: "A mechanism that allows JavaScript and Native modules to communicate by sending JSON messages back and forth."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Hot Reload ve Hot Restart farkı nedir?",
+            az: "Hot Reload və Hot Restart fərqi nədir?",
+            en: "Hot Reload vs Hot Restart?"
+        },
+        a: {
+            tr: "Hot Reload: Uygulama durumunu koruyarak sadece kod değişikliklerini yansıtır. Hot Restart: Uygulamayı sıfırdan başlatır ve tüm durumu temizler.",
+            az: "Hot Reload: Tətbiqin vəziyyətini (state) qoruyaraq yalnız kod dəyişikliklərini göstərir. Hot Restart: Tətbiqi sıfırdan başladır və bütün state-i təmizləyir.",
+            en: "Hot Reload injects code changes while keeping the app state. Hot Restart resets the app state and restarts the app with new code."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "React Native'de 'Props' ve 'State' farkı nedir?",
+            az: "React Native-də 'Props' və 'State' fərqi nədir?",
+            en: "Difference between Props and State?"
+        },
+        a: {
+            tr: "Props: Üst bileşenden (parent) gelen değişmez verilerdir. State: Bileşenin kendi içinde yönettiği ve güncellendiğinde arayüzü yenileyen verilerdir.",
+            az: "Props: Üst komponentdən gələn dəyişməz məlumatlardır. State: Komponentin daxilində idarə olunan və dəyişdikdə interfeysi yeniləyən məlumatlardır.",
+            en: "Props are read-only data passed from parent to child. State is local data managed within the component that can change over time."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Flutter'da 'InheritedWidget' ne işe yarar?",
+            az: "Flutter-də 'InheritedWidget' nə işə yarayır?",
+            en: "What is InheritedWidget in Flutter?"
+        },
+        a: {
+            tr: "Veriyi widget ağacında derinlere, her seviyede manuel taşımadan (prop drilling olmadan) iletmek için kullanılır (Örn: Theme, MediaQuery).",
+            az: "Məlumatı widget ağacında aşağı qatlara hər dəfə əllə ötürmədən çatdırmaq üçün istifadə olunur (Məs: Theme, MediaQuery).",
+            en: "A base class that allows data to be passed down the widget tree efficiently to any descendant widget."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Redux nedir?",
+            az: "Redux nədir?",
+            en: "What is Redux?"
+        },
+        a: {
+            tr: "Uygulamanın tüm durumunu (state) merkezi bir 'store' içinde yöneten bir kütüphanedir. Genelde büyük ölçekli React Native projelerinde kullanılır.",
+            az: "Tətbiqin bütün vəziyyətini mərkəzi bir 'store' daxilində idarə edən kitabxanadır. Adətən böyük React Native layihələrində istifadə olunur.",
+            en: "A predictable state container for JavaScript apps that manages global state in a central store."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Flutter'da 'pubspec.yaml' dosyası nedir?",
+            az: "Flutter-də 'pubspec.yaml' faylı nədir?",
+            en: "What is the pubspec.yaml file?"
+        },
+        a: {
+            tr: "Projenin paket bağımlılıklarını, fontlarını, resim varlıklarını (assets) ve versiyon bilgilerini tanımlayan dosyadır.",
+            az: "Layihənin paket asılılıqlarını, fontlarını, şəkil və digər resurslarını (assets) və versiya məlumatlarını təyin edən fayldır.",
+            en: "The configuration file where you manage dependencies, assets, and versioning for your Flutter project."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "React Native'de 'Flexbox' nedir?",
+            az: "React Native-də 'Flexbox' nədir?",
+            en: "What is Flexbox in React Native?"
+        },
+        a: {
+            tr: "Ekran düzenini (layout) oluşturmak için kullanılan bir tasarım sistemidir. Elemanların boyutunu ve hizalamasını kolaylaştırır.",
+            az: "Ekran düzənini (layout) yaratmaq üçün istifadə olunan dizayn sistemidir. Elementlərin ölçüsünü və düzülüşünü tənzimləməyi asanlaşdırır.",
+            en: "A layout engine that provides a consistent way to align and distribute UI elements within a container across different screen sizes."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "Flutter'da 'Main Isolate' nedir?",
+            az: "Flutter-də 'Main Isolate' nədir?",
+            en: "What is the Main Isolate in Flutter?"
+        },
+        a: {
+            tr: "Dart kodunun çalıştığı ana iş parçacığıdır. UI güncellemeleri ve olay döngüsü (event loop) burada gerçekleşir.",
+            az: "Dart kodunun işlədiyi əsas thread-dir. UI yenilənmələri və hadisə dövrü (event loop) burada baş verir.",
+            en: "The main execution thread for Dart code, where the UI is rendered and events are processed."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "React Native'de 'Expo' ve 'CLI' farkı nedir?",
+            az: "React Native-də 'Expo' və 'CLI' fərqi nədir?",
+            en: "Expo vs React Native CLI?"
+        },
+        a: {
+            tr: "Expo: Kurulumu kolay, hızlı geliştirme sağlar ama kısıtlıdır. CLI: Daha karmaşıktır ama tam kontrol ve native modüllere tam erişim sağlar.",
+            az: "Expo: Quraşdırılması asandır, sürətli inkişaf imkanı verir amma məhduddur. CLI: Daha mürəkkəbdir, lakin tam nəzarət və native modullara tam giriş verir.",
+            en: "Expo is a set of tools that simplifies development but has limitations. CLI offers full control and access to native layers."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Flutter'da 'Future' ve 'Stream' farkı?",
+            az: "Flutter-də 'Future' və 'Stream' fərqi?",
+            en: "Future vs Stream in Flutter?"
+        },
+        a: {
+            tr: "Future: Tek bir asenkron değer döner (örn: API yanıtı). Stream: Zaman içinde birden fazla değer döner (örn: kronometre veya chat).",
+            az: "Future: Tək bir asinxron dəyər qaytarır (məs: API cavabı). Stream: Zaman ərzində bir neçə dəyər qaytarır (məs: saniyəölçən).",
+            en: "Future represents a single asynchronous value. Stream represents a sequence of asynchronous values over time."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "React Native'de 'useEffect' hook'u ne için kullanılır?",
+            az: "React Native-də 'useEffect' hook-u nə üçün istifadə olunur?",
+            en: "What is the purpose of useEffect?"
+        },
+        a: {
+            tr: "Bileşen yaşam döngüsü işlemlerini (mount, update, unmount) yönetmek ve asenkron yan etkileri (API çağrıları) gerçekleştirmek için kullanılır.",
+            az: "Komponentin həyat dövrü əməliyyatlarını (yüklənmə, yenilənmə, silinmə) idarə etmək və kənar təsirləri (API sorğuları) reallaşdırmaq üçündür.",
+            en: "A hook used to handle side effects like data fetching, subscriptions, or manually changing the DOM in functional components."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Flutter'da 'Navigator' nedir?",
+            az: "Flutter-də 'Navigator' nədir?",
+            en: "What is Navigator in Flutter?"
+        },
+        a: {
+            tr: "Uygulama içinde sayfalar arası geçişi (routing) yöneten yapıdır. Stack (yığın) mantığıyla çalışır (Push/Pop).",
+            az: "Tətbiq daxilində səhifələr arası keçidi idarə edən mexanizmdir. Stack (yığın) məntiqi ilə işləyir (Push/Pop).",
+            en: "A widget that manages a set of child widgets with a stack discipline, used for navigating between screens."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Hermes motoru nedir (React Native)?",
+            az: "Hermes mühərriki nədir (React Native)?",
+            en: "What is the Hermes engine?"
+        },
+        a: {
+            tr: "Facebook tarafından geliştirilen, React Native uygulamalarının performansını artıran ve açılış hızını optimize eden açık kaynaklı bir JavaScript motorudur.",
+            az: "Facebook tərəfindən hazırlanan, React Native tətbiqlərinin performansını artıran və açılış sürətini optimallaşdıran JavaScript mühərrikidir.",
+            en: "An open-source JavaScript engine optimized for running React Native apps, improving startup time and reducing memory usage."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Dart'ta 'Mixin' nedir?",
+            az: "Dart-da 'Mixin' nədir?",
+            en: "What is a Mixin in Dart?"
+        },
+        a: {
+            tr: "Sınıflara kalıtım (inheritance) olmadan yeni özellikler eklemeyi sağlayan bir yapıdır. 'with' anahtar kelimesiyle kullanılır.",
+            az: "Klaslara miras (inheritance) olmadan yeni xüsusiyyətlər əlavə etməyə imkan verən strukturdur. 'with' açar sözü ilə istifadə olunur.",
+            en: "A way of reusing a class's code in multiple class hierarchies without needing to use inheritance."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "React Native'de 'FlatList' neden önemlidir?",
+            az: "React Native-də 'FlatList' niyə vacibdir?",
+            en: "Why is FlatList important?"
+        },
+        a: {
+            tr: "Büyük veri listelerini verimli bir şekilde kaydırmak için kullanılır. Sadece ekrandaki elemanları render ederek bellek tasarrufu sağlar.",
+            az: "Böyük məlumat siyahılarını effektiv şəkildə sürüşdürmək (scroll) üçün istifadə olunur. Yalnız ekranda görünən elementləri render edərək yaddaşa qənaət edir.",
+            en: "A performant interface for rendering basic, flat lists, supporting features like infinite scroll and memory optimization."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "Flutter'da 'BLoc' deseni nedir?",
+            az: "Flutter-də 'BLoc' patterni nədir?",
+            en: "What is the BLoc pattern?"
+        },
+        a: {
+            tr: "Business Logic Component; arayüz kodunu iş mantığından ayırmak için Stream yapısını kullanan bir durum yönetimi (state management) yaklaşımıdır.",
+            az: "Business Logic Component; interfeys kodunu biznes məntiqindən ayırmaq üçün Stream strukturundan istifadə edən dövlət idarəetmə (state management) yanaşmasıdır.",
+            en: "A state management system for Flutter that helps separate business logic from UI, relying on Streams and Sinks."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Platform Channels (Flutter) nedir?",
+            az: "Platform Channels (Flutter) nədir?",
+            en: "What are Platform Channels?"
+        },
+        a: {
+            tr: "Flutter'ın yerel cihaz özelliklerine (kamera, pil durumu vb.) erişmek için Native (Java/Swift) kodla iletişim kurmasını sağlayan yapıdır.",
+            az: "Flutter-in cihazın native xüsusiyyətlərinə (kamera, batareya və s.) müraciət etmək üçün Native kodla əlaqə qurmasını təmin edən mexanizmdir.",
+            en: "A bridge that allows Flutter code to communicate with host platforms (iOS and Android) to access native APIs."
+        }
+    }
+]
 };
 
 contentData['ios'] = {
@@ -1548,7 +2999,270 @@ contentData['ios'] = {
                 en: "Native is preferred for peak performance, instant access to latest Apple features (e.g., Dynamic Island), and building stable, 'Premium' feeling apps."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Swift'te 'Optional' nedir?",
+            az: "Swift-də 'Optional' nədir?",
+            en: "What is an Optional in Swift?"
+        },
+        a: {
+            tr: "Bir değişkenin bir değere sahip olabileceğini veya 'nil' (değersiz) olabileceğini belirten türdür. Güvenli kod yazımını sağlar.",
+            az: "Bir dəyişənin dəyərinin ola biləcəyini və ya 'nil' (dəyərsiz) ola biləcəyini bildirən növdür. Təhlükəsiz kod yazılışını təmin edir.",
+            en: "A type that represents either a wrapped value or the absence of a value (nil). It ensures type safety."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Strong, Weak ve Unowned referans farkı nedir?",
+            az: "Strong, Weak və Unowned referans fərqi nədir?",
+            en: "Difference between Strong, Weak, and Unowned?"
+        },
+        a: {
+            tr: "Strong: Nesneyi bellekte tutar. Weak: Nesne silinince 'nil' olur (Retain cycle önler). Unowned: Nesne silinince nil olmaz, silinmiş nesneye erişim crash'e sebep olur.",
+            az: "Strong: Obyekti yaddaşda saxlayır. Weak: Obyekt silindikdə 'nil' olur (Retain cycle-ın qarşısını alır). Unowned: Obyekt silindikdə nil olmur, silinmiş obyektə müraciət tətbiqi çökdürür (crash).",
+            en: "Strong: Keeps a firm hold on the instance. Weak: Doesn't keep a hold and becomes nil when the instance is deallocated. Unowned: Doesn't keep a hold but expects the instance to never be nil."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "ARC (Automatic Reference Counting) nedir?",
+            az: "ARC (Automatic Reference Counting) nədir?",
+            en: "What is ARC?"
+        },
+        a: {
+            tr: "Swift'in bellek yönetimi sistemidir. Bir nesneye olan referans sayısını takip eder ve referans sayısı sıfıra düştüğünde nesneyi bellekten temizler.",
+            az: "Swift-in yaddaş idarəetmə sistemidir. Bir obyektə olan müraciət (referans) sayını izləyir və bu say sıfıra düşdükdə obyekti yaddaşdan silir.",
+            en: "Swift's memory management system. It tracks and manages your app's memory usage by counting references to class instances."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Struct ve Class arasındaki temel farklar nelerdir?",
+            az: "Struct və Class arasındakı əsas fərqlər nələrdir?",
+            en: "Main differences between Struct and Class?"
+        },
+        a: {
+            tr: "Struct 'Value Type'dır (kopyalanır), Stack'te tutulur. Class 'Reference Type'dır (paylaşılır), Heap'te tutulur ve kalıtım (inheritance) destekler.",
+            az: "Struct 'Value Type'-dır (kopyalanır), Stack-də saxlanılır. Class 'Reference Type'-dır (paylaşılır), Heap-də saxlanılır və miras almağı (inheritance) dəstəkləyir.",
+            en: "Structs are Value Types (copied), stored in Stack. Classes are Reference Types (shared), stored in Heap and support inheritance."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Protocol nedir?",
+            az: "Protocol nədir?",
+            en: "What is a Protocol?"
+        },
+        a: {
+            tr: "Belirli bir işlev için gereken metodların ve özelliklerin bir taslağıdır. Java'daki Interface yapısına benzer.",
+            az: "Müəyyən bir funksionallıq üçün lazım olan metodların və xüsusiyyətlərin eskizidir (blueprint). Java-dakı Interface strukturuna bənzəyir.",
+            en: "A blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Closure nedir?",
+            az: "Closure nədir?",
+            en: "What is a Closure?"
+        },
+        a: {
+            tr: "Kod bloklarını değişken gibi saklayabilen ve parametre olarak geçilebilen fonksiyonel yapılardır.",
+            az: "Kod bloklarını dəyişən kimi saxlaya bilən və parametr kimi ötürülə bilən funksional strukturlardır.",
+            en: "Self-contained blocks of functionality that can be passed around and used in your code."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Escaping ve Non-escaping closure farkı?",
+            az: "Escaping və Non-escaping closure fərqi?",
+            en: "Escaping vs Non-escaping closures?"
+        },
+        a: {
+            tr: "Escaping: Fonksiyon bittikten sonra da çalışmaya devam edebilen (örn: network isteği). Non-escaping: Fonksiyon kapsamı içinde biten closure.",
+            az: "Escaping: Funksiya bitdikdən sonra da işləməyə davam edə bilən (məs: network sorğusu). Non-escaping: Funksiya daxilində tamamlanan closure.",
+            en: "Escaping: A closure that outlives the function it was passed to. Non-escaping: Executed within the function's scope."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "MVC ve MVVM mimari farkı nedir?",
+            az: "MVC və MVVM arxitektura fərqi nədir?",
+            en: "Difference between MVC and MVVM?"
+        },
+        a: {
+            tr: "MVC'de Controller hem view hem modelle iç içedir. MVVM'de ViewModel, View'dan tamamen bağımsızdır ve veri bağlama (data binding) kullanır.",
+            az: "MVC-də Controller həm view, həm də modellə sıx bağlıdır. MVVM-də ViewModel view-dan asılı deyil və data binding istifadə edir.",
+            en: "In MVC, Controller is tightly coupled. In MVVM, ViewModel is independent of the View, often using data binding for updates."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Delegation pattern nedir?",
+            az: "Delegation pattern nədir?",
+            en: "What is the Delegation pattern?"
+        },
+        a: {
+            tr: "Bir nesnenin görevini başka bir nesneye devretmesini sağlayan tasarım desenidir. Genelde protokoller ile uygulanır.",
+            az: "Bir obyektin tapşırığını başqa bir obyektə həvalə etməsini təmin edən dizayn patternidir. Adətən protokollar vasitəsilə tətbiq olunur.",
+            en: "A design pattern that enables a class to hand off (or delegate) some of its responsibilities to an instance of another class."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "SwiftUI ve UIKit farkı nedir?",
+            az: "SwiftUI və UIKit fərqi nədir?",
+            en: "SwiftUI vs UIKit?"
+        },
+        a: {
+            tr: "UIKit imperatiftir (adım adım tarif edilir). SwiftUI deklaratiftir (sonuç tarif edilir, sistem nasıl yapacağını bilir).",
+            az: "UIKit imperativdir (addım-addım tərif edilir). SwiftUI deklarativdir (nəticə tərif edilir, sistem onu necə edəcəyini bilir).",
+            en: "UIKit is an imperative framework. SwiftUI is a modern, declarative framework for building user interfaces across all Apple platforms."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "GCD (Grand Central Dispatch) nedir?",
+            az: "GCD (Grand Central Dispatch) nədir?",
+            en: "What is GCD?"
+        },
+        a: {
+            tr: "Çoklu iş parçacığı (multithreading) yönetimi için Apple'ın sunduğu düşük seviyeli API'dir. İşleri kuyruklara (queues) atar.",
+            az: "Çoxşaxəli işləmə (multithreading) üçün Apple tərəfindən təqdim edilən API-dir. Tapşırıqları növbələrə (queues) yerləşdirir.",
+            en: "Apple's low-level API for managing concurrent operations and multithreading using task queues."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Main Thread neden sadece UI için kullanılır?",
+            az: "Main Thread niyə yalnız UI üçün istifadə olunur?",
+            en: "Why is the Main Thread used only for UI?"
+        },
+        a: {
+            tr: "Arayüz güncellemeleri hızlı ve sıralı olmalıdır. Ağır işlemler main thread'de yapılırsa uygulama donar (freezing).",
+            az: "İnterfeys yenilənmələri sürətli və ardıcıl olmalıdır. Ağır əməliyyatlar main thread-də edilsə, tətbiq donar.",
+            en: "To keep the UI responsive. Heavy tasks on the main thread cause the interface to freeze and degrade user experience."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Frame ve Bounds farkı nedir?",
+            az: "Frame və Bounds fərqi nədir?",
+            en: "Difference between Frame and Bounds?"
+        },
+        a: {
+            tr: "Frame: Görünümün üst öğesine (superview) göre konumu. Bounds: Görünümün kendi koordinat sistemine göre konumu.",
+            az: "Frame: Görünüşün üst elementinə (superview) görə mövqeyi. Bounds: Görünüşün öz koordinat sisteminə görə mövqeyi.",
+            en: "Frame: Position and size relative to its superview. Bounds: Position and size relative to its own coordinate system."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "App Lifecycle (Uygulama Yaşam Döngüsü) aşamaları?",
+            az: "App Lifecycle mərhələləri nələrdir?",
+            en: "What are the App Lifecycle states?"
+        },
+        a: {
+            tr: "Not Running, Inactive, Active, Background ve Suspended.",
+            az: "Not Running (İşləmir), Inactive (Qeyri-aktiv), Active (Aktiv), Background (Arxa fon) və Suspended (Dayandırılmış).",
+            en: "The main states are: Not Running, Inactive, Active, Background, and Suspended."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Combine framework'ü nedir?",
+            az: "Combine framework-ü nədir?",
+            en: "What is the Combine framework?"
+        },
+        a: {
+            tr: "Zamana bağlı değerleri işlemek için kullanılan reaktif bir framework'tür (Publisher ve Subscriber mantığı).",
+            az: "Zamana bağlı dəyərləri emal etmək üçün istifadə olunan reaktiv framework-dür (Publisher və Subscriber məntiqi).",
+            en: "A declarative Swift API for processing values over time, focusing on publishers and subscribers."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Final anahtar kelimesi ne işe yarar?",
+            az: "Final açar sözü nə işə yarayır?",
+            en: "What does the 'final' keyword do?"
+        },
+        a: {
+            tr: "Bir sınıfın miras alınmasını (inheritance) veya bir metodun override edilmesini engeller. Performansı artırır.",
+            az: "Bir klasın miras alınmasını və ya bir metodun override edilməsini (dəyişdirilməsini) əngəlləyir. Performansı artırır.",
+            en: "Prevents a class from being inherited or a method from being overridden by subclasses. Also provides performance optimizations."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Dependency Injection nedir?",
+            az: "Dependency Injection nədir?",
+            en: "What is Dependency Injection?"
+        },
+        a: {
+            tr: "Bir sınıfın ihtiyaç duyduğu nesnelerin dışarıdan verilmesidir. Test edilebilirliği artırır.",
+            az: "Bir klasın ehtiyac duyduğu obyektlərin kənardan ötürülməsidir. Kodun test edilməsini asanlaşdırır.",
+            en: "A technique where an object receives its dependencies from the outside rather than creating them itself."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Guard ve If Let farkı nedir?",
+            az: "Guard və If Let fərqi nədir?",
+            en: "Difference between Guard and If Let?"
+        },
+        a: {
+            tr: "If let, değişkeni sadece süslü parantez içinde kullanmanıza izin verir. Guard ise değişkeni kapsamın (scope) geri kalanında kullanmanızı sağlar.",
+            az: "If let dəyişəni yalnız öz blokunun daxilində istifadəyə icazə verir. Guard isə dəyişəni blokdan kənarda da (scope daxilində) istifadə etməyə imkan yaradır.",
+            en: "If Let creates a scope for the unwrapped value. Guard unwraps the value and keeps it available in the rest of the scope."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "Generic nedir?",
+            az: "Generic nədir?",
+            en: "What are Generics?"
+        },
+        a: {
+            tr: "Herhangi bir türle çalışabilen esnek ve tekrar kullanılabilir fonksiyonlar veya tipler yazmanıza olanak tanır.",
+            az: "Hər hansı bir tiple işləyə bilən elastik və təkrar istifadə edilə bilən funksiyalar və ya tiplər yazmağa imkan verir.",
+            en: "Generic code enables you to write flexible, reusable functions and types that can work with any type."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Singleton pattern dezavantajı nedir?",
+            az: "Singleton pattern-in mənfi tərəfi nədir?",
+            en: "What is the disadvantage of Singleton?"
+        },
+        a: {
+            tr: "Test etmesi zordur (global state) ve nesneler arasındaki bağımlılığı gizleyerek karmaşıklığa yol açabilir.",
+            az: "Test edilməsi çətindir (global state) və obyektlər arasındakı asılılığı gizlədərək mürəkkəbliyə səbəb ola bilər.",
+            en: "They can make unit testing difficult due to global state and hide dependencies between components."
+        }
+    }
+]
 };
 
 contentData['frontend'] = {
@@ -3016,7 +4730,140 @@ contentData['ai-engineering'] = {
                 en: "A technique where you feed your private data (PDFs, Company docs) to an LLM so it can answer questions based on that specific data."
             }
         }
-    ]
+    ],
+
+    ai_engineering_interview: [
+    {
+        id: 1,
+        q: {
+            tr: "LLM (Büyük Dil Modelleri) uygulama geliştirme sürecinde 'RAG' (Retrieval-Augmented Generation) nedir?",
+            az: "LLM tətbiqləri hazırlayarkən 'RAG' (Retrieval-Augmented Generation) nədir?",
+            en: "What is RAG (Retrieval-Augmented Generation)?"
+        },
+        a: {
+            tr: "Modelin eğitim verisinde olmayan güncel veya özel bilgileri, bir dış veri kaynağından (vektör veritabanı) çekerek yanıta dahil etmesi yöntemidir.",
+            az: "Modelin təlim məlumatında olmayan aktual və ya özəl məlumatları xarici mənbədən (vektör bazası) taparaq cavaba daxil etməsi üsuludur.",
+            en: "A technique to enhance LLM responses by retrieving relevant information from external data sources before generating an answer."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Vektör Veritabanı (Vector Database) ne işe yarar?",
+            az: "Vektör Veritabanı (Vector Database) nə üçün istifadə olunur?",
+            en: "What is the purpose of a Vector Database?"
+        },
+        a: {
+            tr: "Metin, resim gibi verilerin 'embedding' (sayısal vektör) hallerini saklamak ve benzerlik araması (similarity search) yapmak için kullanılır.",
+            az: "Mətn və ya şəkil kimi məlumatların 'embedding' (ədədi vektör) formalarını saxlamaq və oxşarlıq axtarışı etmək üçün istifadə olunur.",
+            en: "Designed to store and query high-dimensional vector embeddings, enabling fast similarity searches in AI applications."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "MLOps nedir?",
+            az: "MLOps nədir?",
+            en: "What is MLOps?"
+        },
+        a: {
+            tr: "Makine öğrenmesi modellerinin geliştirme, dağıtım ve izleme süreçlerini otomatize eden disiplindir (DevOps'un ML versiyonu).",
+            az: "Maşın öyrənməsi modellərinin hazırlanması, canlıya alınması (deployment) və izlənilməsi proseslərini avtomatlaşdıran intizamdır.",
+            en: "The practice of combining Machine Learning and DevOps to automate the end-to-end lifecycle of ML models."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Fine-tuning ve Prompt Engineering farkı nedir?",
+            az: "Fine-tuning və Prompt Engineering fərqi nədir?",
+            en: "Difference between Fine-tuning and Prompt Engineering?"
+        },
+        a: {
+            tr: "Fine-tuning, modelin ağırlıklarını yeni veriyle günceller. Prompt Engineering ise modelin ağırlıklarını değiştirmeden sadece girdiyi optimize eder.",
+            az: "Fine-tuning modelin çəki əmsallarını yeni məlumatla yeniləyir. Prompt Engineering isə modeli dəyişmədən yalnız giriş mətni vasitəsilə nəticəni yaxşılaşdırır.",
+            en: "Fine-tuning updates model weights with specific data. Prompt Engineering optimizes instructions to get better results without changing the model."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Quantization (Nicemleme) nedir?",
+            az: "Quantization nədir?",
+            en: "What is Model Quantization?"
+        },
+        a: {
+            tr: "Modelin ağırlıklarını daha düşük bit hassasiyetine (örn: 32-bit'ten 8-bit'e) indirerek model boyutunu küçültme ve hızı artırma işlemidir.",
+            az: "Modelin çəki əmsallarını daha aşağı bit səviyyəsinə (məs: 32-bitdən 8-bitə) endirərək ölçüsünü kiçiltmək və sürətini artırmaq prosesidir.",
+            en: "Reducing the precision of a model's weights (e.g., from FP32 to INT8) to reduce size and increase inference speed."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Inference (Çıkarım) optimizasyonu nasıl yapılır?",
+            az: "Inference (Nəticə çıxarma) optimallaşdırması necə edilir?",
+            en: "How to optimize AI model inference?"
+        },
+        a: {
+            tr: "Quantization, Pruning (budama), Knowledge Distillation ve ONNX gibi yüksek performanslı çalışma zamanları (runtimes) kullanılarak.",
+            az: "Quantization, Pruning (budama), Knowledge Distillation və ONNX kimi yüksək performanslı mühitlərdən istifadə etməklə.",
+            en: "Through quantization, pruning, knowledge distillation, and using optimized runtimes like ONNX or TensorRT."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Hallucination (Halüsinasyon) nedir ve nasıl önlenir?",
+            az: "Hallucination (Halüsinasiya) nədir və necə qarşısı alınır?",
+            en: "What is AI Hallucination and how to mitigate it?"
+        },
+        a: {
+            tr: "Modelin yanlış veya uydurma bilgiler üretmesidir. RAG kullanımı, sistem komutlarının sıkılaştırılması ve 'Temperature' ayarının düşürülmesiyle azaltılabilir.",
+            az: "Modelin yanlış və ya uydurma məlumatlar verməsidir. RAG istifadəsi, sistem təlimatlarının dəqiqləşdirilməsi və 'Temperature' dəyərinin azaldılması ilə qarşısı alınır.",
+            en: "When an AI generates false or illogical information. Can be mitigated using RAG, ground truth data, and lower temperature settings."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "AI Agent (Ajan) nedir?",
+            az: "AI Agent (Agent) nədir?",
+            en: "What is an AI Agent?"
+        },
+        a: {
+            tr: "Sadece metin üretmekle kalmayan, araçlar (web araması, kod çalıştırma) kullanarak belirli bir görevi bağımsızca yerine getiren sistemdir.",
+            az: "Yalnız mətn yaratmaqla kifayətlənməyən, alətlərdən (internet axtarışı, kod icrası) istifadə edərək müəyyən tapşırığı müstəqil yerinə yetirən sistemdir.",
+            en: "An autonomous system that uses an LLM to reason, use tools, and take actions to achieve a specific goal."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Vector Embedding nedir?",
+            az: "Vector Embedding nədir?",
+            en: "What is a Vector Embedding?"
+        },
+        a: {
+            tr: "Kelimelerin veya verilerin, makinelerin anlayabileceği anlamlı sayısal listelere (vektörlere) dönüştürülmüş halidir.",
+            az: "Sözlərin və ya məlumatların maşınların anlaya biləcəyi mənalı ədədi siyahılara (vektörlərə) çevrilmiş formasıdır.",
+            en: "A numerical representation of data (like text or images) that captures its semantic meaning in a high-dimensional space."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Tokenization nedir?",
+            az: "Tokenization nədir?",
+            en: "What is Tokenization?"
+        },
+        a: {
+            tr: "Ham metnin, model tarafından işlenebilecek daha küçük parçalara (kelime veya karakter grupları) bölünmesi işlemidir.",
+            az: "Xam mətnin model tərəfindən emal edilə biləcək daha kiçik hissələrə (tokenlərə) bölünməsi prosesidir.",
+            en: "The process of breaking down text into smaller units (tokens) like words or subwords that an AI model can process."
+        }
+    }
+]
 };
 
 contentData['network'] = {
