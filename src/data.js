@@ -1495,6 +1495,69 @@ contentData['big-data'] = {
             en: "Partitioning splits data within a single server. Sharding distributes data across multiple physical machines."
         }
     }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "E-Ticaret Log Analizi (Batch Processing)", 
+            az: "E-Ticarət Log Analizi (Batch Processing)", 
+            en: "E-commerce Log Analysis" 
+        },
+        desc: { 
+            tr: "Milyonlarca satırlık web sunucu loglarını analiz ederek en popüler ürünleri bulan sistem.", 
+            az: "Milyonlarla sətirlik web server loglarını analiz edərək ən populyar məhsulları tapan sistem.", 
+            en: "A system that analyzes millions of web server log entries to find the most popular products." 
+        },
+        tech: ["Apache Spark (PySpark)", "HDFS", "SQL", "Python"],
+        features: { 
+            tr: ["Veri temizleme (Data Cleaning)", "Agregasyon işlemleri", "Parquet formatında depolama"], 
+            az: ["Məlumat təmizləmə", "Aqreqasiya əməliyyatları", "Parquet formatında saxlama"], 
+            en: ["Data cleaning", "Aggregation operations", "Storage in Parquet format"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Gerçek Zamanlı Sahtekarlık Tespit Sistemi", 
+            az: "Real Zamanlı Fırıldaqçılıq Aşkarlama Sistemi", 
+            en: "Real-time Fraud Detection System" 
+        },
+        desc: { 
+            tr: "Banka işlemlerini anlık olarak takip edip şüpheli aktiviteleri saniyeler içinde belirleyen yapı.", 
+            az: "Bank əməliyyatlarını anlıq izləyərək şübhəli fəaliyyətləri saniyələr daxilində müəyyən edən struktur.", 
+            en: "A pipeline that monitors bank transactions in real-time and identifies suspicious activities within seconds." 
+        },
+        tech: ["Apache Kafka", "Spark Streaming", "NoSQL (Cassandra/Redis)", "Grafana"],
+        features: { 
+            tr: ["Stream Processing", "Düşük gecikmeli veri işleme", "Anlık dashboard görselleştirme"], 
+            az: ["Stream Processing", "Aşağı gecikməli emal", "Anlıq dashboard vizuallaşdırma"], 
+            en: ["Stream Processing", "Low-latency data processing", "Real-time dashboard visualization"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Modern Data Lakehouse Mimarisi", 
+            az: "Müasir Data Lakehouse Memarlığı", 
+            en: "Modern Data Lakehouse Architecture" 
+        },
+        desc: { 
+            tr: "Hem yapısal hem yapısal olmayan büyük verileri yöneten, ACID desteği sunan bütünsel veri platformu.", 
+            az: "Həm strukturlaşmış, həm də qeyri-struktur böyük məlumatları idarə edən, ACID dəstəkli vahid data platforması.", 
+            en: "A unified data platform that manages structured and unstructured big data while providing ACID transaction support." 
+        },
+        tech: ["Delta Lake", "Apache Iceberg", "Trino/Presto", "AWS/Azure Cloud"],
+        features: { 
+            tr: ["Schema Enforcement", "Time Travel (Veri versiyonlama)", "Dağıtık sorgu optimizasyonu"], 
+            az: ["Schema Enforcement", "Time Travel (Data versiyalaması)", "Paylanmış sorğu optimallaşdırılması"], 
+            en: ["Schema Enforcement", "Time Travel (Data versioning)", "Distributed query optimization"] 
+        }
+    }
 ]
 };
 
@@ -1767,6 +1830,69 @@ contentData['deep-learning'] = {
             en: "AI systems capable of generating new content like text, images, or audio by learning patterns from existing data."
         }
     }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Trafik İşaretleri Tanıma Sistemi", 
+            az: "Yol Nişanlarının Tanınması Sistemi", 
+            en: "Traffic Sign Recognition System" 
+        },
+        desc: { 
+            tr: "Bilgisayarlı görü kullanarak trafik işaretlerini gerçek zamanlı sınıflandıran model.", 
+            az: "Computer Vision istifadə edərək yol nişanlarını real zamanlı təsnif edən model.", 
+            en: "A model that classifies traffic signs in real-time using computer vision." 
+        },
+        tech: ["Python", "Keras/TensorFlow", "OpenCV", "CNN"],
+        features: { 
+            tr: ["Görüntü Artırma (Augmentation)", "CNN Katman Tasarımı", "%95+ Doğruluk Oranı"], 
+            az: ["Görüntü artırma (Augmentation)", "CNN təbəqə dizaynı", "%95+ dəqiqlik dərəcəsi"], 
+            en: ["Image Augmentation", "Custom CNN architecture", "95%+ Accuracy"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Dil Çeviri Modeli (Encoder-Decoder)", 
+            az: "Dil Tərcümə Modeli (Encoder-Decoder)", 
+            en: "Language Translation Model" 
+        },
+        desc: { 
+            tr: "Bir dilden diğerine otomatik çeviri yapan Sequence-to-Sequence modeli.", 
+            az: "Bir dildən digərinə avtomatik tərcümə edən Sequence-to-Sequence modeli.", 
+            en: "A sequence-to-sequence model that performs neural machine translation between two languages." 
+        },
+        tech: ["PyTorch", "LSTM/GRU", "Attention Mechanism", "NLTK"],
+        features: { 
+            tr: ["Attention mekanizması", "Tokenization ve Word Embeddings", "BLEU Score değerlendirmesi"], 
+            az: ["Attention mexanizmi", "Tokenization və Word Embeddings", "BLEU Score qiymətləndirilməsi"], 
+            en: ["Attention Mechanism", "Tokenization & Embeddings", "BLEU Score evaluation"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Generative Adversarial Network (GAN) ile Yüz Oluşturma", 
+            az: "GAN ilə Realistik İnsan Üzlərinin Yaradılması", 
+            en: "Face Generation using GANs" 
+        },
+        desc: { 
+            tr: "Gerçekte var olmayan, yüksek çözünürlüklü insan yüzleri üreten yapay zeka.", 
+            az: "Reallıqda mövjud olmayan, yüksək keyfiyyətli insan üzləri yaradan süni intellekt.", 
+            en: "A generative model that creates high-resolution, synthetic human faces that don't exist in reality." 
+        },
+        tech: ["PyTorch/TensorFlow", "DCGAN/StyleGAN", "GPU Computing (CUDA)", "Matplotlib"],
+        features: { 
+            tr: ["Generator ve Discriminator eğitimi", "Zarar (Loss) fonksiyonu optimizasyonu", "Hiperparametre tuning"], 
+            az: ["Generator və Discriminator təlimi", "Loss funksiyası optimallaşdırması", "Hyperparameter tuning"], 
+            en: ["Generator & Discriminator training", "Loss function optimization", "Hyperparameter tuning"] 
+        }
+    }
 ]
 };
 
@@ -2034,6 +2160,69 @@ contentData['ml'] = {
             tr: "Bir ajanın çevreyle etkileşime girerek ödül mekanizması sayesinde en iyi stratejiyi deneme-yanılma yoluyla öğrenmesidir.",
             az: "Bir agentin ətraf mühitlə əlaqəyə girərək mükafat mexanizmi vasitəsilə ən yaxşı strategiyanı sınaq-yanılma yolu ilə öyrənməsidir.",
             en: "A type of machine learning where an agent learns to make decisions by performing actions in an environment to maximize rewards."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Emlak Fiyat Tahminleme Sistemi", 
+            az: "Əmlak Qiymətlərinin Təxmin Edilməsi", 
+            en: "Real Estate Price Predictor" 
+        },
+        desc: { 
+            tr: "Ev özelliklerine göre piyasa değerini tahmin eden regresyon modeli.", 
+            az: "Evin xüsusiyyətlərinə görə bazar qiymətini təxmin edən reqressiya modeli.", 
+            en: "A regression model that predicts property market value based on various features." 
+        },
+        tech: ["Python", "Scikit-learn", "XGBoost", "Pandas"],
+        features: { 
+            tr: ["Çoklu Doğrusal Regresyon", "Aykırı Değer Analizi", "Model Performans Metrikleri (MAE/RMSE)"], 
+            az: ["Çoxsaylı Xətti Reqressiya", "Kənar dəyər (Outlier) analizi", "Model performans metrikaları (MAE/RMSE)"], 
+            en: ["Multiple Linear Regression", "Outlier Analysis", "Model Metrics (MAE/RMSE)"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Haber Metni Sınıflandırıcı (NLP)", 
+            az: "Xəbər Mətnlərinin Təsnifatı (NLP)", 
+            en: "News Text Classifier (NLP)" 
+        },
+        desc: { 
+            tr: "Metin verilerini analiz ederek haberleri kategorilere (spor, siyaset vb.) ayıran sistem.", 
+            az: "Mətn məlumatlarını analiz edərək xəbərləri kateqoriyalara ayıran sistem.", 
+            en: "A natural language processing system that categorizes news articles into topics like sports or politics." 
+        },
+        tech: ["NLTK/SpaCy", "TF-IDF / Word2Vec", "Support Vector Machines (SVM)", "Flask"],
+        features: { 
+            tr: ["Metin Ön İşleme", "Duygu Analizi Entegrasyonu", "Confusion Matrix Görselleştirme"], 
+            az: ["Mətnin ilkin emalı", "Sentiment (Hiss) analizi inteqrasiyası", "Confusion Matrix vizuallaşdırma"], 
+            en: ["Text Preprocessing", "Sentiment Analysis integration", "Confusion Matrix visualization"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Öneri Sistemi ve Hibrit Mimari", 
+            az: "Tövsiyə Sistemi və Hibrid Memarlıq", 
+            en: "Hybrid Recommendation System" 
+        },
+        desc: { 
+            tr: "Kullanıcı davranışlarını analiz ederek kişiselleştirilmiş ürün önerileri sunan motor.", 
+            az: "İstifadəçi davranışlarını analiz edərək fərdiləşdirilmiş məhsul tövsiyələri verən motor.", 
+            en: "An engine that provides personalized product recommendations by analyzing user behavior." 
+        },
+        tech: ["Surprise Library", "Collaborative Filtering", "LightFM", "PySpark"],
+        features: { 
+            tr: ["Matris Ayrıştırma (SVD)", "Cold-start problemi çözümü", "Büyük Veri (Big Data) entegrasyonu"], 
+            az: ["Matrix Factorization (SVD)", "Cold-start problemi həlli", "Böyük məlumat (Big Data) inteqrasiyası"], 
+            en: ["Matrix Factorization (SVD)", "Solving the Cold-start problem", "Big Data integration"] 
         }
     }
 ]
@@ -2436,6 +2625,69 @@ contentData['data-science'] = {
             tr: "Bagging (Random Forest): Ağaçlar paralel çalışır. Boosting (XGBoost): Ağaçlar sıralı çalışır, her ağaç bir öncekinin hatasını düzeltmeye odaklanır.",
             az: "Bagging: Ağaclar paralel işləyir. Boosting: Ağaclar ardıcıl işləyir, hər bir yeni ağac əvvəlkinin səhvini düzəltməyə çalışır.",
             en: "Bagging builds independent models in parallel. Boosting builds sequential models where each model learns from the errors of the previous one."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Müşteri Kayıp (Churn) Analizi", 
+            az: "Müştəri İtkisi (Churn) Analizi", 
+            en: "Customer Churn Analysis" 
+        },
+        desc: { 
+            tr: "Bir telekom şirketindeki müşterilerin ayrılma ihtimalini tahmin eden model.", 
+            az: "Telekom şirkətində müştərilərin xidmətdən imtina etmə ehtimalını təxmin edən model.", 
+            en: "A model that predicts the probability of customers leaving a telecom service provider." 
+        },
+        tech: ["Python", "Pandas/NumPy", "Scikit-learn", "Matplotlib/Seaborn"],
+        features: { 
+            tr: ["Keşifçi Veri Analizi (EDA)", "Lojistik Regresyon/Random Forest", "Feature Importance analizi"], 
+            az: ["Məlumatın kəşfiyyat xarakterli analizi (EDA)", "Lojistik Reqressiya/Random Forest", "Parametr əhəmiyyətlilik analizi"], 
+            en: ["Exploratory Data Analysis (EDA)", "Logistic Regression/Random Forest", "Feature Importance analysis"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Görüntü Sınıflandırma ve API Entegrasyonu", 
+            az: "Təsvirlərin Təsnifatı və API İnteqrasiyası", 
+            en: "Image Classification with API Integration" 
+        },
+        desc: { 
+            tr: "Derin öğrenme kullanarak nesne tanıyan ve bunu bir web servisi olarak sunan proje.", 
+            az: "Dərin öyrənmə ilə obyektləri tanıyan və bunu web servis kimi təqdim edən layihə.", 
+            en: "A project that recognizes objects using deep learning and serves the model via a web API." 
+        },
+        tech: ["TensorFlow/PyTorch", "CNN", "FastAPI", "Docker"],
+        features: { 
+            tr: ["Önceden eğitilmiş model (Transfer Learning)", "API üzerinden resim yükleme", "Dockerize edilmiş dağıtım"], 
+            az: ["Transfer Learning (ResNet/VGG)", "API vasitəsilə şəkil yükləmə", "Dockerize edilmiş tətbiq"], 
+            en: ["Transfer Learning", "Image upload via API", "Dockerized deployment"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Uçtan Uca MLOps Hattı (Pipeline)", 
+            az: "Ucdan Uca MLOps Boru Xətti (Pipeline)", 
+            en: "End-to-End MLOps Pipeline" 
+        },
+        desc: { 
+            tr: "Modelin otomatik eğitildiği, test edildiği ve canlıya alındığı tam kapsamlı sistem.", 
+            az: "Modelin avtomatik öyrədildiyi, test edildiyi və canlıya alındığı tam sistem.", 
+            en: "A fully automated system where models are trained, tested, and deployed continuously." 
+        },
+        tech: ["MLflow", "Airflow", "Kubernetes", "DVC (Data Version Control)"],
+        features: { 
+            tr: ["Model versiyonlama", "Veri drifti takibi", "Otomatik yeniden eğitim (Retraining)"], 
+            az: ["Model versiyalaması", "Data drift izləmə", "Avtomatik yenidən təlim (Retraining)"], 
+            en: ["Model versioning", "Data drift monitoring", "Automated retraining pipelines"] 
         }
     }
 ]
@@ -4861,6 +5113,69 @@ contentData['ai-engineering'] = {
             tr: "Ham metnin, model tarafından işlenebilecek daha küçük parçalara (kelime veya karakter grupları) bölünmesi işlemidir.",
             az: "Xam mətnin model tərəfindən emal edilə biləcək daha kiçik hissələrə (tokenlərə) bölünməsi prosesidir.",
             en: "The process of breaking down text into smaller units (tokens) like words or subwords that an AI model can process."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "PDF Soru-Cevap Botu (RAG)", 
+            az: "PDF Sual-Cavab Botu (RAG)", 
+            en: "PDF Question-Answering Bot (RAG)" 
+        },
+        desc: { 
+            tr: "Yüklenen PDF dosyalarını analiz eden ve içeriğe göre soruları yanıtlayan AI uygulaması.", 
+            az: "Yüklənən PDF fayllarını analiz edən və məzmuna uyğun sualları cavablandıran AI tətbiqi.", 
+            en: "An AI application that analyzes uploaded PDF files and answers questions based on the content." 
+        },
+        tech: ["LangChain", "OpenAI/Llama-3", "ChromaDB/Pinecone", "Streamlit"],
+        features: { 
+            tr: ["Vektör veritabanı entegrasyonu", "Mevcut döküman üzerinden çıkarım", "Basit UI arayüzü"], 
+            az: ["Vektör verilənlər bazası inteqrasiyası", "Mövcud sənəd üzərindən nəticə çıxarma", "Sadə UI interfeysi"], 
+            en: ["Vector database integration", "Retrieval-Augmented Generation", "Simple UI interface"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Otonom AI Ajanı (Tools & Function Calling)", 
+            az: "Avtonom AI Agenti (Alətlər və Funksiya Çağırışları)", 
+            en: "Autonomous AI Agent" 
+        },
+        desc: { 
+            tr: "Belirli görevleri yerine getirmek için dış araçları (Google Search, Python Interpreter) kullanabilen ajan.", 
+            az: "Müəyyən tapşırıqları yerinə yetirmək üçün xarici alətlərdən (Google Search, Python Interpreter) istifadə edə bilən agent.", 
+            en: "An agent that can use external tools (Google Search, Python Interpreter) to perform complex tasks autonomously." 
+        },
+        tech: ["LangGraph/CrewAI", "Function Calling", "FastAPI", "PostgreSQL"],
+        features: { 
+            tr: ["Çok adımlı akıl yürütme", "API entegrasyonları", "Oturum bazlı bellek yönetimi"], 
+            az: ["Çoxmərhələli mühakimə (reasoning)", "API inteqrasiyaları", "Sessiya əsaslı yaddaş idarəetməsi"], 
+            en: ["Multi-step reasoning", "API tool integrations", "Session-based memory management"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Ölçeklenebilir LLM İşletim Hattı (vLLM & Monitoring)", 
+            az: "Ölçəklənə bilən LLM Emal Xətti (vLLM və Monitorinq)", 
+            en: "Scalable LLM Inference Pipeline" 
+        },
+        desc: { 
+            tr: "Açık kaynaklı modelleri yüksek performansla sunan ve kullanım metriklerini izleyen altyapı.", 
+            az: "Açıq mənbəli modelləri (Llama/Mistral) yüksək performansla təqdim edən və metrikaları izləyən infrastruktur.", 
+            en: "Infrastructure that serves open-source models with high performance and monitors usage metrics." 
+        },
+        tech: ["vLLM/TGI", "Docker/Kubernetes", "Prometheus/Grafana", "LangSmith"],
+        features: { 
+            tr: ["Düşük gecikmeli (low-latency) çıkarım", "Model Quantization (GGUF/AWQ)", "Hallucination izleme sistemi"], 
+            az: ["Aşağı gecikməli (low-latency) nəticə çıxarma", "Model Quantization", "Hallucinasiya izləmə sistemi"], 
+            en: ["Low-latency inference", "Model Quantization", "Hallucination monitoring"] 
         }
     }
 ]
