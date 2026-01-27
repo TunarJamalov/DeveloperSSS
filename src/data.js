@@ -1364,7 +1364,7 @@ contentData['big-data'] = {
         }
     ],
 
-    big_data_interview: [
+    interview: [
     {
         id: 1,
         q: {
@@ -4732,7 +4732,7 @@ contentData['ai-engineering'] = {
         }
     ],
 
-    ai_engineering_interview: [
+    interview: [
     {
         id: 1,
         q: {
