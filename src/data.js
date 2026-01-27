@@ -12,7 +12,7 @@ export const countries = [
     { code: 'AZ', name: 'Azerbaijan', flag: '🇦🇿' },
 ];
 
-// UI Hello World! Hello Devs!
+// UI Hello World! Hello Devs! Hello mello sello
 export const ui = {
     en: {
         welcome: "Welcome",
