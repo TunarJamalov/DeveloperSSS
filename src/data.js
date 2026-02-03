@@ -785,7 +785,333 @@ contentData['devops'] = {
                 en: "Yes, the learning curve is steep. It has many moving parts. But once you grasp the logic, you possess the industry's most powerful tool."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "DevOps nedir?",
+            az: "DevOps nədir?",
+            en: "What is DevOps?"
+        },
+        a: {
+            tr: "Yazılım geliştirme (Dev) ve sistem operasyonları (Ops) arasındaki engelleri kaldıran, otomasyon ve sürekli iyileştirmeyi hedefleyen bir kültür ve pratikler bütünüdür.",
+            az: "Proqram təminatının hazırlanması (Dev) və sistem əməliyyatları (Ops) arasındakı maneələri aradan qaldıran, avtomatlaşdırma və davamlı təkmilləşdirməni hədəfləyən bir mədəniyyətdir.",
+            en: "A set of practices and a culture that combines software development (Dev) and IT operations (Ops) to shorten the systems development life cycle and provide high quality."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "CI/CD Pipeline bileşenleri nelerdir?",
+            az: "CI/CD Pipeline-ın komponentləri hansılardır?",
+            en: "What are the components of a CI/CD Pipeline?"
+        },
+        a: {
+            tr: "Source (Kod), Build (Derleme), Test (Otomatik testler) ve Deploy (Canlıya alma) aşamalarından oluşur.",
+            az: "Source (Kod), Build (Yığma), Test (Avtomatlaşdırılmış testlər) və Deploy (İstifadəyə vermə) mərhələlərindən ibarətdir.",
+            en: "It consists of Source (Code), Build, Test (Automated testing), and Deploy (Release to production) stages."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Infrastructure as Code (IaC) nedir?",
+            az: "Infrastructure as Code (IaC) nədir?",
+            en: "What is Infrastructure as Code (IaC)?"
+        },
+        a: {
+            tr: "Altyapının (Server, Network vb.) manuel yerine kod dosyalarıyla (Terraform, CloudFormation) yönetilmesidir. Hızlı, tekrarlanabilir ve hatasız kurulum sağlar.",
+            az: "İnfrastrukturun (Server, Şəbəkə və s.) əllə deyil, kod faylları vasitəsilə (Terraform, CloudFormation) idarə edilməsidir. Sürətli və səhvsiz quraşdırma təmin edir.",
+            en: "Managing and provisioning infrastructure through code (Terraform, Ansible) rather than manual processes. It ensures consistency and speed."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Docker Image ve Container farkı nedir?",
+            az: "Docker Image və Container fərqi nədir?",
+            en: "Difference between Docker Image and Container?"
+        },
+        a: {
+            tr: "Image, uygulamanın çalışması için gereken her şeyi içeren salt okunur bir şablondur. Container ise bu imajın çalışan canlı örneğidir.",
+            az: "Image tətbiqin işləməsi üçün lazım olan hər şeyi ehtiva edən oxunaqlı şablondur. Container isə həmin imicin işlək vəziyyətdə olan nümunəsidir.",
+            en: "An Image is a read-only template containing the app and its dependencies. A Container is a running instance of that image."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Kubernetes (K8s) nedir?",
+            az: "Kubernetes (K8s) nədir?",
+            en: "What is Kubernetes (K8s)?"
+        },
+        a: {
+            tr: "Konteynerize edilmiş uygulamaların dağıtımını, ölçeklenmesini ve yönetimini otomatize eden bir orkestrasyon platformudur.",
+            az: "Konteynerləşdirilmiş tətbiqlərin paylanmasını, miqyaslanmasını və idarə edilməsini avtomatlaşdıran bir orkestrasiya platformadır.",
+            en: "An open-source container orchestration platform for automating deployment, scaling, and management of containerized applications."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Blue-Green Deployment nedir?",
+            az: "Blue-Green Deployment nədir?",
+            en: "What is Blue-Green Deployment?"
+        },
+        a: {
+            tr: "Sıfır kesinti için iki özdeş ortam kullanılır: Biri canlı (Blue), diğeri yeni sürümün yüklendiği (Green). Testten sonra trafik Green'e aktarılır.",
+            az: "Sıfır kəsinti üçün iki eyni mühit istifadə olunur: Biri canlı (Blue), digəri yeni versiyanın yükləndiyi (Green). Testdən sonra trafik Green-ə yönləndirilir.",
+            en: "A deployment strategy with two identical environments (Blue and Green). Traffic is switched to Green after the new version is tested there."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "GitOps nedir?",
+            az: "GitOps nədir?",
+            en: "What is GitOps?"
+        },
+        a: {
+            tr: "Altyapı ve uygulama yapılandırmaları için Git'i 'tek gerçeklik kaynağı' (source of truth) olarak kullanan bir operasyonel modeldir.",
+            az: "İnfrastruktur və tətbiq konfiqurasiyaları üçün Git-i 'vahid həqiqət mənbəyi' kimi istifadə edən əməliyyat modelidir.",
+            en: "An operational model where Git is used as the single source of truth for infrastructure and application configurations."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Microservices vs Monolithic?",
+            az: "Mikroservis vs Monolitik?",
+            en: "Microservices vs Monolithic?"
+        },
+        a: {
+            tr: "Monolitik tek bir büyük parçadır. Mikroservisler bağımsız, küçük servislerdir; hata izolasyonu ve bağımsız ölçekleme sağlar.",
+            az: "Monolitik vahid böyük blokdur. Mikroservislər isə müstəqil, kiçik servislərdir; xətaların təcrid olunmasını və müstəqil miqyaslanmanı təmin edir.",
+            en: "Monolithic is a single unified unit. Microservices break the app into independent services for better fault isolation and scalability."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Rolling Update nedir?",
+            az: "Rolling Update nədir?",
+            en: "What is a Rolling Update?"
+        },
+        a: {
+            tr: "Kubernetes'te uygulamaları eski versiyonu birer birer kapatıp yeni versiyonu açarak, hizmet kesintisi olmadan güncelleme yöntemidir.",
+            az: "Kubernetes-də köhnə versiyaları tək-tək söndürüb yenisini yandırmaqla, xidmətdə fasilə yaratmadan tətbiqi yeniləmə üsuludur.",
+            en: "A deployment strategy that updates an application by replacing instances one by one with the new version to ensure zero downtime."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Mutable vs Immutable Infrastructure?",
+            az: "Mutable vs Immutable İnfrastruktur?",
+            en: "Mutable vs Immutable Infrastructure?"
+        },
+        a: {
+            tr: "Mutable: Mevcut sunucu üzerinde değişiklik yapılır. Immutable: Değişiklik için eski sunucu silinir, yerine yenisi kurulur (daha güvenli).",
+            az: "Mutable: Mövcud server üzərində dəyişiklik edilir. Immutable: Dəyişiklik üçün köhnə server silinir, yerinə yenisi qurulur (daha etibarlıdır).",
+            en: "Mutable infra is modified in place. Immutable infra is never modified; instead, it is replaced by a new instance when changes are needed."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "Observability (Gözlemlenebilirlik) sütunları nelerdir?",
+            az: "Observability-nin sütunları hansılardır?",
+            en: "What are the pillars of Observability?"
+        },
+        a: {
+            tr: "Metrics (Sayısal veriler), Logging (Olay kayıtları) ve Tracing (İstek izleme).",
+            az: "Metrics (Sayısal göstəricilər), Logging (Hadisə qeydləri) və Tracing (Sorğu izləmə).",
+            en: "The three pillars are Metrics, Logging, and Tracing."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Config Management (Ansible, Puppet) ne için kullanılır?",
+            az: "Config Management nə üçün istifadə olunur?",
+            en: "What is Configuration Management used for?"
+        },
+        a: {
+            tr: "Yüzlerce sunucunun yapılandırmasını (yazılım yükleme, ayar yapma) merkezi ve otomatik bir şekilde yönetmek için kullanılır.",
+            az: "Yüzlərlə serverin konfiqurasiyasını (proqram yükləmə, tənzimləmə) mərkəzi və avtomatlaşdırılmış şəkildə idarə etmək üçün istifadə olunur.",
+            en: "Used to manage the configuration of hundreds of servers automatically and consistently from a central point."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Canary Deployment nedir?",
+            az: "Canary Deployment nədir?",
+            en: "What is Canary Deployment?"
+        },
+        a: {
+            tr: "Yeni sürümü önce trafiğin küçük bir kısmına (%5) açıp, sorun yoksa kademeli olarak herkese yayma stratejisidir.",
+            az: "Yeni versiyanı əvvəlcə trafikin kiçik bir hissəsinə (%5) təqdim edib, problem yoxdursa tədricən hamı üçün aktivləşdirməkdir.",
+            en: "A deployment strategy where a small percentage of users get the new version first to test stability before full rollout."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "Helm nedir?",
+            az: "Helm nədir?",
+            en: "What is Helm?"
+        },
+        a: {
+            tr: "Kubernetes için bir paket yöneticisidir (yum veya apt gibi). Karmaşık K8s uygulamalarını tanımlamayı ve paylaşmayı kolaylaştırır.",
+            az: "Kubernetes üçün paket idarəçisidir (yum və ya apt kimi). Mürəkkəb K8s tətbiqlərini asanlıqla quraşdırmağa kömək edir.",
+            en: "A package manager for Kubernetes. It simplifies the definition, installation, and upgrade of complex K8s applications."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Site Reliability Engineering (SRE) nedir?",
+            az: "SRE nədir?",
+            en: "What is Site Reliability Engineering (SRE)?"
+        },
+        a: {
+            tr: "Google tarafından ortaya atılan, sistem operasyonlarına bir yazılım mühendisliği yaklaşımıyla yaklaşan disiplindir.",
+            az: "Google tərəfindən yaradılan, sistem əməliyyatlarına proqram mühəndisliyi yanaşması ilə yanaşan intizamdır.",
+            en: "A discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Self-healing (Kendi kendini iyileştirme) nedir?",
+            az: "Self-healing nədir?",
+            en: "What is Self-healing?"
+        },
+        a: {
+            tr: "Bir servisin çökmesi durumunda Kubernetes gibi sistemlerin bunu fark edip otomatik olarak yeni bir instance başlatmasıdır.",
+            az: "Bir servisin sıradan çıxması halında Kubernetes kimi sistemlərin bunu fəhm edib avtomat olaraq yeni bir nüsxə başlatmasıdır.",
+            en: "The ability of a system (like K8s) to automatically detect failure and restart or replace failed components."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Stateful vs Stateless?",
+            az: "Stateful vs Stateless?",
+            en: "Stateful vs Stateless?"
+        },
+        a: {
+            tr: "Stateless veri saklamaz, kolay ölçeklenir. Stateful (veritabanı gibi) veriyi tutar ve yönetimi daha zordur.",
+            az: "Stateless məlumat saxlamır, asan miqyaslanır. Stateful (verilənlər bazası kimi) məlumatı saxlayır və idarə edilməsi daha çətindir.",
+            en: "Stateless apps don't store data between sessions. Stateful apps (like DBs) require persistent storage and session tracking."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Zero Downtime Deployment nedir?",
+            az: "Zero Downtime Deployment nədir?",
+            en: "What is Zero Downtime Deployment?"
+        },
+        a: {
+            tr: "Yeni sürüm yüklenirken kullanıcının hiçbir kesinti hissetmemesi durumudur.",
+            az: "Yeni versiya yüklənərkən istifadəçinin heç bir kəsinti hiss etməməsi vəziyyətidir.",
+            en: "A deployment process where the application remains available to users without any interruption during the update."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "Docker Compose ne işe yarar?",
+            az: "Docker Compose nə işə yarayır?",
+            en: "What is Docker Compose used for?"
+        },
+        a: {
+            tr: "Birden fazla konteyneri tek bir YAML dosyasıyla tanımlayıp aynı anda çalıştırmayı sağlar (Örn: App + DB).",
+            az: "Birdən çox konteyneri tək bir YAML faylı ilə təyin edib eyni anda işə salmağı təmin edir (Məs: App + DB).",
+            en: "A tool for defining and running multi-container Docker applications using a single YAML file."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Horizontal Pod Autoscaler (HPA) nedir?",
+            az: "HPA nədir?",
+            en: "What is HPA (Horizontal Pod Autoscaler)?"
+        },
+        a: {
+            tr: "CPU veya RAM kullanımı arttığında Kubernetes'in pod sayısını otomatik olarak artırmasıdır.",
+            az: "CPU və ya RAM istifadəsi artdıqda Kubernetes-in pod sayını avtomatik olaraq artırmasıdır.",
+            en: "A Kubernetes feature that automatically scales the number of pods in a deployment based on observed CPU/RAM utilization."
+        }
+    }
+],
+
+devops_projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Statik Web Sitesi CI/CD Pipeline", 
+            az: "Statik Veb Sayt CI/CD Pipeline", 
+            en: "Static Website CI/CD Pipeline" 
+        },
+        desc: { 
+            tr: "GitHub'a kod atıldığında otomatik olarak AWS S3 veya Netlify'a yükleme yapan sistem.", 
+            az: "GitHub-a kod atıldıqda avtomatik olaraq AWS S3 və ya Netlify-a yükləmə edən sistem.", 
+            en: "A system that automatically deploys code to AWS S3 or Netlify whenever changes are pushed to GitHub." 
+        },
+        tech: ["GitHub Actions", "AWS S3/CloudFront", "HTML/CSS"],
+        features: { 
+            tr: ["Kod analizi (Linting)", "Otomatik dağıtım", "CDN entegrasyonu"], 
+            az: ["Kod analizi (Linting)", "Avtomatik deploy", "CDN inteqrasiyası"], 
+            en: ["Linting checks", "Automated deployment", "CDN integration"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Dockerize Edilmiş App ve Monitoring", 
+            az: "Dockerizasiya olunmuş Tətbiq və Monitoring", 
+            en: "Dockerized App with Monitoring" 
+        },
+        desc: { 
+            tr: "Konteyner içinde çalışan bir uygulamanın performansını izleyen ve loglayan altyapı.", 
+            az: "Konteyner daxilində çalışan tətbiqin performansını izləyən və loqlayan infrastruktur.", 
+            en: "Infrastructure that monitors and logs the performance of an application running inside containers." 
+        },
+        tech: ["Docker & Compose", "Prometheus", "Grafana", "ELK Stack"],
+        features: { 
+            tr: ["Metrik görselleştirme", "Log yönetimi", "Konteyner orkestrasyonu"], 
+            az: ["Metrik vizuallaşdırma", "Log idarəetməsi", "Konteyner orkestrasiyası"], 
+            en: ["Metrics visualization", "Log aggregation", "Container orchestration"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Kubernetes Üzerinde GitOps ve IaC", 
+            az: "Kubernetes üzərində GitOps və IaC", 
+            en: "GitOps and IaC on Kubernetes" 
+        },
+        desc: { 
+            tr: "Tüm altyapının Terraform ile kurulduğu ve uygulama güncellemelerinin ArgoCD ile yönetildiği ileri seviye yapı.", 
+            az: "Bütün infrastrukturun Terraform ilə qurulduğu və yenilənmələrin ArgoCD ilə idarə edildiyi irəli səviyyəli struktur.", 
+            en: "Advanced setup where all infrastructure is provisioned via Terraform and app updates are managed via ArgoCD." 
+        },
+        tech: ["Kubernetes", "Terraform", "ArgoCD", "Helm Charts"],
+        features: { 
+            tr: ["Otomatik iyileştirme (Self-healing)", "Infrastructure as Code", "Declarative CD"], 
+            az: ["Avtomatik bərpa (Self-healing)", "Kod olaraq infrastruktur", "Deklarativ CD"], 
+            en: ["Self-healing clusters", "Infrastructure as Code", "Declarative CD"] 
+        }
+    }
+]
 };
 
 contentData['cyber-security'] = {
@@ -4957,7 +5283,333 @@ contentData['cloud'] = {
                 en: "A model where you don't manage servers and only pay for the execution time (milliseconds) of your code (e.g., AWS Lambda). It is the future."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Cloud Computing modelleri (SaaS, PaaS, IaaS) farkı nedir?",
+            az: "SaaS, PaaS və IaaS arasındakı fərq nədir?",
+            en: "Difference between SaaS, PaaS, and IaaS?"
+        },
+        a: {
+            tr: "IaaS altyapı (VM, Network), PaaS platform (Runtime, DB), SaaS ise hazır yazılım (Gmail, Slack) sunar. Kontrol seviyesi IaaS'tan SaaS'a doğru azalır.",
+            az: "IaaS infrastruktur, PaaS platforma, SaaS isə hazır proqram təminatı təqdim edir. Nəzarət səviyyəsi IaaS-dan SaaS-a doğru azalır.",
+            en: "IaaS provides infrastructure, PaaS provides a platform for developers, and SaaS provides software as a service. Control decreases from IaaS to SaaS."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Public, Private ve Hybrid Cloud farkı?",
+            az: "Public, Private və Hybrid Cloud fərqi?",
+            en: "Public vs Private vs Hybrid Cloud?"
+        },
+        a: {
+            tr: "Public genel internet üzerindedir (AWS). Private tek bir kurum içindir. Hybrid, ikisinin birleşimidir.",
+            az: "Public ümumi internet üzərindədir (AWS). Private tək bir təşkilat üçündür. Hybrid isə hər ikisinin birləşməsidir.",
+            en: "Public is shared over the internet. Private is dedicated to one organization. Hybrid is a mix of both."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Serverless Computing nedir?",
+            az: "Serverless Computing nədir?",
+            en: "What is Serverless Computing?"
+        },
+        a: {
+            tr: "Sunucu yönetimi olmadan sadece kodun (AWS Lambda, Azure Functions) çalıştırılmasıdır. Kullandığın kadar ödersin.",
+            az: "Server idarəetməsi olmadan yalnız kodun (AWS Lambda) işlədilməsidir. Yalnız istifadə etdiyin qədər ödəyirsən.",
+            en: "Running code without managing servers. The cloud provider handles scaling and execution (e.g., AWS Lambda)."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Cloud Agnostic nedir?",
+            az: "Cloud Agnostic nədir?",
+            en: "What is Cloud Agnostic?"
+        },
+        a: {
+            tr: "Uygulamanın tek bir bulut sağlayıcısına bağlı kalmadan her platformda (AWS, Azure, GCP) çalışabilecek şekilde tasarlanmasıdır.",
+            az: "Tətbiqin tək bir bulud provayderindən asılı olmayaraq hər platformada işləyə biləcək şəkildə dizayn edilməsidir.",
+            en: "A design that allows applications to run on any cloud provider without being locked into one (e.g., using Terraform/K8s)."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "High Availability (HA) nedir?",
+            az: "High Availability (HA) nədir?",
+            en: "What is High Availability (HA)?"
+        },
+        a: {
+            tr: "Sistemin donanım veya yazılım arızalarına rağmen minimum kesintiyle çalışmaya devam etme kapasitesidir.",
+            az: "Sistemin aparat və ya proqram təminatı xətalarına baxmayaraq minimum fasilə ilə işləməyə davam etmə qabiliyyətidir.",
+            en: "The ability of a system to remain operational and accessible with minimal downtime even during failures."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Auto Scaling nedir?",
+            az: "Auto Scaling nədir?",
+            en: "What is Auto Scaling?"
+        },
+        a: {
+            tr: "Trafik arttığında kaynakların (VM sayısı) otomatik artırılması, trafik azaldığında ise maliyet tasarrufu için azaltılmasıdır.",
+            az: "Trafik artdıqda resursların (VM sayı) avtomatik artırılması, azaldıqda isə xərclərə qənaət üçün azaldılmasıdır.",
+            en: "Automatically adjusting the number of computing resources based on actual demand or traffic."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Region ve Availability Zone (AZ) farkı?",
+            az: "Region və Availability Zone (AZ) fərqi?",
+            en: "Region vs Availability Zone (AZ)?"
+        },
+        a: {
+            tr: "Region coğrafi bir bölgedir (Örn: Frankfurt). AZ ise bir region içindeki birbirinden izole veri merkezleridir.",
+            az: "Region coğrafi bir bölgədir. AZ isə bir region daxilindəki bir-birindən izole edilmiş məlumat mərkəzləridir (Data Centers).",
+            en: "A Region is a geographic area. An AZ is an isolated data center within that region."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Object Storage vs Block Storage?",
+            az: "Object Storage və Block Storage fərqi?",
+            en: "Object Storage vs Block Storage?"
+        },
+        a: {
+            tr: "Object: Resim, video gibi yapısal olmayan veriler için (AWS S3). Block: İşletim sistemi diskleri için (AWS EBS).",
+            az: "Object: Şəkil, video kimi strukturlaşdırılmamış fayllar üçün (AWS S3). Block: Əməliyyat sistemi diskləri üçün (AWS EBS).",
+            en: "Object storage is for flat files (S3). Block storage is for high-performance disk volumes (EBS)."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Shared Responsibility Model nedir?",
+            az: "Shared Responsibility Model nədir?",
+            en: "What is the Shared Responsibility Model?"
+        },
+        a: {
+            tr: "Bulut sağlayıcı altyapının güvenliğinden, müşteri ise bulutun içindeki verilerin ve uygulamaların güvenliğinden sorumludur.",
+            az: "Bulud provayderi infrastrukturun, müştəri isə bulud daxilindəki məlumatların və tətbiqlərin təhlükəsizliyindən cavabdehdir.",
+            en: "The provider is responsible for security 'of' the cloud, while the customer is responsible for security 'in' the cloud."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Cloud-Native nedir?",
+            az: "Cloud-Native nədir?",
+            en: "What is Cloud-Native?"
+        },
+        a: {
+            tr: "Uygulamaların bulut ortamının avantajlarından (mikroservisler, konteynerler) tam yararlanacak şekilde sıfırdan tasarlanmasıdır.",
+            az: "Tətbiqlərin bulud mühitinin üstünlüklərindən tam yararlanacaq şəkildə sıfırdan dizayn edilməsidir.",
+            en: "Designing and building applications specifically to leverage cloud computing benefits like scalability and containers."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "Elasticity ve Scalability farkı?",
+            az: "Elasticity və Scalability fərqi?",
+            en: "Elasticity vs Scalability?"
+        },
+        a: {
+            tr: "Scalability sistemin büyüme kapasitesidir. Elasticity ise talebe göre anlık daralıp genişleyebilme yeteneğidir.",
+            az: "Scalability sistemin böyümə qabiliyyətidir. Elasticity isə tələbə görə anlıq daralıb genişlənə bilmək bacarığıdır.",
+            en: "Scalability is the ability to handle growth. Elasticity is the ability to adapt to changes in real-time demand."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Content Delivery Network (CDN) nedir?",
+            az: "CDN nədir?",
+            en: "What is a CDN?"
+        },
+        a: {
+            tr: "Verileri kullanıcıya en yakın coğrafi sunucularda önbelleğe alarak web sitelerinin hızını artıran dağıtık sunucu ağıdır.",
+            az: "Məlumatları istifadəçiyə ən yaxın serverlərdə keşləyərək veb saytların sürətini artıran paylanmış server şəbəkəsidir.",
+            en: "A network of distributed servers that deliver web content closer to users based on their geographic location."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Disaster Recovery (DR) nedir?",
+            az: "Disaster Recovery (DR) nədir?",
+            en: "What is Disaster Recovery?"
+        },
+        a: {
+            tr: "Büyük bir felaket durumunda (deprem, siber saldırı) sistemin farklı bir bölgeden tekrar ayağa kaldırılması planıdır.",
+            az: "Böyük bir fəlakət zamanı (zəlzələ, kiber hücum) sistemin fərqli bir regiondan yenidən işə salınması planıdır.",
+            en: "A set of policies and tools to enable the recovery of infrastructure and systems after a disaster."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "VPC (Virtual Private Cloud) nedir?",
+            az: "VPC nədir?",
+            en: "What is a VPC?"
+        },
+        a: {
+            tr: "Bulut üzerinde size özel, mantıksal olarak izole edilmiş bir ağ alanıdır. Kendi IP aralığınızı ve alt ağlarınızı yönetirsiniz.",
+            az: "Bulud üzərində sizə özəl, məntiqlə izole edilmiş şəbəkə sahəsidir. Öz IP aralığınızı və alt şəbəkələrinizi idarə edirsiniz.",
+            en: "A private, isolated section of the cloud where you can launch resources in a virtual network you define."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Microservices Cloud'da neden popüler?",
+            az: "Mikroservislər buludda niyə populyardır?",
+            en: "Why are Microservices popular in Cloud?"
+        },
+        a: {
+            tr: "Bağımsız ölçeklenebilirlik ve hızlı dağıtım imkanı tanır. Bulutun esnek kaynak yönetimiyle mükemmel uyum sağlar.",
+            az: "Müstəqil miqyaslana bilmə və sürətli deploy imkanı verir. Buludun elastik resurs idarəetməsi ilə mükəmməl uyğunlaşır.",
+            en: "They allow independent scaling and fast deployment, perfectly fitting the cloud's elastic resource management."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Edge Computing nedir?",
+            az: "Edge Computing nədir?",
+            en: "What is Edge Computing?"
+        },
+        a: {
+            tr: "Veri işlemenin merkezi bulut yerine verinin üretildiği yere (sensörler, cihazlar) daha yakın yapılmasıdır.",
+            az: "Məlumat emalının mərkəzi bulud yerinə məlumatın yarandığı yerə (cihazlar, sensorlar) daha yaxın edilməsidir.",
+            en: "Processing data closer to where it is generated (the 'edge') rather than in a centralized cloud data center."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Cold Storage nedir?",
+            az: "Cold Storage nədir?",
+            en: "What is Cold Storage?"
+        },
+        a: {
+            tr: "Nadiren erişilen verilerin (arşivler) çok ucuza saklanmasıdır. Veriyi geri çekmek zaman alabilir.",
+            az: "Nadir hallarda müraciət olunan məlumatların (arxivlər) çox ucuz qiymətə saxlanmasıdır. Məlumatı geri çəkmək vaxt ala bilər.",
+            en: "Storage for infrequently accessed data (archives) at a lower cost, with longer retrieval times."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Multi-Cloud stratejisi nedir?",
+            az: "Multi-Cloud strategiyası nədir?",
+            en: "What is a Multi-Cloud strategy?"
+        },
+        a: {
+            tr: "Riskleri azaltmak için birden fazla bulut sağlayıcısını (AWS + Azure) aynı anda kullanma yöntemidir.",
+            az: "Riskləri azaltmaq üçün eyni anda birdən çox bulud provayderindən (AWS + Azure) istifadə etməkdir.",
+            en: "Using multiple cloud computing services from different providers to avoid vendor lock-in and increase reliability."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "Identity and Access Management (IAM) nedir?",
+            az: "IAM nədir?",
+            en: "What is IAM?"
+        },
+        a: {
+            tr: "Bulut kaynaklarına kimlerin, hangi yetkilerle erişebileceğini yöneten güvenlik katmanıdır.",
+            az: "Bulud resurslarına kimlərin, hansı icazələrlə daxil ola biləcəyini idarə edən təhlükəsizlik qatıdır.",
+            en: "A framework for managing digital identities and controlling access to cloud resources."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Cloud Migration stratejileri nelerdir?",
+            az: "Cloud Migration strategiyaları hansılardır?",
+            en: "What are the Cloud Migration strategies?"
+        },
+        a: {
+            tr: "Rehost (Lift and Shift), Replatform, Refactor, Retire ve Retain. Uygulamayı buluta taşıma yöntemlerini tanımlar.",
+            az: "Rehost (olduğu kimi köçürmək), Replatform, Refactor və s. Tətbiqi buluda daşımaq üsullarını ifadə edir.",
+            en: "Common strategies include Rehost (Lift and Shift), Replatform, Refactor, Retire, and Retain."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Serverless Web Uygulaması", 
+            az: "Serverless Veb Tətbiqi", 
+            en: "Serverless Web Application" 
+        },
+        desc: { 
+            tr: "Sunucu yönetimi olmadan, sadece bulut servislerini kullanarak ölçeklenebilir bir uygulama.", 
+            az: "Server idarəetməsi olmadan, yalnız bulud servislərindən istifadə edərək miqyaslana bilən tətbiq.", 
+            en: "A scalable application built using only cloud services without managing any servers." 
+        },
+        tech: ["AWS Lambda / Azure Functions", "S3 / Azure Blob", "DynamoDB", "API Gateway"],
+        features: { 
+            tr: ["Kullandığın kadar öde", "Otomatik ölçeklenme", "Statik hosting"], 
+            az: ["İstifadə etdiyin qədər ödə", "Avtomatik miqyaslanma", "Statik hostinq"], 
+            en: ["Pay-as-you-go model", "Auto-scaling", "Static website hosting"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Multi-Tier Fault Tolerant Mimari", 
+            az: "Çoxqatlı Fövqəladə Hallara Davamlı Memarlıq", 
+            en: "Multi-Tier Fault Tolerant Architecture" 
+        },
+        desc: { 
+            tr: "Yüksek erişilebilirlik için birden fazla bölgede (AZ) çalışan yedekli sistem tasarımı.", 
+            az: "Yüksək əlçatanlıq üçün birdən çox zonada (AZ) çalışan yedəkli sistem dizaynı.", 
+            en: "A redundant system design running across multiple Availability Zones for high availability." 
+        },
+        tech: ["VPC", "EC2 Auto Scaling", "ELB (Load Balancer)", "RDS Multi-AZ"],
+        features: { 
+            tr: ["Yük dengeleme", "Veritabanı replikasyonu", "Güvenli network (Public/Private Subnets)"], 
+            az: ["Yük balansı (Load balancing)", "Verilənlər bazası replikasiyası", "Təhlükəsiz şəbəkə"], 
+            en: ["Load balancing", "Database replication", "Secure networking"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Cloud Cost & Security Governance", 
+            az: "Bulud Xərcləri və Təhlükəsizlik İdarəetməsi", 
+            en: "Cloud Cost & Security Governance" 
+        },
+        desc: { 
+            tr: "Büyük ölçekli projelerde maliyetleri izleyen ve güvenlik açıklarını otomatik kapatan dashboard.", 
+            az: "Böyük miqyaslı layihələrdə xərcləri izləyən və təhlükəsizlik boşluqlarını avtomatik bağlayan idarəetmə paneli.", 
+            en: "A dashboard and automation suite that monitors costs and auto-remediates security gaps in large-scale environments." 
+        },
+        tech: ["Python/Boto3", "AWS Cost Explorer API", "CloudWatch", "Terraform Drift Detection"],
+        features: { 
+            tr: ["Otomatik maliyet raporu", "Güvenlik uyumluluk denetimi", "Atıl kaynak temizliği"], 
+            az: ["Avtomatik xərc hesabatı", "Təhlükəsizlik uyğunluğu auditi", "İstifadəsiz resursların təmizlənməsi"], 
+            en: ["Automated cost reporting", "Security compliance auditing", "Resource cleanup automation"] 
+        }
+    }
+]
 };
 
 contentData['ai-engineering'] = {
@@ -5399,7 +6051,333 @@ contentData['network'] = {
                 en: "Inspects incoming/outgoing packets. Blocks them if they contain threats or violate rules (e.g., closed ports)."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "OSI Modeli katmanları nelerdir?",
+            az: "OSI Modelinin təbəqələri hansılardır?",
+            en: "What are the layers of the OSI Model?"
+        },
+        a: {
+            tr: "7 katmandan oluşur: Physical, Data Link, Network, Transport, Session, Presentation, Application. Veri iletimini standartlaştırmak için kullanılır.",
+            az: "7 təbəqədən ibarətdir: Physical, Data Link, Network, Transport, Session, Presentation, Application. Məlumat ötürülməsini standartlaşdırmaq üçündür.",
+            en: "It consists of 7 layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. It standardizes communication functions."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Switch ve Router arasındaki fark nedir?",
+            az: "Switch və Router arasındakı fərq nədir?",
+            en: "Difference between a Switch and a Router?"
+        },
+        a: {
+            tr: "Switch, aynı yerel ağdaki (LAN) cihazları MAC adresleriyle bağlar. Router, farklı ağları IP adresleri üzerinden birbirine bağlar.",
+            az: "Switch, eyni yerli şəbəkədəki (LAN) cihazları MAC ünvanları ilə birləşdirir. Router isə fərqli şəbəkələri IP ünvanları vasitəsilə bir-birinə bağlayır.",
+            en: "A Switch connects devices within the same LAN using MAC addresses. A Router connects different networks together using IP addresses."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "VLAN nedir ve neden kullanılır?",
+            az: "VLAN nədir və nə üçün istifadə olunur?",
+            en: "What is VLAN and why is it used?"
+        },
+        a: {
+            tr: "Fiziksel bir ağı mantıksal olarak alt ağlara bölmektir. Güvenliği artırır, broadcast trafiğini azaltır ve yönetimi kolaylaştırır.",
+            az: "Fiziki bir şəbəkəni məntiqli olaraq alt şəbəkələrə bölməkdir. Təhlükəsizliyi artırır, broadcast trafikini azaldır və idarəetməni asanlaşdırır.",
+            en: "Virtual Local Area Network. It logically segments a physical network into subnets to improve security, reduce broadcast traffic, and ease management."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "TCP ve UDP arasındaki temel farklar?",
+            az: "TCP və UDP arasındakı əsas fərqlər?",
+            en: "Main differences between TCP and UDP?"
+        },
+        a: {
+            tr: "TCP bağlantı tabanlıdır, veri iletimini garanti eder (Web). UDP bağlantısızdır, daha hızlıdır ama veri kaybı olabilir (Streaming/Gaming).",
+            az: "TCP bağlantı əsaslıdır, məlumatın çatdırılmasına zəmanət verir. UDP isə bağlantısızdır, daha sürətlidir amma məlumat itkisi ola bilər (Video/Oyun).",
+            en: "TCP is connection-oriented and reliable (guarantees delivery). UDP is connectionless and faster but doesn't guarantee delivery."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "DNS (Domain Name System) nasıl çalışır?",
+            az: "DNS (Domain Name System) necə işləyir?",
+            en: "How does DNS work?"
+        },
+        a: {
+            tr: "İnsanların okuyabildiği alan adlarını (google.com) makinelerin anlayabildiği IP adreslerine (142.250.x.x) dönüştürür.",
+            az: "İnsanların oxuya bildiyi domen adlarını (google.com) maşınların anladığı IP ünvanlarına (142.250.x.x) çevirir.",
+            en: "It translates human-readable domain names (like google.com) into machine-readable IP addresses."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Subnetting (Alt Ağlara Bölme) nedir?",
+            az: "Subnetting nədir?",
+            en: "What is Subnetting?"
+        },
+        a: {
+            tr: "Büyük bir IP ağını daha küçük, yönetilebilir parçalara bölme işlemidir. IP adreslerinin israfını önler.",
+            az: "Böyük bir IP şəbəkəsini daha kiçik, idarə oluna bilən hissələrə bölmək prosesidir. IP ünvanlarının israfının qarşısını alır.",
+            en: "The process of dividing a large IP network into smaller, manageable sub-networks to optimize IP address usage."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Default Gateway (Varsayılan Ağ Geçidi) nedir?",
+            az: "Default Gateway nədir?",
+            en: "What is a Default Gateway?"
+        },
+        a: {
+            tr: "Bir cihazın kendi yerel ağında olmayan bir adrese paket göndermek istediğinde kullandığı çıkış noktasıdır (genellikle router).",
+            az: "Bir cihazın öz yerli şəbəkəsində olmayan bir ünvana paket göndərmək istədikdə istifadə etdiyi çıxış nöqtəsidir (adətən router).",
+            en: "The access point or IP address that a device uses to send information to a destination outside its own local network."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "DHCP (Dynamic Host Configuration Protocol) nedir?",
+            az: "DHCP nədir?",
+            en: "What is DHCP?"
+        },
+        a: {
+            tr: "Ağdaki cihazlara otomatik olarak IP adresi, subnet mask ve gateway gibi bilgileri atayan protokoldür.",
+            az: "Şəbəkədəki cihazlara avtomatik olaraq IP ünvanı, subnet mask və gateway kimi məlumatları təyin edən protokoldur.",
+            en: "A protocol that automatically assigns IP addresses and other network configuration parameters to devices on a network."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "NAT (Network Address Translation) neden kullanılır?",
+            az: "NAT nə üçün istifadə olunur?",
+            en: "Why is NAT used?"
+        },
+        a: {
+            tr: "Özel (Private) IP adreslerini genel (Public) IP adreslerine dönüştürür. IPv4 yetersizliğini gidermek ve güvenliği artırmak için kullanılır.",
+            az: "Daxili (Private) IP ünvanlarını xarici (Public) IP ünvanlarına çevirir. IPv4 qıtlığını həll etmək və təhlükəsizlik üçün istifadə olunur.",
+            en: "It translates private IP addresses to public ones, allowing multiple devices to share a single public IP and enhancing security."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "ICMP protokolü ne işe yarar?",
+            az: "ICMP protokolu nə işə yarayır?",
+            en: "What is the purpose of the ICMP protocol?"
+        },
+        a: {
+            tr: "Ağ cihazları arasındaki hata mesajlarını ve operasyonel bilgileri iletir. 'Ping' ve 'Traceroute' komutları ICMP kullanır.",
+            az: "Şəbəkə cihazları arasındakı xəta mesajlarını və əməliyyat məlumatlarını ötürür. 'Ping' və 'Traceroute' əmrləri ICMP-dən istifadə edir.",
+            en: "Used by network devices to send error messages and operational information. 'Ping' and 'Traceroute' rely on ICMP."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "MAC Adresi ve IP Adresi farkı?",
+            az: "MAC ünvanı və IP ünvanı fərqi?",
+            en: "Difference between MAC address and IP address?"
+        },
+        a: {
+            tr: "MAC adresi donanımsaldır (L2) ve değiştirilemez. IP adresi mantıksaldır (L3) ve cihazın ağdaki konumuna göre değişebilir.",
+            az: "MAC ünvanı fiziki qurğuya aiddir (L2) və dəyişmir. IP ünvanı isə məntiqlidir (L3) və cihazın şəbəkədəki yerinə görə dəyişə bilər.",
+            en: "MAC address is a permanent hardware ID (Layer 2). IP address is a logical address (Layer 3) assigned based on network location."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "ARP (Address Resolution Protocol) nedir?",
+            az: "ARP nədir?",
+            en: "What is ARP?"
+        },
+        a: {
+            tr: "Bilinen bir IP adresine karşılık gelen fiziksel MAC adresini bulmak için kullanılır.",
+            az: "Məlum olan bir IP ünvanına uyğun gələn fiziki MAC ünvanını tapmaq üçün istifadə olunur.",
+            en: "It maps a known IP address to a physical MAC address on a local area network."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "VPN (Virtual Private Network) nasıl çalışır?",
+            az: "VPN necə işləyir?",
+            en: "How does a VPN work?"
+        },
+        a: {
+            tr: "Genel internet üzerinden şifreli, güvenli bir tünel oluşturarak iki nokta arasında özel bir ağ kurar.",
+            az: "İnternet üzərindən şifrəli və təhlükəsiz bir tunel yaradaraq iki nöqtə arasında özəl şəbəkə bağlantısı qurur.",
+            en: "It creates an encrypted, secure tunnel over the public internet to establish a private network connection between points."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "Firewall (Güvenlik Duvarı) nedir?",
+            az: "Firewall nədir?",
+            en: "What is a Firewall?"
+        },
+        a: {
+            tr: "Önceden belirlenmiş güvenlik kurallarına göre gelen ve giden ağ trafiğini izleyen ve filtreleyen sistemdir.",
+            az: "Əvvəlcədən təyin edilmiş qaydalara əsasən gələn və gedən şəbəkə trafikini izləyən və süzgəcdən keçirən sistemdir.",
+            en: "A security system that monitors and filters incoming and outgoing network traffic based on predetermined security rules."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Static ve Dynamic Routing farkı?",
+            az: "Statik və Dinamik Routing fərqi?",
+            en: "Difference between Static and Dynamic Routing?"
+        },
+        a: {
+            tr: "Statik rotalar el ile girilir. Dinamik rotalar (OSPF, BGP gibi) protokoller aracılığıyla ağdaki değişikliklere göre otomatik güncellenir.",
+            az: "Statik marşrutlar əllə daxil edilir. Dinamik marşrutlar (OSPF, BGP) isə protokollar vasitəsilə avtomatik olaraq yenilənir.",
+            en: "Static routes are manually configured. Dynamic routes (like OSPF or BGP) use protocols to automatically adapt to network changes."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "STP (Spanning Tree Protocol) neden önemlidir?",
+            az: "STP (Spanning Tree Protocol) niyə vacibdir?",
+            en: "Why is STP important?"
+        },
+        a: {
+            tr: "Switch'ler arasındaki yedekli bağlantılarda oluşabilecek 'loop' (döngü) durumlarını engelleyerek ağın çökmesini önler.",
+            az: "Switch-lər arasındakı artıq bağlantılarda yarana biləcək 'loop' (döngü) hallarının qarşısını alaraq şəbəkənin çökməsini önləyir.",
+            en: "It prevents network loops in redundant switch connections by blocking specific paths, ensuring a loop-free topology."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "BGP (Border Gateway Protocol) nedir?",
+            az: "BGP nədir?",
+            en: "What is BGP?"
+        },
+        a: {
+            tr: "İnternetin ana yönlendirme protokolüdür. Farklı Otonom Sistemler (AS) arasında yönlendirme bilgisi alışverişi yapar.",
+            az: "İnternetin əsas yönləndirmə protokoludur. Fərqli Avtonom Sistemlər (AS) arasında marşrut məlumatlarını mübadilə edir.",
+            en: "The routing protocol of the internet. It exchanges routing information between different Autonomous Systems (AS)."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Ping ve Traceroute farkı nedir?",
+            az: "Ping və Traceroute fərqi nədir?",
+            en: "Difference between Ping and Traceroute?"
+        },
+        a: {
+            tr: "Ping, bir cihazın erişilebilir olup olmadığını ve gecikmeyi ölçer. Traceroute, paketin hedefe giderken geçtiği tüm durakları (hop) gösterir.",
+            az: "Ping, cihazın əlçatatan olub-olmadığını yoxlayır. Traceroute isə paketin hədəfə gedərkən keçdiyi bütün nöqtələri (hop) göstərir.",
+            en: "Ping checks reachability and latency. Traceroute shows the entire path (hops) a packet takes to reach a destination."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "MTU (Maximum Transmission Unit) nedir?",
+            az: "MTU nədir?",
+            en: "What is MTU?"
+        },
+        a: {
+            tr: "Bir ağ bağlantısı üzerinden bir seferde iletilebilecek en büyük veri paketinin boyutudur (genellikle 1500 byte).",
+            az: "Şəbəkə bağlantısı vasitəsilə bir dəfəyə ötürülə bilən ən böyük paket ölçüsüdür (adətən 1500 bayt).",
+            en: "The size of the largest protocol data unit (PDU) that can be communicated in a single network layer transaction."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "DoS ve DDoS saldırısı nedir?",
+            az: "DoS və DDoS hücumu nədir?",
+            en: "What is a DoS and DDoS attack?"
+        },
+        a: {
+            tr: "Bir sistemi aşırı trafikle boğarak erişilemez hale getirmektir. DDoS'ta bu saldırı çok sayıda farklı kaynaktan aynı anda yapılır.",
+            az: "Bir sistemi həddindən artıq trafiklə yükləyərək sıradan çıxarmaqdır. DDoS-da bu hücum eyni anda çox sayda fərqli mənbədən edilir.",
+            en: "An attempt to make a system unavailable by flooding it with traffic. DDoS uses multiple compromised sources to launch the attack."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Küçük Ofis (SOHO) Ağ Tasarımı", 
+            az: "Kiçik Ofis (SOHO) Şəbəkə Dizaynı", 
+            en: "Small Office (SOHO) Network Design" 
+        },
+        desc: { 
+            tr: "Cisco Packet Tracer üzerinde güvenli ve ölçeklenebilir bir ofis altyapısı simülasyonu.", 
+            az: "Cisco Packet Tracer üzərində təhlükəsiz və miqyaslana bilən ofis infrastrukturu simulyasiyası.", 
+            en: "A secure and scalable office infrastructure simulation using Cisco Packet Tracer." 
+        },
+        tech: ["Cisco Packet Tracer", "Static Routing", "VLANs", "DHCP/DNS"],
+        features: { 
+            tr: ["VLAN ile departman ayrımı", "WPA2 şifreli kablosuz ağ", "Temel Firewall kuralları"], 
+            az: ["VLAN ilə departament bölgüsü", "WPA2 şifrəli simsiz şəbəkə", "Təməl Firewall qaydaları"], 
+            en: ["Department segmentation via VLANs", "WPA2 wireless security", "Basic Firewall ACLs"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "Kurumsal Kampüs Ağı (Enterprise)", 
+            az: "Korporativ Kampus Şəbəkəsi", 
+            en: "Enterprise Campus Network" 
+        },
+        desc: { 
+            tr: "GNS3 veya EVE-NG kullanarak çok lokasyonlu, yedekli bir kurumsal ağ yapısı.", 
+            az: "GNS3 və ya EVE-NG istifadə edərək çox lokasiyalı və yedəkli korporativ şəbəkə quruluşu.", 
+            en: "A multi-site, redundant enterprise network structure using GNS3 or EVE-NG." 
+        },
+        tech: ["OSPF/EIGRP", "EtherChannel", "HSRP/VRRP", "VPN (IPsec)"],
+        features: { 
+            tr: ["Yedekli Gateway (High Availability)", "Şubeler arası site-to-site VPN", "Dinamik yönlendirme protokolleri"], 
+            az: ["Yedəkli Gateway (Yüksək əlçatanlıq)", "Filiallar arası IPsec VPN", "Dinamik yönləndirmə protokolları"], 
+            en: ["Gateway redundancy (HA)", "Site-to-site IPsec VPN", "Dynamic routing optimization"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "SDN ve Ağ Otomasyonu", 
+            az: "SDN və Şəbəkə Avtomatlaşdırılması", 
+            en: "SDN and Network Automation" 
+        },
+        desc: { 
+            tr: "Yüzlerce cihazın konfigürasyonunu kodla yöneten ve izleyen otomasyon sistemi.", 
+            az: "Yüzlərlə cihazın konfiqurasiyasını kodla idarə edən və izləyən avtomatlaşdırma sistemi.", 
+            en: "An automation system that manages and monitors configurations for hundreds of devices via code." 
+        },
+        tech: ["Python (Netmiko/Nornir)", "Ansible", "Docker", "SNMP/Zabbix"],
+        features: { 
+            tr: ["Otomatik yedekleme ve raporlama", "ZTP (Zero Touch Provisioning)", "Anomali tespiti ve uyarı sistemi"], 
+            az: ["Avtomatik backup və hesabat", "ZTP (Zero Touch Provisioning)", "Anomaliya tespiti və xəbərdarlıq"], 
+            en: ["Automated backups & reporting", "Zero Touch Provisioning (ZTP)", "Anomaly detection & alerting"] 
+        }
+    }
+]
 };
 
 contentData['game-programming'] = {
@@ -5551,7 +6529,333 @@ contentData['game-programming'] = {
                 en: "No. The Designer plans the rules, story, and fun factor. The Programmer turns that plan into code. In small teams, one person often does both."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Game Loop (Oyun Döngüsü) nedir?",
+            az: "Game Loop nədir?",
+            en: "What is a Game Loop?"
+        },
+        a: {
+            tr: "Oyunun sürekli olarak girdileri aldığı, oyun durumunu güncellediği ve ekrana çizim yaptığı sonsuz döngüdür (Input -> Update -> Render).",
+            az: "Oyunun davamlı olaraq daxiletmələri qəbul etdiyi, oyun vəziyyətini yenilədiyi və ekrana görüntü verdiyi sonsuz dövrdür.",
+            en: "The central hub of every game that processes input, updates game state, and renders the frame in a continuous loop."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Delta Time nedir ve neden kullanılır?",
+            az: "Delta Time nədir və nə üçün istifadə olunur?",
+            en: "What is Delta Time and why use it?"
+        },
+        a: {
+            tr: "İki kare (frame) arasında geçen süredir. Oyunun farklı FPS değerlerinde aynı hızda çalışmasını (kare hızından bağımsız hareket) sağlar.",
+            az: "İki kadr (frame) arasında keçən vaxtdır. Oyunun fərqli FPS-lərdə eyni sürətlə işləməsini təmin edir.",
+            en: "The time elapsed since the last frame. It ensures that movement and logic are consistent regardless of the frame rate."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Component-Based Architecture nedir?",
+            az: "Component-Based Arxitektura nədir?",
+            en: "What is Component-Based Architecture?"
+        },
+        a: {
+            tr: "Oyun nesnelerini büyük sınıflar yerine küçük, yeniden kullanılabilir parçalar (Mesh, Physics, Audio) birleştirerek oluşturma yaklaşımıdır.",
+            az: "Oyun obyektlərini böyük siniflər yerinə kiçik, təkrar istifadə edilə bilən hissələri (komponentləri) birləşdirərək yaratmaq yanaşmasıdır.",
+            en: "A design pattern where game objects are composed of modular components rather than complex inheritance hierarchies."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Draw Call nedir ve performansı nasıl etkiler?",
+            az: "Draw Call nədir və performansa necə təsir edir?",
+            en: "What is a Draw Call and how does it affect performance?"
+        },
+        a: {
+            tr: "CPU'nun GPU'ya bir nesneyi çizmesi için gönderdiği komuttur. Çok fazla draw call olması işlemciyi darboğaza sokar, performansı düşürür.",
+            az: "CPU-nun GPU-ya bir obyekti çəkməsi üçün göndərdiyi əmrdir. Çox sayda draw call prosessoru yükləyir və performansı aşağı salır.",
+            en: "A command sent by the CPU to the GPU to render an object. High draw call counts can lead to CPU bottlenecks."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Object Pooling nedir?",
+            az: "Object Pooling nədir?",
+            en: "What is Object Pooling?"
+        },
+        a: {
+            tr: "Sık kullanılan nesneleri (mermiler, patlamalar) sürekli oluşturup yok etmek yerine, bir havuzda tutup tekrar kullanma tekniğidir.",
+            az: "Tez-tez istifadə olunan obyektləri (güllələr və s.) daim yaradıb yox etmək yerinə, bir 'hovuzda' saxlayıb təkrar istifadə etmək texnikasıdır.",
+            en: "A performance optimization technique that reuses objects from a pre-allocated pool instead of constantly creating and destroying them."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Raycasting nedir?",
+            az: "Raycasting nədir?",
+            en: "What is Raycasting?"
+        },
+        a: {
+            tr: "Bir noktadan belirli bir yöne hayali bir ışın gönderip, bu ışının hangi nesnelere çarptığını tespit etme işlemidir (Ateş etme, görüş kontrolü).",
+            az: "Bir nöqtədən müəyyən istiqamətə xəyali bir şüa göndərib, bu şüanın hansı obyektlərə dəydiyini təyin etməkdir (Atəş açma və s.).",
+            en: "Projecting an invisible line from a point in a specific direction to detect collisions with game objects."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Shaders (Gölgeleyiciler) nedir?",
+            az: "Shader nədir?",
+            en: "What are Shaders?"
+        },
+        a: {
+            tr: "GPU üzerinde çalışan, piksellerin rengini veya nesnelerin yüzey görünümünü hesaplayan küçük programlardır.",
+            az: "GPU üzərində işləyən, piksellərin rəngini və ya obyektlərin səth görünüşünü hesablayan kiçik proqramlardır.",
+            en: "Small programs that run on the GPU to calculate the color of pixels and visual effects of surfaces."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Vektörlerin Dot Product (Noktasal Çarpım) kullanımı?",
+            az: "Vektorların Dot Product (Nöqtəvi hasil) istifadəsi?",
+            en: "Use of Dot Product in Game Dev?"
+        },
+        a: {
+            tr: "İki vektör arasındaki açıyı bulmak için kullanılır. Bir düşmanın oyuncuya bakıp bakmadığını anlamak için idealdir.",
+            az: "İki vektor arasındakı bucağı tapmaq üçün istifadə olunur. Məsələn, düşmənin oyunçuya baxıb-baxmadığını müəyyən etmək üçün istifadə edilir.",
+            en: "Used to find the angle between two vectors. It’s commonly used to determine if an object is facing another."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "RigidBody ve Kinematic farkı?",
+            az: "RigidBody və Kinematic fərqi?",
+            en: "Difference between RigidBody and Kinematic?"
+        },
+        a: {
+            tr: "RigidBody fizik motoruyla (yerçekimi, çarpışma) hareket eder. Kinematic ise kodla doğrudan kontrol edilir, fizik kuvvetlerinden etkilenmez.",
+            az: "RigidBody fizika mühərriki ilə (cazibə qüvvəsi və s.) hərəkət edir. Kinematic isə kodla idarə olunur və xarici fiziki qüvvələrdən təsirlənmir.",
+            en: "A RigidBody is controlled by the physics engine. A Kinematic body is controlled manually by code and ignores external forces."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "Frustum Culling nedir?",
+            az: "Frustum Culling nədir?",
+            en: "What is Frustum Culling?"
+        },
+        a: {
+            tr: "Kameranın görüş alanı dışında kalan nesnelerin render edilmemesi (çizilmemesi) işlemidir, performansı artırır.",
+            az: "Kameranın görüş sahəsindən kənarda qalan obyektlərin render edilməməsidir, bu da performansı artırır.",
+            en: "The process of not rendering objects that are outside the camera's view frustum to save resources."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "LOD (Level of Detail) nedir?",
+            az: "LOD (Level of Detail) nədir?",
+            en: "What is LOD (Level of Detail)?"
+        },
+        a: {
+            tr: "Kameraya uzak olan nesnelerin daha düşük poligonlu versiyonlarının gösterilmesidir.",
+            az: "Kameraya uzaq olan obyektlərin daha az poliqonlu (daha sadə) versiyalarının göstərilməsidir.",
+            en: "Displaying lower-polygon versions of 3D models when they are far away from the camera."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Finitie State Machine (FSM) nedir?",
+            az: "Finite State Machine (FSM) nədir?",
+            en: "What is a Finite State Machine (FSM)?"
+        },
+        a: {
+            tr: "Bir karakterin (AI) durumları (Idle, Run, Attack) arasındaki geçişleri yöneten bir tasarım kalıbıdır.",
+            az: "Bir personajın (AI) vəziyyətləri (Idle, Run, Attack) arasındakı keçidləri idarə edən dizayn modelidir.",
+            en: "A design pattern used to manage AI behaviors by switching between different states like Idle, Walking, or Attacking."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "NavMesh nedir?",
+            az: "NavMesh nədir?",
+            en: "What is NavMesh?"
+        },
+        a: {
+            tr: "Yapay zekanın (AI) sahnede yürüyebileceği alanları belirleyen, optimize edilmiş bir veri yapısıdır (yol bulma için).",
+            az: "Süni intellektin (AI) səhnədə yeriyə biləcəyi sahələri müəyyən edən və yol tapmaq üçün istifadə edilən strukturudur.",
+            en: "A simplified mesh data structure used for pathfinding, defining walkable areas for AI agents."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "Singleton Pattern oyunlarda neden kullanılır?",
+            az: "Singleton Pattern oyunlarda niyə istifadə olunur?",
+            en: "Why use Singleton Pattern in games?"
+        },
+        a: {
+            tr: "Sadece tek bir örneği olması gereken (GameManager, SoundManager) sınıflara her yerden kolayca erişmek için kullanılır.",
+            az: "Yalnız bir nüsxəsi olması lazım olan (GameManager və s.) siniflərə hər yerdən asanlıqla müraciət etmək üçün istifadə olunur.",
+            en: "To ensure a class has only one instance and provides a global point of access to it (e.g., ScoreManager)."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Vertex ve Fragment Shader farkı?",
+            az: "Vertex və Fragment Shader fərqi?",
+            en: "Difference between Vertex and Fragment Shader?"
+        },
+        a: {
+            tr: "Vertex shader nesnenin şekli ve pozisyonuyla ilgilenir. Fragment shader ise piksellerin rengi ve ışıklandırmasıyla ilgilenir.",
+            az: "Vertex shader obyektin forması və mövqeyi ilə, Fragment shader isə piksellərin rəngi və işıqlandırılması ilə məşğul olur.",
+            en: "Vertex shaders handle geometry and positions. Fragment (pixel) shaders handle the color and lighting of each pixel."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Garbage Collection oyunlarda neden sorundur?",
+            az: "Garbage Collection oyunlarda niyə problemdir?",
+            en: "Why is Garbage Collection a problem in games?"
+        },
+        a: {
+            tr: "Bellek temizliği sırasında oyunun anlık olarak takılmasına (stuttering) neden olabilir, bu yüzden bellek yönetimini manuel veya dikkatli yapmalıyız.",
+            az: "Yaddaşın təmizlənməsi zamanı oyunun anlıq donmasına (stuttering) səbəb ola bilər, ona görə də yaddaş idarəetməsinə diqqət edilməlidir.",
+            en: "GC pauses can cause frame rate drops or 'stuttering', which is why game devs try to minimize memory allocations during gameplay."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Occlusion Culling nedir?",
+            az: "Occlusion Culling nədir?",
+            en: "What is Occlusion Culling?"
+        },
+        a: {
+            tr: "Başka bir nesnenin arkasında kalan ve görünmeyen nesnelerin render edilmemesi işlemidir.",
+            az: "Başqa bir obyektin arxasında qalan və görünməyən obyektlərin render edilməməsidir.",
+            en: "A rendering feature that disables rendering for objects that are hidden behind other opaque objects."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Prefab (veya Blueprint) nedir?",
+            az: "Prefab (və ya Blueprint) nədir?",
+            en: "What is a Prefab (or Blueprint)?"
+        },
+        a: {
+            tr: "Bir nesnenin ve üzerindeki tüm ayarların kaydedilmiş bir örneğidir, sahnede defalarca tekrar kullanılabilir.",
+            az: "Bir obyektin və üzərindəki bütün tənzimləmələrin yadda saxlanılmış nüsxəsidir, səhnədə dəfələrlə istifadə edilə bilər.",
+            en: "A reusable template for game objects that stores its components and properties for easy instantiation."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "Spatial Partitioning (Mekansal Bölümleme) nedir?",
+            az: "Spatial Partitioning nədir?",
+            en: "What is Spatial Partitioning?"
+        },
+        a: {
+            tr: "Geniş dünyalarda çarpışma testlerini hızlandırmak için alanı Quadtree veya Octree gibi yapılarla parçalara bölmektir.",
+            az: "Böyük dünyalarda toqquşma (collision) testlərini sürətləndirmək üçün sahəni Quadtree və ya Octree kimi strukturlarla hissələrə bölməkdir.",
+            en: "A technique to organize game objects in space (using Quadtrees or Octrees) to optimize collision detection and rendering."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Anti-Aliasing nedir?",
+            az: "Anti-Aliasing nədir?",
+            en: "What is Anti-Aliasing?"
+        },
+        a: {
+            tr: "Düşük çözünürlüklü görsellerdeki nesne kenarlarında oluşan tırtıklı (pixelated) görünümü yumuşatma tekniğidir.",
+            az: "Aşağı keyfiyyətli görüntülərdə obyekt kənarlarındakı kələ-kötürlüyü (tırtıqlılığı) yumşaltmaq üçün istifadə olunan texnikadır.",
+            en: "A technique used to smooth out jagged edges on objects in digital images by blending pixel colors."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "2D Fizik Tabanlı Platformer", 
+            az: "2D Fizika Əsaslı Platformer", 
+            en: "2D Physics-Based Platformer" 
+        },
+        desc: { 
+            tr: "Karakter hareketleri, zıplama mekaniği ve basit düşman yapay zekası içeren bir oyun.", 
+            az: "Personaj hərəkətləri, tullanma mexanikası və sadə süni intellektli düşmənləri olan oyun.", 
+            en: "A game featuring character movement, jumping mechanics, and simple enemy AI." 
+        },
+        tech: ["Unity (C#) / Godot", "Physics2D", "Tilemaps"],
+        features: { 
+            tr: ["Karakter kontrolü", "Toplanabilir eşyalar", "Basit UI ve skor sistemi"], 
+            az: ["Personaj idarəetməsi", "Yığıla bilən əşyalar", "Sadə UI və xal sistemi"], 
+            en: ["Character controller", "Collectibles", "Basic UI and scoring"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "3D Survival / Crafting Sistemi", 
+            az: "3D Survival / Crafting Sistemi", 
+            en: "3D Survival / Crafting System" 
+        },
+        desc: { 
+            tr: "Envanter yönetimi, kaynak toplama ve nesne üretme mekaniklerine sahip 3D bir temel.", 
+            az: "İnventar idarəetməsi, resurs toplama və əşya istehsalı mexanikalarına sahib 3D baza.", 
+            en: "A 3D framework with inventory management, resource gathering, and item crafting mechanics." 
+        },
+        tech: ["Unreal Engine (C++/BP) / Unity", "Scriptable Objects", "Raycasting"],
+        features: { 
+            tr: ["Gelişmiş envanter sistemi", "Dayanıklılık (Hunger/Health) mekanikleri", "Dinamik eşya yerleştirme"], 
+            az: ["Təkmil inventar sistemi", "Aclıq/Sağlamlıq mexanikaları", "Dinamik əşya yerləşdirmə"], 
+            en: ["Advanced inventory system", "Hunger/Health survival stats", "Dynamic object placement"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Multiplayer Tank Savaşı (ECS & Networking)", 
+            az: "Multiplayer Tank Döyüşü (ECS və Şəbəkə)", 
+            en: "Multiplayer Tank Combat (ECS & Networking)" 
+        },
+        desc: { 
+            tr: "Yüksek performanslı Data-Oriented mimari ve gecikme telafisi içeren çok oyunculu savaş motoru.", 
+            az: "Yüksək performanslı Data-Oriented memarlıq və gecikmə kompensasiyası olan çox oyunçulu döyüş mühərriki.", 
+            en: "A high-performance multiplayer engine featuring Data-Oriented architecture and lag compensation." 
+        },
+        tech: ["Unity DOTS / C++ Custom Engine", "UDP/TCP Networking", "Entity Component System"],
+        features: { 
+            tr: ["Server-side prediction", "Client-side reconciliation", "Büyük ölçekli optimizasyon"], 
+            az: ["Server-side prediction", "Client-side reconciliation", "Böyük miqyaslı optimizasiya"], 
+            en: ["Server-side prediction", "Client-side reconciliation", "Large-scale optimization"] 
+        }
+    }
+]
 };
 
 contentData['graphics-programming'] = {
@@ -5696,7 +7000,333 @@ contentData['graphics-programming'] = {
                 en: "A Shader is a small program that runs directly on the GPU. They determine the color of every pixel or the position of every vertex."
             }
         }
-    ]
+    ],
+
+    interview: [
+    {
+        id: 1,
+        q: {
+            tr: "Graphics Pipeline (Grafik Hattı) aşamaları nelerdir?",
+            az: "Graphics Pipeline-ın mərhələləri hansılardır?",
+            en: "What are the stages of the Graphics Pipeline?"
+        },
+        a: {
+            tr: "Vertex Processing, Rasterization, Fragment Processing ve Output Merging aşamalarından oluşur. 3D veriyi 2D piksele dönüştürür.",
+            az: "Vertex Processing, Rasterization, Fragment Processing və Output Merging mərhələlərindən ibarətdir. 3D məlumatı 2D pikselə çevirir.",
+            en: "Stages include Vertex Processing, Rasterization, Fragment/Pixel Processing, and Output Merging. It converts 3D data into 2D pixels."
+        }
+    },
+    {
+        id: 2,
+        q: {
+            tr: "Rasterization nedir?",
+            az: "Rasterization nədir?",
+            en: "What is Rasterization?"
+        },
+        a: {
+            tr: "Vektör tabanlı geometrik şekilleri (üçgenleri) ekrandaki piksellere dönüştürme işlemidir.",
+            az: "Vektor əsaslı həndəsi fiqurları (üçbucaqları) ekrandakı piksellərə çevirmə prosesidir.",
+            en: "The process of converting vector-based shapes into a grid of pixels for display on a screen."
+        }
+    },
+    {
+        id: 3,
+        q: {
+            tr: "Ray Tracing ve Rasterization farkı nedir?",
+            az: "Ray Tracing və Rasterization fərqi nədir?",
+            en: "Difference between Ray Tracing and Rasterization?"
+        },
+        a: {
+            tr: "Rasterization hızlıdır ama ışık efektleri zordur. Ray Tracing, ışık ışınlarını simüle ederek gerçekçi yansımalar sağlar ama maliyetlidir.",
+            az: "Rasterization sürətlidir amma işıq effektləri çətindir. Ray Tracing isə işıq şüalarını simulyasiya edərək realistik əks olunmalar yaradır.",
+            en: "Rasterization is faster and used in real-time. Ray Tracing simulates the physical behavior of light for high realism but is computationally heavy."
+        }
+    },
+    {
+        id: 4,
+        q: {
+            tr: "Vertex Buffer Object (VBO) nedir?",
+            az: "VBO (Vertex Buffer Object) nədir?",
+            en: "What is a Vertex Buffer Object (VBO)?"
+        },
+        a: {
+            tr: "Vertex verilerini (koordinat, renk) GPU belleğinde tutan tamponlardır, CPU-GPU arası veri trafiğini minimize eder.",
+            az: "Vertex məlumatlarını (koordinat, rəng) GPU yaddaşında saxlayan buferlərdir, CPU-dan GPU-ya məlumat axınını azaldır.",
+            en: "A buffer that stores vertex data in GPU memory to minimize data transfer between the CPU and the GPU."
+        }
+    },
+    {
+        id: 5,
+        q: {
+            tr: "Z-Buffer (Depth Buffer) ne işe yarar?",
+            az: "Z-Buffer (Dərinlik Buferi) nə işə yarayır?",
+            en: "What is a Z-Buffer?"
+        },
+        a: {
+            tr: "Hangi nesnenin hangi nesnenin önünde olduğunu belirlemek için her pikselin derinlik bilgisini saklar.",
+            az: "Hansı obyektin öndə, hansının arxada olduğunu müəyyən etmək üçün hər pikselin dərinlik məlumatını saxlayır.",
+            en: "A buffer that stores the depth value of each pixel to handle hidden surface removal (occlusion)."
+        }
+    },
+    {
+        id: 6,
+        q: {
+            tr: "Homogeneous Coordinates (Homojen Koordinatlar) neden kullanılır?",
+            az: "Homogen Koordinatlar niyə istifadə olunur?",
+            en: "Why use Homogeneous Coordinates?"
+        },
+        a: {
+            tr: "3x3 matrislerle yapılamayan 'Translation' (öteleme) işlemini 4x4 matrislerle lineer bir işlem gibi yapabilmek için kullanılır.",
+            az: "3x3 matrislərlə mümkün olmayan 'Translation' (yerdəyişmə) əməliyyatını 4x4 matrislərlə xətti şəkildə edə bilmək üçün istifadə olunur.",
+            en: "They allow translation, rotation, and scaling to be represented as a single matrix multiplication in 4D space."
+        }
+    },
+    {
+        id: 7,
+        q: {
+            tr: "Double Buffering nedir?",
+            az: "Double Buffering nədir?",
+            en: "What is Double Buffering?"
+        },
+        a: {
+            tr: "Ekrandaki titremeyi önlemek için bir kare çizilirken (Back Buffer), diğerinin ekranda gösterilmesidir (Front Buffer).",
+            az: "Ekrandakı titrəməni önləmək üçün bir kadr çəkilərkən (Back Buffer), digərinin ekranda göstərilməsidir (Front Buffer).",
+            en: "A technique using two buffers to prevent screen tearing; one is displayed while the other is being drawn."
+        }
+    },
+    {
+        id: 8,
+        q: {
+            tr: "Alpha Blending nedir?",
+            az: "Alpha Blending nədir?",
+            en: "What is Alpha Blending?"
+        },
+        a: {
+            tr: "Nesnelerin şeffaflığını hesaplamak için renklerin birbiriyle karıştırılması işlemidir.",
+            az: "Obyektlərin şəffaflığını hesablamaq üçün rənglərin bir-biri ilə qarışdırılması prosesidir.",
+            en: "The process of combining a translucent foreground color with a background color to produce transparency effects."
+        }
+    },
+    {
+        id: 9,
+        q: {
+            tr: "Mipmapping nedir?",
+            az: "Mipmapping nədir?",
+            en: "What is Mipmapping?"
+        },
+        a: {
+            tr: "Uzaklıktaki nesneler için dokuların (textures) daha küçük ve düşük çözünürlüklü kopyalarının kullanılmasıdır.",
+            az: "Uzaqdakı obyektlər üçün teksturaların daha kiçik və aşağı keyfiyyətli nüsxələrinin istifadə edilməsidir.",
+            en: "Pre-calculated, optimized sequences of images used to represent textures at different distances to save memory and improve quality."
+        }
+    },
+    {
+        id: 10,
+        q: {
+            tr: "PBR (Physically Based Rendering) nedir?",
+            az: "PBR nədir?",
+            en: "What is PBR?"
+        },
+        a: {
+            tr: "Işığın gerçek dünyadaki fiziksel davranışını taklit eden bir gölgeleme ve malzeme modelleme tekniğidir.",
+            az: "İşığın real dünyadakı fiziki davranışını təqlid edən bir shader və material modelləmə texnikasıdır.",
+            en: "A shading model that follows physical laws of light and material properties to achieve high realism."
+        }
+    },
+    {
+        id: 11,
+        q: {
+            tr: "Normal Mapping nedir?",
+            az: "Normal Mapping nədir?",
+            en: "What is Normal Mapping?"
+        },
+        a: {
+            tr: "Düşük poligonlu modellere ek detay ve kabarıklık hissi vermek için piksellerin yüzey normallerini değiştiren bir tekniktir.",
+            az: "Aşağı poliqonlu modellərə əlavə detal və kələ-kötürlük hissi vermək üçün piksellərin səth normallarını dəyişən texnikadır.",
+            en: "A technique used for faking the lighting of bumps and dents—an add-on to low-poly models to add detail."
+        }
+    },
+    {
+        id: 12,
+        q: {
+            tr: "Barycentric Coordinates nedir?",
+            az: "Barycentric Koordinatlar nədir?",
+            en: "What are Barycentric Coordinates?"
+        },
+        a: {
+            tr: "Üçgen içindeki bir noktanın, köşelere göre konumunu belirtir. Interpolasyon (renk geçişi) için kullanılır.",
+            az: "Üçbucaq daxilindəki bir nöqtənin təpə nöqtələrinə görə mövqeyini bildirir. İnterpolyasiya üçün istifadə olunur.",
+            en: "A coordinate system used to express the position of a point within a triangle, essential for fragment interpolation."
+        }
+    },
+    {
+        id: 13,
+        q: {
+            tr: "Antialiasing (MSAA) nasıl çalışır?",
+            az: "MSAA (Multisample Antialiasing) necə işləyir?",
+            en: "How does MSAA work?"
+        },
+        a: {
+            tr: "Piksel kenarlarında birden fazla örnek alarak renkleri yumuşatır ve tırtıklı görünümü azaltır.",
+            az: "Piksel kənarlarında birdən çox nümunə (sample) götürərək rəngləri yumşaldır və kələ-kötürlüyü azaldır.",
+            en: "It reduces aliasing by taking multiple samples per pixel at the edges of geometry."
+        }
+    },
+    {
+        id: 14,
+        q: {
+            tr: "Compute Shader nedir?",
+            az: "Compute Shader nədir?",
+            en: "What is a Compute Shader?"
+        },
+        a: {
+            tr: "Grafik çizimi dışında genel amaçlı hesaplamaları (fizik, su simülasyonu) GPU üzerinde yapmak için kullanılır.",
+            az: "Qrafik çəkilişi xaricində ümumi hesablamaları (fizika, su simulyasiyası) GPU-da etmək üçün istifadə olunur.",
+            en: "A shader stage used for general-purpose computing on the GPU, outside the regular graphics pipeline."
+        }
+    },
+    {
+        id: 15,
+        q: {
+            tr: "Phong Shading vs Gouraud Shading?",
+            az: "Phong vs Gouraud Shading?",
+            en: "Phong vs Gouraud Shading?"
+        },
+        a: {
+            tr: "Gouraud renkleri köşelerde hesaplar ve yayar. Phong her piksel için normali hesaplar, daha pürüzsüzdür.",
+            az: "Gouraud rəngləri təpə nöqtələrində hesablayır. Phong isə hər piksel üçün hesablayır, daha hamar nəticə verir.",
+            en: "Gouraud calculates lighting at vertices; Phong calculates lighting per pixel, providing better specular highlights."
+        }
+    },
+    {
+        id: 16,
+        q: {
+            tr: "Tessellation nedir?",
+            az: "Tessellation nədir?",
+            en: "What is Tessellation?"
+        },
+        a: {
+            tr: "Karmaşık bir yüzeyin daha fazla detay için GPU tarafından dinamik olarak küçük üçgenlere bölünmesidir.",
+            az: "Mürəkkəb səthin daha çox detal üçün GPU tərəfindən dinamik olaraq kiçik üçbucaqlara bölünməsidir.",
+            en: "A technique used to subdivide geometry into smaller primitives to increase detail dynamically on the GPU."
+        }
+    },
+    {
+        id: 17,
+        q: {
+            tr: "Vulkan vs OpenGL farkı?",
+            az: "Vulkan və OpenGL fərqi?",
+            en: "Difference between Vulkan and OpenGL?"
+        },
+        a: {
+            tr: "OpenGL yüksek seviyelidir, kullanımı kolaydır. Vulkan düşük seviyelidir, daha fazla kontrol ve daha iyi CPU paralelliği sağlar.",
+            az: "OpenGL yüksək səviyyəlidir. Vulkan aşağı səviyyəlidir (low-level), daha çox idarəetmə və CPU paralelliyi təmin edir.",
+            en: "OpenGL is a high-level API. Vulkan is low-level, providing explicit control over GPU resources and multi-threading."
+        }
+    },
+    {
+        id: 18,
+        q: {
+            tr: "Screen Space Ambient Occlusion (SSAO) nedir?",
+            az: "SSAO nədir?",
+            en: "What is SSAO?"
+        },
+        a: {
+            tr: "Kesişen yüzeylerin köşelerinde oluşan yumuşak gölgeleri (derinlik hissini) gerçek zamanlı hesaplayan bir post-processing efektidir.",
+            az: "Kəsişən səthlərin künclərində yaranan yumşaq kölgələri real vaxtda hesablayan post-processing effektidir.",
+            en: "A post-processing effect used to simulate realistic shadows in creases and corners based on screen-depth data."
+        }
+    },
+    {
+        id: 19,
+        q: {
+            tr: "GPU Memory Management (Texture compression)?",
+            az: "GPU Yaddaş idarəetməsi (Tekstura sıxılması)?",
+            en: "GPU Memory Management (Texture compression)?"
+        },
+        a: {
+            tr: "Dokuları (textures) GPU'nun doğrudan okuyabileceği formatlarda (BC, ASTC) sıkıştırarak VRAM tasarrufu yapmaktır.",
+            az: "Teksturaları GPU-nun birbaşa oxuya biləcəyi formatlarda (BC, ASTC) sıxaraq VRAM-a qənaət etməkdir.",
+            en: "Compacting textures into hardware-readable formats to save VRAM and increase bandwidth efficiency."
+        }
+    },
+    {
+        id: 20,
+        q: {
+            tr: "Post-Processing nedir?",
+            az: "Post-Processing nədir?",
+            en: "What is Post-Processing?"
+        },
+        a: {
+            tr: "Sahne çizildikten sonra tüm ekrana uygulanan efektlerdir (Bloom, Motion Blur, Color Correction).",
+            az: "Səhnə çəkildikdən sonra bütün ekrana tətbiq edilən effektlərdir (Bloom, Motion Blur və s.).",
+            en: "Effects applied to a 2D image of a scene after it has been rendered (e.g., Bloom, Depth of Field)."
+        }
+    }
+],
+
+projects: [
+    {
+        id: 1,
+        level: "junior",
+        title: { 
+            tr: "Yazılım Tabanlı Rasterizer (Software Renderer)", 
+            az: "Proqram Təminatı Əsaslı Rasterizer", 
+            en: "Software Rasterizer" 
+        },
+        desc: { 
+            tr: "Hiçbir grafik API'si (OpenGL/DirectX) kullanmadan, pikselleri tek tek CPU ile ekrana çizen bir motor.", 
+            az: "Heç bir qrafik API (OpenGL/DirectX) istifadə etmədən, pikselləri bir-bir CPU ilə ekrana çəkən mühərrik.", 
+            en: "A renderer that draws pixels to the screen using only the CPU, without any graphics APIs." 
+        },
+        tech: ["C++", "SDL2 / SFML (Piksel tamponu için)", "Linear Algebra"],
+        features: { 
+            tr: ["Tel kafes (Wireframe) render", "Barycentric koordinat hesaplama", "Z-Buffering"], 
+            az: ["Wireframe render", "Barycentric koordinat hesablanması", "Z-Buffering"], 
+            en: ["Wireframe rendering", "Barycentric interpolation", "Z-buffering"] 
+        }
+    },
+    {
+        id: 2,
+        level: "mid",
+        title: { 
+            tr: "İleri Seviye OpenGL/Vulkan Shader Motoru", 
+            az: "Təkmil OpenGL/Vulkan Shader Mühərriki", 
+            en: "Advanced OpenGL/Vulkan Shader Engine" 
+        },
+        desc: { 
+            tr: "Modern aydınlatma modellerini ve gölgeleri destekleyen bir gerçek zamanlı render motoru.", 
+            az: "Müasir işıqlandırma modellərini və kölgələri dəstəkləyən real vaxtlı render mühərriki.", 
+            en: "A real-time rendering engine supporting modern lighting models and shadows." 
+        },
+        tech: ["OpenGL 4.5+ / Vulkan", "GLSL", "C++", "Assimp (Model yükleme)"],
+        features: { 
+            tr: ["PBR (Physically Based Rendering)", "Shadow Mapping", "Bloom & HDR efektleri"], 
+            az: ["PBR (Physically Based Rendering)", "Shadow Mapping", "Bloom və HDR effektləri"], 
+            en: ["PBR (Physically Based Rendering)", "Shadow Mapping", "Bloom & HDR post-processing"] 
+        }
+    },
+    {
+        id: 3,
+        level: "expert",
+        title: { 
+            tr: "Gerçek Zamanlı Ray Tracer (GPU)", 
+            az: "Real Vaxtlı Ray Tracer (GPU)", 
+            en: "Real-time GPU Ray Tracer" 
+        },
+        desc: { 
+            tr: "Işığın fiziksel yansımalarını GPU üzerinde simüle eden, yüksek performanslı ışın izleme motoru.", 
+            az: "İşığın fiziki əks olunmalarını GPU üzərində simulyasiya edən, yüksək performanslı işın izləmə mühərriki.", 
+            en: "A high-performance engine that simulates physical light behavior using GPU ray tracing." 
+        },
+        tech: ["C++", "DirectX 12 (DXR) / Vulkan Raytracing", "Compute Shaders"],
+        features: { 
+            tr: ["Yansıma ve kırılma (Reflections/Refractions)", "Denoising algoritmaları", "BVH (Bounding Volume Hierarchy) optimizasyonu"], 
+            az: ["Qırılma və əks olunma effektləri", "Denoising alqoritmləri", "BVH optimizasiyası"], 
+            en: ["Reflections & Refractions", "Denoising algorithms", "BVH acceleration structures"] 
+        }
+    }
+]
 };
 
 
