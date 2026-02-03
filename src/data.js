@@ -72,7 +72,7 @@ export const categories = [
     {
         id: 'web-dev',
         icon: '💻',
-        color: 'from-blue-200 to-cyan-500',
+        color: 'blue',
         title: { en: 'Web Development', tr: 'Web Geliştirme', az: 'Veb İnkişafı' },
         desc: { en: 'Frontend, Backend, Full Stack', tr: 'Frontend, Backend, Full Stack', az: 'Frontend, Backend, Full Stack' },
         subCategories: [
