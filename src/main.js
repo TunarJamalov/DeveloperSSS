@@ -180,7 +180,9 @@ const MobileMenu = () => {
                         <span class="text-xl">${languages.find(l => l.code === state.lang)?.flag}</span>
                         <span>${state.lang.toUpperCase()}</span>
                     </div>
-                    <span class="text-xs text-gray-500 uppercase tracking-widest">${t('back') === 'Back' ? 'Change' : 'Dəyiş'} →</span>
+                    <span class="text-xs text-gray-500 uppercase tracking-widest">
+                        ${state.lang === 'az' ? 'Dəyiş' : (state.lang === 'tr' ? 'Değiştir' : 'Change')} →
+                    </span>
                 </button>
 
                 <button onclick="window.navigateTo('faq'); window.toggleMobileMenu()" class="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl border border-white/5 bg-white/5 text-gray-300 font-medium hover:text-white transition-colors ${state.view === 'faq' ? 'border-brand-purple/50 bg-brand-purple/10 text-brand-purple' : ''}">
