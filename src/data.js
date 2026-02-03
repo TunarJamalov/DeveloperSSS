@@ -7351,7 +7351,17 @@ contentData['embedded'] = {
             { title: "Drayverlərin Yazılması", items: ["HAL", "Device Drivers", "BSP"], status: "advanced" },
             { title: "Debug & Alətlər", items: ["JTAG/SWD Debugging", "GDB", "Logic Analyzer", "MISRA C"], status: "advanced" },
             { title: "İrəli Səviyyə Mövzular", items: ["DSP", "FPGA & VHDL/Verilog", "Edge AI", "OTA Yeniləmələr"], status: "expert" }
-        ]
+        ],
+        en: [
+    { title: "Electronics Fundamentals", items: ["Ohm’s Law", "Passive Components", "Transistors", "Oscilloscope & Multimeter"], status: "start" },
+    { title: "C and C++ Programming", items: ["Pointers & Memory Management", "Bit Manipulation", "Volatile Keyword", "Struct Alignment"], status: "start" },
+    { title: "Microcontroller Architecture", items: ["Register-Level Programming", "Interrupts & ISR", "Timers & PWM", "DMA"], status: "mid" },
+    { title: "Communication Protocols", items: ["UART", "I2C", "SPI", "CAN Bus"], status: "mid" },
+    { title: "Embedded Operating Systems", items: ["RTOS (FreeRTOS)", "Task Scheduling", "Mutex & Semaphores", "Embedded Linux"], status: "advanced" },
+    { title: "Driver Development", items: ["HAL", "Device Drivers", "BSP"], status: "advanced" },
+    { title: "Debug & Tools", items: ["JTAG/SWD Debugging", "GDB", "Logic Analyzer", "MISRA C"], status: "advanced" },
+    { title: "Advanced Topics", items: ["DSP", "FPGA & VHDL/Verilog", "Edge AI", "OTA Updates"], status: "expert" }
+]
     },
 
     // 2. RESOURCES
@@ -7387,31 +7397,63 @@ contentData['embedded'] = {
 
     // 4. FAQ
     faq: [
-        {
-            id: 1,
-            q: { tr: "Arduino ile başlamalı mıyım?", az: "Arduino ilə başlamalıyam?" },
-            a: { tr: "Hobi için evet, ama mühendislik kariyeri için doğrudan STM32 veya ESP32 gibi çiplerin register yapılarını öğrenerek başlamak daha profesyoneldir.", az: "Hobi üçün bəli, amma peşəkar karyera üçün birbaşa STM32 və ya ESP32 kimi çiplərlə başlamaq daha yaxşıdır." }
+    {
+        id: 1,
+        q: { 
+            tr: "Arduino ile başlamalı mıyım?", 
+            az: "Arduino ilə başlamalıyam?", 
+            en: "Should I start with Arduino?" 
         },
-        {
-            id: 2,
-            q: { tr: "C++ gömülü sistemlerde kullanılır mı?", az: "C++ gömülü sistemlərdə istifadə olunur?" },
-            a: { tr: "Evet, özellikle modern gömülü sistemlerde (RTOS ve Embedded Linux) nesne yönelimli yapısı nedeniyle C++ çok yaygınlaşmıştır.", az: "Bəli, xüsusilə müasir sistemlərdə (RTOS və Embedded Linux) C++ çox geniş istifadə olunur." }
+        a: { 
+            tr: "Hobi için evet, ama mühendislik kariyeri için doğrudan STM32 veya ESP32 gibi çiplerin register yapılarını öğrenerek başlamak daha profesyoneldir.", 
+            az: "Hobi üçün bəli, amma peşəkar karyera üçün birbaşa STM32 və ya ESP32 kimi çiplərlə başlamaq daha yaxşıdır.",
+            en: "For a hobby, yes; however, for an engineering career, it is more professional to start by learning the register structures of chips like STM32 or ESP32 directly."
         }
-    ],
+    },
+    {
+        id: 2,
+        q: { 
+            tr: "C++ gömülü sistemlerde kullanılır mı?", 
+            az: "C++ gömülü sistemlərdə istifadə olunur?", 
+            en: "Is C++ used in embedded systems?" 
+        },
+        a: { 
+            tr: "Evet, özellikle modern gömülü sistemlerde (RTOS ve Embedded Linux) nesne yönelimli yapısı nedeniyle C++ çok yaygınlaşmıştır.", 
+            az: "Bəli, xüsusilə müasir sistemlərdə (RTOS və Embedded Linux) C++ çox geniş istifadə olunur.",
+            en: "Yes, C++ has become very common in modern embedded systems (RTOS and Embedded Linux) due to its object-oriented nature."
+        }
+    }
+],
 
     // 5. INTERVIEW PREP
     interview: [
-        {
-            id: 1,
-            q: { tr: "'volatile' anahtar kelimesi ne işe yarar?", az: "'volatile' açar sözü nə işə yarayır?" },
-            a: { tr: "Derleyiciye bu değişkenin dışarıdan (örn: bir interrupt veya donanım register'ı) her an değişebileceğini ve optimizasyon yapmaması gerektiğini bildirir.", az: "Kompilyatora bildirir ki, bu dəyişən kənardan (məs: interrupt) hər an dəyişə bilər və optimizasiya olunmamalıdır." }
+    {
+        id: 1,
+        q: { 
+            tr: "'volatile' anahtar kelimesi ne işe yarar?", 
+            az: "'volatile' açar sözü nə işə yarayır?",
+            en: "What is the purpose of the 'volatile' keyword?" 
         },
-        {
-            id: 2,
-            q: { tr: "Interrupt Service Routine (ISR) yazarken nelere dikkat edilmelidir?", az: "ISR yazarkən nələrə diqqət edilməlidir?" },
-            a: { tr: "ISR mümkün olduğunca kısa olmalı, içinde 'printf' veya 'delay' gibi fonksiyonlar kullanılmamalı ve bloklayıcı işlemlerden kaçınılmalıdır.", az: "ISR mümkün qədər qısa olmalı, daxilində 'printf' və ya 'delay' kimi funksiyalar istifadə olunmamalıdır." }
+        a: { 
+            tr: "Derleyiciye bu değişkenin dışarıdan (örn: bir interrupt veya donanım register'ı) her an değişebileceğini ve optimizasyon yapmaması gerektiğini bildirir.", 
+            az: "Kompilyatora bildirir ki, bu dəyişən kənardan (məs: interrupt) hər an dəyişə bilər və optimizasiya olunmamalıdır.",
+            en: "It informs the compiler that a variable can be changed by external factors (e.g., an interrupt or a hardware register) at any time, and therefore, the compiler should not perform any optimization on it."
         }
-    ],
+    },
+    {
+        id: 2,
+        q: { 
+            tr: "Interrupt Service Routine (ISR) yazarken nelere dikkat edilmelidir?", 
+            az: "ISR yazarkən nələrə diqqət edilməlidir?",
+            en: "What should be considered when writing an Interrupt Service Routine (ISR)?" 
+        },
+        a: { 
+            tr: "ISR mümkün olduğunca kısa olmalı, içinde 'printf' veya 'delay' gibi fonksiyonlar kullanılmamalı ve bloklayıcı işlemlerden kaçınılmalıdır.", 
+            az: "ISR mümkün qədər qısa olmalı, daxilində 'printf' və ya 'delay' kimi funksiyalar istifadə olunmamalıdır.",
+            en: "An ISR should be as short as possible; it should avoid using functions like 'printf' or 'delay' and must not include any blocking operations."
+        }
+    }
+],
 
     // 6. PROJECT HUB
     projects: [
@@ -7445,30 +7487,40 @@ contentData['embedded'] = {
 contentData['iot'] = {
     // 1. ROADMAP
     roadmap: {
-        tr: [
-            { title: "Elektronik Temelleri", items: ["Temel Devre Elemanları (Direnç, Kondansatör)", "Devre Analizi (Ohm Kanunu)", "Multimetre & Osiloskop Kullanımı", "PCB Tasarımı (Altium, KiCad)"], status: "start" },
-            { title: "Gömülü Programlama Dilleri", items: ["C (Gömülü Sistemlerin Atası)", "C++ (OOP ve Kütüphaneler)", "Python (Raspberry Pi & Prototipleme)", "Rust (Modern & Güvenli Gömülü Sistemler)"], status: "start" },
-            { title: "Mikrokontrolcüler & Mimari", items: ["Arduino (Atmega)", "ESP32 & ESP8266 (Wi-Fi/BT)", "STM32 (ARM Cortex-M)", "Raspberry Pi (SBC)", "Memory Management (Stack/Heap)"], status: "mid" },
-            { title: "IoT Haberleşme Protokolleri", items: ["MQTT (Hafif ve Popüler)", "HTTP/REST", "WebSockets", "CoAP", "LoRaWAN (Uzun Mesafe/Düşük Güç)"], status: "mid" },
-            { title: "Sensörler & Aktüatörler", items: ["I2C, SPI, UART İletişimi", "Analog & Dijital Sensör Okuma", "PWM ile Motor Kontrolü", "Interrupts & Timers"], status: "mid" },
-            { title: "IoT Bulut & Veri Yönetimi", items: ["AWS IoT Core", "Google Cloud IoT", "ThingsBoard", "InfluxDB (Time-series Data)"], status: "advanced" },
-            { title: "Bağlantı Teknolojileri", items: ["Wi-Fi & Bluetooth (BLE)", "Zigbee & Z-Wave", "Cellular (NB-IoT, 5G)", "NFC/RFID"], status: "advanced" },
-            { title: "İleri Seviye Konular", items: ["RTOS (FreeRTOS, Zephyr)", "Edge Computing", "OTA (Over-the-Air) Güncellemeler", "Güç Optimizasyonu (Deep Sleep)"], status: "expert" },
-            { title: "IoT Güvenliği", items: ["TLS/SSL Sertifikaları", "Secure Boot", "Encryption (AES, RSA)", "Firmware Güvenliği"], status: "expert" }
-        ],
-        az: [
-            { title: "Elektronika Əsasları", items: ["Dövrə Elementləri", "Dövrə Analizi", "Multimetr & Osiloskop", "PCB Dizaynı"], status: "start" },
-            { title: "Daxili Proqramlaşdırma (Embedded)", items: ["C Dili", "C++", "Python", "Rust"], status: "start" },
-            { title: "Mikrokontrollerlər", items: ["Arduino", "ESP32", "STM32 (ARM)", "Raspberry Pi"], status: "mid" },
-            { title: "IoT Protokolları", items: ["MQTT", "HTTP/REST", "CoAP", "LoRaWAN"], status: "mid" },
-            { title: "Sensorlar & Aktuatorlar", items: ["I2C, SPI, UART", "Analoq & Rəqəmsal Oxuma", "PWM Kontrol", "Interrupts"], status: "mid" },
-            { title: "IoT Bulud Sistemləri", items: ["AWS IoT Core", "ThingsBoard", "InfluxDB", "Grafana"], status: "advanced" },
-            { title: "Əlaqə Texnologiyaları", items: ["Wi-Fi & BLE", "Zigbee", "NB-IoT", "Cellular"], status: "advanced" },
-            { title: "İrəli Səviyyə Mövzular", items: ["RTOS Əsasları", "Edge Computing", "OTA Yeniləmələr", "Enerji Optimizasiyası"], status: "expert" },
-            { title: "IoT Təhlükəsizliyi", items: ["TLS/SSL", "Secure Boot", "Şifrələmə (Encryption)", "Firmware Security"], status: "expert" }
-        ]
-    },
-
+    tr: [
+        { title: "Elektronik Temelleri", items: ["Temel Devre Elemanları (Direnç, Kondansatör)", "Devre Analizi (Ohm Kanunu)", "Multimetre & Osiloskop Kullanımı", "PCB Tasarımı (Altium, KiCad)"], status: "start" },
+        { title: "Gömülü Programlama Dilleri", items: ["C (Gömülü Sistemlerin Atası)", "C++ (OOP ve Kütüphaneler)", "Python (Raspberry Pi & Prototipleme)", "Rust (Modern & Güvenli Gömülü Sistemler)"], status: "start" },
+        { title: "Mikrokontrolcüler & Mimari", items: ["Arduino (Atmega)", "ESP32 & ESP8266 (Wi-Fi/BT)", "STM32 (ARM Cortex-M)", "Raspberry Pi (SBC)", "Memory Management (Stack/Heap)"], status: "mid" },
+        { title: "IoT Haberleşme Protokolleri", items: ["MQTT (Hafif ve Popüler)", "HTTP/REST", "WebSockets", "CoAP", "LoRaWAN (Uzun Mesafe/Düşük Güç)"], status: "mid" },
+        { title: "Sensörler & Aktüatörler", items: ["I2C, SPI, UART İletişimi", "Analog & Dijital Sensör Okuma", "PWM ile Motor Kontrolü", "Interrupts & Timers"], status: "mid" },
+        { title: "IoT Bulut & Veri Yönetimi", items: ["AWS IoT Core", "Google Cloud IoT", "ThingsBoard", "InfluxDB (Time-series Data)"], status: "advanced" },
+        { title: "Bağlantı Teknolojileri", items: ["Wi-Fi & Bluetooth (BLE)", "Zigbee & Z-Wave", "Cellular (NB-IoT, 5G)", "NFC/RFID"], status: "advanced" },
+        { title: "İleri Seviye Konular", items: ["RTOS (FreeRTOS, Zephyr)", "Edge Computing", "OTA (Over-the-Air) Güncellemeler", "Güç Optimizasyonu (Deep Sleep)"], status: "expert" },
+        { title: "IoT Güvenliği", items: ["TLS/SSL Sertifikaları", "Secure Boot", "Encryption (AES, RSA)", "Firmware Güvenliği"], status: "expert" }
+    ],
+    az: [
+        { title: "Elektronika Əsasları", items: ["Dövrə Elementləri (Rezistor, Kondensator)", "Dövrə Analizi (Om Qanunu)", "Multimetr & Osiloskop İstifadəsi", "PCB Dizaynı (Altium, KiCad)"], status: "start" },
+        { title: "Daxili Proqramlaşdırma Dilləri", items: ["C (Embedded-in Atası)", "C++ (OOP və Kitabxanalar)", "Python (Raspberry Pi & Prototipləmə)", "Rust (Müasir & Təhlükəsiz Sistemlər)"], status: "start" },
+        { title: "Mikrokontrollerlər & Arxitektura", items: ["Arduino (Atmega)", "ESP32 & ESP8266 (Wi-Fi/BT)", "STM32 (ARM Cortex-M)", "Raspberry Pi (SBC)", "Yaddaş İdarəetməsi (Stack/Heap)"], status: "mid" },
+        { title: "IoT Rabitə Protokolları", items: ["MQTT (Yüngül və Populyar)", "HTTP/REST", "WebSockets", "CoAP", "LoRaWAN (Uzaq Məsafə/Aşağı Enerji)"], status: "mid" },
+        { title: "Sensorlar & Aktuatorlar", items: ["I2C, SPI, UART Rabitəsi", "Analoq & Rəqəmsal Sensor Oxuma", "PWM ilə Motor Kontrolu", "Kəsilmələr (Interrupts) & Taymerlər"], status: "mid" },
+        { title: "IoT Bulud & Məlumat İdarəetməsi", items: ["AWS IoT Core", "Google Cloud IoT", "ThingsBoard", "InfluxDB (Zaman Seriyalı Məlumatlar)"], status: "advanced" },
+        { title: "Bağlantı Texnologiyaları", items: ["Wi-Fi & Bluetooth (BLE)", "Zigbee & Z-Wave", "Mobil Şəbəkə (NB-IoT, 5G)", "NFC/RFID"], status: "advanced" },
+        { title: "İrəli Səviyyə Mövzular", items: ["RTOS (FreeRTOS, Zephyr)", "Edge Computing", "OTA Yeniləmələr", "Enerji Optimizasiyası (Deep Sleep)"], status: "expert" },
+        { title: "IoT Təhlükəsizliyi", items: ["TLS/SSL Sertifikatları", "Secure Boot", "Şifrələmə (AES, RSA)", "Firmware Təhlükəsizliyi"], status: "expert" }
+    ],
+    en: [
+        { title: "Electronics Fundamentals", items: ["Basic Circuit Elements (Resistor, Capacitor)", "Circuit Analysis (Ohm's Law)", "Multimeter & Oscilloscope Usage", "PCB Design (Altium, KiCad)"], status: "start" },
+        { title: "Embedded Programming Languages", items: ["C (The Father of Embedded)", "C++ (OOP & Libraries)", "Python (Raspberry Pi & Prototyping)", "Rust (Modern & Secure Embedded)"], status: "start" },
+        { title: "Microcontrollers & Architecture", items: ["Arduino (Atmega)", "ESP32 & ESP8266 (Wi-Fi/BT)", "STM32 (ARM Cortex-M)", "Raspberry Pi (SBC)", "Memory Management (Stack/Heap)"], status: "mid" },
+        { title: "IoT Communication Protocols", items: ["MQTT (Lightweight & Popular)", "HTTP/REST", "WebSockets", "CoAP", "LoRaWAN (Long Range/Low Power)"], status: "mid" },
+        { title: "Sensors & Actuators", items: ["I2C, SPI, UART Communication", "Analog & Digital Sensor Reading", "Motor Control with PWM", "Interrupts & Timers"], status: "mid" },
+        { title: "IoT Cloud & Data Management", items: ["AWS IoT Core", "Google Cloud IoT", "ThingsBoard", "InfluxDB (Time-series Data)"], status: "advanced" },
+        { title: "Connectivity Technologies", items: ["Wi-Fi & Bluetooth (BLE)", "Zigbee & Z-Wave", "Cellular (NB-IoT, 5G)", "NFC/RFID"], status: "advanced" },
+        { title: "Advanced Topics", items: ["RTOS (FreeRTOS, Zephyr)", "Edge Computing", "OTA (Over-the-Air) Updates", "Power Optimization (Deep Sleep)"], status: "expert" },
+        { title: "IoT Security", items: ["TLS/SSL Certificates", "Secure Boot", "Encryption (AES, RSA)", "Firmware Security"], status: "expert" }
+    ]
+},
     // 2. RESOURCES
     resources: {
         items: [
