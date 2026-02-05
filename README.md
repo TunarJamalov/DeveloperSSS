@@ -28,6 +28,14 @@ A modern, open-source, community-driven guide for developers. This project provi
     ```
     Open `http://localhost:5173` in your browser.
 
+## 📊 Analytics
+
+This project uses **Vercel Web Analytics** to track user behavior and optimize the platform. Analytics are automatically collected when the site is deployed on Vercel.
+
+For more information, see:
+- **[Vercel Analytics Setup Guide](./docs/VERCEL_ANALYTICS.md)** - Technical implementation details
+- **[Getting Started with Vercel Analytics](./docs/GETTING_STARTED_ANALYTICS.md)** - Complete guide for maintainers and contributors
+
 ## 🤝 Contributing
 
 This project is open-source and grows with community contributions! If you want to add a new resource, fix a bug, or suggest a new roadmap, please read the **[CONTRIBUTING.md](CONTRIBUTING.md)** file.
