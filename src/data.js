@@ -7734,29 +7734,40 @@ contentData['blockchain'] = {
 contentData['ar-vr'] = {
     // 1. ROADMAP
     roadmap: {
-        tr: [
-            { title: "Temel Kavramlar & Matematik", items: ["3D Koordinat Sistemleri", "Vektörler & Quaternionlar", "Lineer Cebir", "Render Pipeline Mantığı"], status: "start" },
-            { title: "Oyun Motoru Seçimi", items: ["Unity (C# - En Popüler)", "Unreal Engine (C++ - Yüksek Performans)", "Godot", "WebXR (A-Frame, Three.js)"], status: "start" },
-            { title: "C# veya C++ Geliştirme", items: ["Scripting Temelleri", "Object-Oriented Programming", "Memory Management", "Event System & Delegates"], status: "mid" },
-            { title: "Varlık (Asset) Yönetimi", items: ["3D Modeller (FBX, GLTF)", "PBR Materyaller & Textures", "Animations & Rigging", "Lighting & Post-Processing"], status: "mid" },
-            { title: "AR & VR SDK'ları", items: ["Meta Quest SDK (Oculus)", "ARCore (Android) & ARKit (iOS)", "Vuforia", "Unity XR Interaction Toolkit"], status: "mid" },
-            { title: "Etkileşim Tasarımı", items: ["Raycasting", "Grabbing & Throwing", "Locomotion (Teleport, Smooth Move)", "UI in World Space"], status: "mid" },
-            { title: "Optimizasyon & Performans", items: ["Draw Calls & Batching", "Occlusion Culling", "LOD (Level of Detail)", "Mobile vs PC VR Profiling"], status: "advanced" },
-            { title: "İleri Seviye Konular", items: ["Custom Shaders (HLSL/GLSL)", "Spatial Audio", "Hand Tracking & Eye Tracking", "Multiplayer XR (Photon/Mirror)"], status: "expert" },
-            { title: "Endüstriyel Uygulamalar", items: ["Digital Twins", "Telepresence", "Mixed Reality (Hololens/Magic Leap)", "Procedural Mesh Generation"], status: "expert" }
-        ],
-        az: [
-            { title: "Təməl Anlayışlar & Riyaziyyat", items: ["3D Koordinat Sistemləri", "Vektorlar & Kvaternionlar", "Xətti Cəbr", "Render Pipeline"], status: "start" },
-            { title: "Mühərrik Seçimi", items: ["Unity (C#)", "Unreal Engine (C++)", "WebXR (Three.js)", "Godot"], status: "start" },
-            { title: "C# və ya C++ İnkişafı", items: ["Scripting Əsasları", "OOP", "Memory Management", "Events & Delegates"], status: "mid" },
-            { title: "Asset İdarəetməsi", items: ["3D Modellər", "PBR Materiallar", "Animasiya & Rigging", "İşıqlandırma"], status: "mid" },
-            { title: "AR & VR SDK-lar", items: ["Meta Quest SDK", "ARCore & ARKit", "Vuforia", "XR Interaction Toolkit"], status: "mid" },
-            { title: "İnteraksiya Dizaynı", items: ["Raycasting", "Tutma & Atma", "Teleportasiya", "World Space UI"], status: "mid" },
-            { title: "Optimizasiya", items: ["Draw Calls", "Occlusion Culling", "LOD (Level of Detail)", "Profiling"], status: "advanced" },
-            { title: "İrəli Səviyyə Mövzular", items: ["Custom Shaders", "Spatial Audio (Məkan Səsi)", "Hand Tracking", "Multiplayer XR"], status: "expert" },
-            { title: "Sənaye Tətbiqləri", items: ["Digital Twins", "Telepresence", "Mixed Reality (MR)", "Procedural Mesh Generation"], status: "expert" }
-        ]
-    },
+    tr: [
+        { title: "Temel Kavramlar & Matematik", items: ["3D Koordinat Sistemleri", "Vektörler & Quaternionlar", "Lineer Cebir", "Render Pipeline Mantığı"], status: "start" },
+        { title: "Oyun Motoru Seçimi", items: ["Unity (C# - En Popüler)", "Unreal Engine (C++ - Yüksek Performans)", "Godot", "WebXR (A-Frame, Three.js)"], status: "start" },
+        { title: "C# veya C++ Geliştirme", items: ["Scripting Temelleri", "Object-Oriented Programming", "Memory Management", "Event System & Delegates"], status: "mid" },
+        { title: "Varlık (Asset) Yönetimi", items: ["3D Modeller (FBX, GLTF)", "PBR Materyaller & Textures", "Animations & Rigging", "Lighting & Post-Processing"], status: "mid" },
+        { title: "AR & VR SDK'ları", items: ["Meta Quest SDK (Oculus)", "ARCore (Android) & ARKit (iOS)", "Vuforia", "Unity XR Interaction Toolkit"], status: "mid" },
+        { title: "Etkileşim Tasarımı", items: ["Raycasting", "Grabbing & Throwing", "Locomotion (Teleport, Smooth Move)", "UI in World Space"], status: "mid" },
+        { title: "Optimizasyon & Performans", items: ["Draw Calls & Batching", "Occlusion Culling", "LOD (Level of Detail)", "Mobile vs PC VR Profiling"], status: "advanced" },
+        { title: "İleri Seviye Konular", items: ["Custom Shaders (HLSL/GLSL)", "Spatial Audio", "Hand Tracking & Eye Tracking", "Multiplayer XR (Photon/Mirror)"], status: "expert" },
+        { title: "Endüstriyel Uygulamalar", items: ["Digital Twins", "Telepresence", "Mixed Reality (Hololens/Magic Leap)", "Procedural Mesh Generation"], status: "expert" }
+    ],
+    az: [
+        { title: "Təməl Anlayışlar & Riyaziyyat", items: ["3D Koordinat Sistemləri", "Vektorlar & Kvaternionlar", "Xətti Cəbr", "Render Pipeline"], status: "start" },
+        { title: "Mühərrik Seçimi", items: ["Unity (C#)", "Unreal Engine (C++)", "WebXR (Three.js)", "Godot"], status: "start" },
+        { title: "C# və ya C++ İnkişafı", items: ["Scripting Əsasları", "OOP", "Memory Management", "Events & Delegates"], status: "mid" },
+        { title: "Asset İdarəetməsi", items: ["3D Modellər", "PBR Materiallar", "Animasiya & Rigging", "İşıqlandırma"], status: "mid" },
+        { title: "AR & VR SDK-lar", items: ["Meta Quest SDK", "ARCore & ARKit", "Vuforia", "XR Interaction Toolkit"], status: "mid" },
+        { title: "İnteraksiya Dizaynı", items: ["Raycasting", "Tutma & Atma", "Teleportasiya", "World Space UI"], status: "mid" },
+        { title: "Optimizasiya", items: ["Draw Calls", "Occlusion Culling", "LOD (Level of Detail)", "Profiling"], status: "advanced" },
+        { title: "İrəli Səviyyə Mövzular", items: ["Custom Shaders", "Spatial Audio (Məkan Səsi)", "Hand Tracking", "Multiplayer XR"], status: "expert" },
+        { title: "Sənaye Tətbiqləri", items: ["Digital Twins", "Telepresence", "Mixed Reality (MR)", "Procedural Mesh Generation"], status: "expert" }
+    ],
+    en: [
+        { title: "Fundamentals & Math", items: ["3D Coordinate Systems", "Vectors & Quaternions", "Linear Algebra", "Render Pipeline Concepts"], status: "start" },
+        { title: "Engine Selection", items: ["Unity (C#)", "Unreal Engine (C++)", "Godot", "WebXR (Three.js/A-Frame)"], status: "start" },
+        { title: "C# or C++ Development", items: ["Scripting Basics", "OOP Principles", "Memory Management", "Events & Delegates"], status: "mid" },
+        { title: "Asset Management", items: ["3D Models (FBX/GLB)", "PBR Materials & Textures", "Animation & Rigging", "Lighting & Post-Processing"], status: "mid" },
+        { title: "AR & VR SDKs", items: ["Meta Quest SDK", "ARCore (Android) & ARKit (iOS)", "Vuforia", "Unity XR Interaction Toolkit"], status: "mid" },
+        { title: "Interaction Design", items: ["Raycasting", "Grabbing & Throwing", "Locomotion (Teleport/Smooth Move)", "World Space UI"], status: "mid" },
+        { title: "Optimization & Performance", items: ["Draw Calls & Batching", "Occlusion Culling", "LOD (Level of Detail)", "VR Profiling Tools"], status: "advanced" },
+        { title: "Advanced Topics", items: ["Custom Shaders (HLSL/GLSL)", "Spatial Audio", "Hand & Eye Tracking", "Multiplayer XR (Photon/Mirror)"], status: "expert" },
+        { title: "Industrial Applications", items: ["Digital Twins", "Telepresence", "Mixed Reality (MR)", "Procedural Mesh Generation"], status: "expert" }
+    ]
+},
 
     // 2. RESOURCES
     resources: {
