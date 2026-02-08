@@ -7605,40 +7605,40 @@ contentData['iot'] = {
 contentData['web3'] = {
     // 1. ROADMAP
     roadmap: {
-        tr: [
-            { title: "Blokzincir Temelleri", items: ["Kriptografik Hash Fonksiyonları", "Public/Private Key (Asimetrik Şifreleme)", "P2P Ağlar", "Consensus (PoW, PoS, DPoS)"], status: "start" },
-            { title: "Web3'e Giriş", items: ["Cüzdan Mantığı (Metamask, Seed Phrase)", "Blockchain Explorer (Etherscan)", "Gas Fee & Transaction Mantığı", "Nodes (Full, Light, Archive)"], status: "start" },
-            { title: "Akıllı Kontrat Geliştirme", items: ["Solidity (EVM Standardı)", "Veri Tipleri & Functions", "Events & Errors", "Inheritance & Interfaces"], status: "mid" },
-            { title: "Geliştirme Ortamları", items: ["Hardhat / Foundry", "Ethers.js / Web3.js", "Remix IDE", "OpenZeppelin Kütüphaneleri"], status: "mid" },
-            { title: "Token Standartları & DeFi", items: ["ERC-20 (Fungible Tokens)", "ERC-721 & ERC-1155 (NFTs)", "DEX Mantığı (Uniswap, AMM)", "Lending & Staking Mekanizmaları"], status: "mid" },
-            { title: "Frontend & Web3 Entegrasyonu", items: ["Wallet Connect", "Sign-in with Ethereum (SIWE)", "Contract Interaction", "Subgraph (The Graph)"], status: "advanced" },
-            { title: "Layer 2 & Scaling", items: ["Rollups (Optimistic vs ZK)", "Sidechains (Polygon)", "Bridging Assets", "L2 Gaz Optimizasyonu"], status: "advanced" },
-            { title: "İleri Seviye & Güvenlik", items: ["Reentrancy Attacks", "Flash Loans", "Upgradable Contracts (Proxy)", "Formal Verification"], status: "expert" },
-            { title: "Yeni Nesil Web3", items: ["Account Abstraction (ERC-4337)", "Zero Knowledge Proofs (ZKP)", "DAO Governance", "IPFS & Arweave (Storage)"], status: "expert" }
-        ],
-        az: [
-            { title: "Blokçeyn Əsasları", items: ["Heş Funksiyaları", "Açıq/Gizli Açar (Asimmetrik Şifrləmə)", "P2P Şəbəkələr", "Konsensus (PoW, PoS)"], status: "start" },
-            { title: "Web3-ə Giriş", items: ["Pulqabı Məntiqi (Seed Phrase)", "Blockchain Explorer (Etherscan)", "Qaz haqqı (Gas Fee)", "Nodes (Düyünlər)"], status: "start" },
-            { title: "Smart Kontrakt İnkişafı", items: ["Solidity Dili", "Data Tipləri & Funksiyalar", "Events & Errors", "Inheritance"], status: "mid" },
-            { title: "İnkişaf Alətləri", items: ["Hardhat / Foundry", "Ethers.js", "Remix IDE", "OpenZeppelin Standardları"], status: "mid" },
-            { title: "Token Standardları & DeFi", items: ["ERC-20 (Tokenlər)", "ERC-721 (NFT)", "DEX Məntiqi", "Lending & Staking"], status: "mid" },
-            { title: "Frontend & Web3 İnteqrasiyası", items: ["Wallet Connect", "Kontraktlarla əlaqə", "ABI istifadəsi", "The Graph"], status: "advanced" },
-            { title: "Layer 2 & Miqyaslanma", items: ["Rollups (ZK vs Optimistic)", "Sidechains (Polygon)", "Körpülər (Bridges)", "L2 Optimizasiyası"], status: "advanced" },
-            { title: "İrəli Səviyyə & Təhlükəsizlik", items: ["Smart Kontrakt Audit", "Flash Loans", "Proxy Kontraktlar", "Reentrancy Attacks"], status: "expert" },
-            { title: "Gələcək Web3", items: ["Account Abstraction", "Zero Knowledge (ZK)", "DAO İdarəetməsi", "IPFS (Mərkəzsiz Yaddaş)"], status: "expert" }
-        ],
-        en: [
-        { title: "Blockchain Fundamentals", items: ["Cryptographic Hash Functions", "Public/Private Key (Asymmetric Encryption)", "P2P Networks", "Consensus Mechanisms (PoW, PoS, DPoS)"], status: "start" },
-        { title: "Introduction to Web3", items: ["Wallet Logic (Metamask, Seed Phrase)", "Blockchain Explorers (Etherscan)", "Gas Fees & Transaction Logic", "Nodes (Full, Light, Archive)"], status: "start" },
-        { title: "Smart Contract Development", items: ["Solidity (EVM Standard)", "Data Types & Functions", "Events & Errors", "Inheritance & Interfaces"], status: "mid" },
-        { title: "Development Environments", items: ["Hardhat / Foundry", "Ethers.js / Web3.js", "Remix IDE", "OpenZeppelin Libraries"], status: "mid" },
-        { title: "Token Standards & DeFi", items: ["ERC-20 (Fungible Tokens)", "ERC-721 & ERC-1155 (NFTs)", "DEX Logic (Uniswap, AMM)", "Lending & Staking Mechanisms"], status: "mid" },
-        { title: "Frontend & Web3 Integration", items: ["Wallet Connect", "Sign-in with Ethereum (SIWE)", "Contract Interaction", "Subgraphs (The Graph)"], status: "advanced" },
-        { title: "Layer 2 & Scaling", items: ["Rollups (Optimistic vs ZK)", "Sidechains (Polygon)", "Bridging Assets", "L2 Gas Optimization"], status: "advanced" },
-        { title: "Advanced Security & Auditing", items: ["Reentrancy Attacks", "Flash Loans", "Upgradable Contracts (Proxy)", "Formal Verification"], status: "expert" },
-        { title: "Next-Gen Web3", items: ["Account Abstraction (ERC-4337)", "Zero Knowledge Proofs (ZKP)", "DAO Governance", "IPFS & Arweave (Storage)"], status: "expert" }
-        ],
-    },
+    tr: [
+        { title: "Blockchain Temelleri", items: ["Blockchain Nasıl Çalışır?", "Kriptografi (Hashing, Digital Signatures)", "Consensus Algoritmaları (PoW, PoS)", "Public vs Private Blockchains"], status: "start" },
+        { title: "Kripto Cüzdanlar & İşlemler", items: ["Metamask & Wallet Entegrasyonu", "Public/Private Keys", "Gas Fees & Transaction Lifecycle", "Mnemonic Phrases"], status: "start" },
+        { title: "Akıllı Kontrat Programlama", items: ["Solidity (EVM)", "Rust (Solana/Near)", "Vyper", "Smart Contract Lifecycle"], status: "mid" },
+        { title: "Geliştirme Araçları", items: ["Hardhat / Foundry", "Truffle", "Ganache (Local Blockchain)", "Remix IDE"], status: "mid" },
+        { title: "Web3 Kütüphaneleri", items: ["Ethers.js", "Web3.js", "Viem", "WalletConnect SDK"], status: "mid" },
+        { title: "Merkeziyetsiz Depolama & İndeksleme", items: ["IPFS", "Arweave", "The Graph (Subgraphs)", "Chainlink (Oracles)"], status: "mid" },
+        { title: "DeFi & Token Standartları", items: ["ERC-20, ERC-721 (NFT), ERC-1155", "DEX (Uniswap) Mantığı", "Liquidity Pools", "Staking & Yield Farming"], status: "advanced" },
+        { title: "Layer 2 & Ölçeklenebilirlik", items: ["Optimistic Rollups (Arbitrum/Optimism)", "ZK-Rollups (zkSync/Polygon)", "Sidechains", "Bridges"], status: "expert" },
+        { title: "Güvenlik & Denetim", items: ["Reentrancy Attacks", "Flash Loan Attacks", "Smart Contract Auditing", "Formal Verification"], status: "expert" }
+    ],
+    az: [
+        { title: "Blockchain Əsasları", items: ["Blockchain Necə İşləyir?", "Kriptoqrafiya (Hashing, Digital Signatures)", "Konsensus Alqoritmləri (PoW, PoS)", "Public vs Private Blockchains"], status: "start" },
+        { title: "Kripto Pulqabılar & Əməliyyatlar", items: ["Metamask & Wallet İnteqrasiyası", "Public/Private Keys", "Gas Fees & Transaction Lifecycle", "Mnemonic Phrases"], status: "start" },
+        { title: "Smart Kontrakt Proqramlaşdırma", items: ["Solidity (EVM)", "Rust (Solana/Near)", "Vyper", "Smart Contract Lifecycle"], status: "mid" },
+        { title: "İnkişaf Alətləri", items: ["Hardhat / Foundry", "Truffle", "Ganache (Local Blockchain)", "Remix IDE"], status: "mid" },
+        { title: "Web3 Kitabxanaları", items: ["Ethers.js", "Web3.js", "Viem", "WalletConnect SDK"], status: "mid" },
+        { title: "Mərkəzləşdirilməmiş Saxlama & İndeksləmə", items: ["IPFS", "Arweave", "The Graph (Subgraphs)", "Chainlink (Oracles)"], status: "mid" },
+        { title: "DeFi & Token Standartları", items: ["ERC-20, ERC-721 (NFT), ERC-1155", "DEX (Uniswap) Məntiqi", "Liquidity Pools", "Staking & Yield Farming"], status: "advanced" },
+        { title: "Layer 2 & Ölçeklənmə", items: ["Optimistic Rollups (Arbitrum/Optimism)", "ZK-Rollups (zkSync/Polygon)", "Sidechains", "Bridges"], status: "expert" },
+        { title: "Təhlükəsizlik & Audit", items: ["Reentrancy Attacks", "Flash Loan Attacks", "Smart Contract Auditing", "Formal Verification"], status: "expert" }
+    ],
+    en: [
+        { title: "Blockchain Basics", items: ["How Blockchain Works", "Cryptography (Hashing, Digital Signatures)", "Consensus Mechanisms (PoW, PoS)", "Public vs Private Blockchains"], status: "start" },
+        { title: "Wallets & Transactions", items: ["Metamask & Wallet Integration", "Public/Private Keys", "Gas Fees & Transaction Lifecycle", "Mnemonic Phrases"], status: "start" },
+        { title: "Smart Contract Development", items: ["Solidity (EVM)", "Rust (Solana/Near)", "Vyper", "Smart Contract Lifecycle"], status: "mid" },
+        { title: "Development Frameworks", items: ["Hardhat / Foundry", "Truffle", "Ganache (Local Blockchain)", "Remix IDE"], status: "mid" },
+        { title: "Web3 Libraries", items: ["Ethers.js", "Web3.js", "Viem", "WalletConnect SDK"], status: "mid" },
+        { title: "Decentralized Storage & Indexing", items: ["IPFS", "Arweave", "The Graph (Subgraphs)", "Chainlink (Oracles)"], status: "mid" },
+        { title: "DeFi & Token Standards", items: ["ERC-20, ERC-721 (NFT), ERC-1155", "DEX (Uniswap) Mechanics", "Liquidity Pools", "Staking & Yield Farming"], status: "advanced" },
+        { title: "Layer 2 & Scaling", items: ["Optimistic Rollups (Arbitrum/Optimism)", "ZK-Rollups (zkSync/Polygon)", "Sidechains", "Bridges"], status: "expert" },
+        { title: "Security & Auditing", items: ["Reentrancy Attacks", "Flash Loan Attacks", "Smart Contract Auditing", "Formal Verification"], status: "expert" }
+    ]
+},
 
     // 2. RESOURCES
     resources: {
