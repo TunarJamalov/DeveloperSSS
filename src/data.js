@@ -7861,29 +7861,40 @@ contentData['ar-vr'] = {
 contentData['qa-automation'] = {
     // 1. ROADMAP
     roadmap: {
-        tr: [
-            { title: "Test Temelleri", items: ["SDLC & STLC", "Bug Life Cycle", "Test Case Yazımı", "Kara Kutu & Beyaz Kutu Testi"], status: "start" },
-            { title: "Programlama Dili", items: ["Java (En Yaygın)", "Python (Hızlı & Popüler)", "JavaScript/TypeScript (Modern Web)", "C#"], status: "start" },
-            { title: "Web Otomasyonu", items: ["Selenium WebDriver", "Playwright (Modern & Hızlı)", "Cypress", "Locator Stratejileri (XPath, CSS)"], status: "mid" },
-            { title: "API Testi", items: ["REST Assured (Java)", "Postman & Newman", "PyTest (Python)", "JSON & XML Doğrulama"], status: "mid" },
-            { title: "Test Framework Mimarisi", items: ["Page Object Model (POM)", "Data Driven Testing", "Behavior Driven Development (Cucumber/Gherkin)", "Keyword Driven"], status: "mid" },
-            { title: "Mobil Otomasyon", items: ["Appium (iOS & Android)", "Emulator & Simulator Yönetimi", "Mobile Gestures"], status: "advanced" },
-            { title: "CI/CD & DevOps", items: ["Jenkins / GitHub Actions", "Docker (Test Container)", "Reporting (Allure, Extent Reports)", "Selenium Grid / Selenoid"], status: "advanced" },
-            { title: "İleri Seviye Konular", items: ["Performance Testing (JMeter, K6)", "Security Testing Temelleri", "Visual Regression Testing", "Database Testing (SQL)"], status: "expert" },
-            { title: "Kod Kalitesi & Mimari", items: ["Clean Code for Testers", "Design Patterns in Automation", "Flaky Test Yönetimi", "Custom Framework Geliştirme"], status: "expert" }
-        ],
-        az: [
-            { title: "Test Əsasları", items: ["SDLC & STLC", "Bug Həyat Dövrü", "Test Case Dizaynı", "Test Plan Hazırlanması"], status: "start" },
-            { title: "Proqramlaşdırma", items: ["Java", "Python", "JavaScript", "OOP Prinsipləri"], status: "start" },
-            { title: "Veb Avtomatlaşdırma", items: ["Selenium WebDriver", "Playwright", "Cypress", "Element Locators"], status: "mid" },
-            { title: "API Testi", items: ["REST Assured", "Postman", "Request & Response Doğrulanması", "Swagger"], status: "mid" },
-            { title: "Test Arxitekturası", items: ["Page Object Model (POM)", "BDD (Cucumber)", "Data Driven Testing", "TestNG / JUnit"], status: "mid" },
-            { title: "Mobil Testlər", items: ["Appium", "Android & iOS Testləri", "Cloud Testing (BrowserStack)"], status: "advanced" },
-            { title: "DevOps & Hesabat", items: ["CI/CD İnteqrasiyası", "Docker", "Allure Report", "Jenkins"], status: "advanced" },
-            { title: "İrəli Səviyyə Mövzular", items: ["Performans Testi (JMeter)", "Yük Testləri", "SQL & DB Verifikasiyası", "Security Scans"], status: "expert" },
-            { title: "Kod Keyfiyyəti", items: ["Automation Design Patterns", "Custom Frameworks", "Parallel Execution", "Flaky Test Management"], status: "expert" }
-        ]
-    },
+    tr: [
+        { title: "Test Temelleri", items: ["SDLC & STLC", "Bug Life Cycle", "Test Case Yazımı", "Kara Kutu & Beyaz Kutu Testi"], status: "start" },
+        { title: "Programlama Dili", items: ["Java (En Yaygın)", "Python (Hızlı & Popüler)", "JavaScript/TypeScript (Modern Web)", "C#"], status: "start" },
+        { title: "Web Otomasyonu", items: ["Selenium WebDriver", "Playwright (Modern & Hızlı)", "Cypress", "Locator Stratejileri (XPath, CSS)"], status: "mid" },
+        { title: "API Testi", items: ["REST Assured (Java)", "Postman & Newman", "PyTest (Python)", "JSON & XML Doğrulama"], status: "mid" },
+        { title: "Test Framework Mimarisi", items: ["Page Object Model (POM)", "Data Driven Testing", "Behavior Driven Development (Cucumber/Gherkin)", "Keyword Driven"], status: "mid" },
+        { title: "Mobil Otomasyon", items: ["Appium (iOS & Android)", "Emulator & Simulator Yönetimi", "Mobile Gestures"], status: "advanced" },
+        { title: "CI/CD & DevOps", items: ["Jenkins / GitHub Actions", "Docker (Test Container)", "Reporting (Allure, Extent Reports)", "Selenium Grid / Selenoid"], status: "advanced" },
+        { title: "İleri Seviye Konular", items: ["Performance Testing (JMeter, K6)", "Security Testing Temelleri", "Visual Regression Testing", "Database Testing (SQL)"], status: "expert" },
+        { title: "Kod Kalitesi & Mimari", items: ["Clean Code for Testers", "Design Patterns in Automation", "Flaky Test Yönetimi", "Custom Framework Geliştirme"], status: "expert" }
+    ],
+    az: [
+        { title: "Test Əsasları", items: ["SDLC & STLC", "Bug Həyat Dövrü", "Test Case Dizaynı", "Test Plan Hazırlanması"], status: "start" },
+        { title: "Proqramlaşdırma", items: ["Java", "Python", "JavaScript", "OOP Prinsipləri"], status: "start" },
+        { title: "Veb Avtomatlaşdırma", items: ["Selenium WebDriver", "Playwright", "Cypress", "Element Locators"], status: "mid" },
+        { title: "API Testi", items: ["REST Assured", "Postman", "Request & Response Doğrulanması", "Swagger"], status: "mid" },
+        { title: "Test Arxitekturası", items: ["Page Object Model (POM)", "BDD (Cucumber)", "Data Driven Testing", "TestNG / JUnit"], status: "mid" },
+        { title: "Mobil Testlər", items: ["Appium", "Android & iOS Testləri", "Cloud Testing (BrowserStack)"], status: "advanced" },
+        { title: "DevOps & Hesabat", items: ["CI/CD İnteqrasiyası", "Docker", "Allure Report", "Jenkins"], status: "advanced" },
+        { title: "İrəli Səviyyə Mövzular", items: ["Performans Testi (JMeter)", "Yük Testləri", "SQL & DB Verifikasiyası", "Security Scans"], status: "expert" },
+        { title: "Kod Keyfiyyəti", items: ["Automation Design Patterns", "Custom Frameworks", "Parallel Execution", "Flaky Test Management"], status: "expert" }
+    ],
+    en: [
+        { title: "Testing Fundamentals", items: ["SDLC & STLC", "Bug Life Cycle", "Test Case Design", "Black Box & White Box Testing"], status: "start" },
+        { title: "Programming Languages", items: ["Java", "Python", "JavaScript/TypeScript", "OOP for Automation"], status: "start" },
+        { title: "Web Automation", items: ["Selenium WebDriver", "Playwright", "Cypress", "Locator Strategies (XPath/CSS)"], status: "mid" },
+        { title: "API Testing", items: ["REST Assured", "Postman & Newman", "Contract Testing", "JSON/XML Validation"], status: "mid" },
+        { title: "Framework Architecture", items: ["Page Object Model (POM)", "BDD (Cucumber/Gherkin)", "Data Driven Testing", "Test Runners (JUnit/Pytest)"], status: "mid" },
+        { title: "Mobile Automation", items: ["Appium", "Android & iOS Emulators", "Mobile Gestures & Contexts"], status: "advanced" },
+        { title: "CI/CD & DevOps", items: ["Jenkins / GitHub Actions", "Docker for Tests", "Test Reporting (Allure)", "Cloud Grids (BrowserStack/SauceLabs)"], status: "advanced" },
+        { title: "Advanced Topics", items: ["Performance Testing (JMeter/K6)", "Security Fundamentals", "Visual Regression", "Database Testing"], status: "expert" },
+        { title: "Code Quality & Patterns", items: ["Clean Code for Testers", "Automation Design Patterns", "Flaky Test Management", "Custom Framework Development"], status: "expert" }
+    ]
+},
 
     // 2. RESOURCES
     resources: {
