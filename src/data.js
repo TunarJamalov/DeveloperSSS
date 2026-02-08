@@ -7642,15 +7642,26 @@ contentData['blockchain'] = {
 
     // 2. RESOURCES
     resources: {
-        items: [
-            { type: 'youtube', title: 'EatTheBlocks', url: 'https://youtube.com/@EatTheBlocks', desc: 'Web3 developerlar üçün layihə əsaslı mükəmməl kanal.', lang: 'en' },
-            { type: 'youtube', title: 'Patrick Collins', url: 'https://youtube.com/@PatrickCollins', desc: 'Blockchain təhlükəsizliyi və Solidity üzrə dünyanın ən yaxşı kurslarının müəllifi.', lang: 'en' },
-            { type: 'course', title: 'CryptoZombies', url: 'https://cryptozombies.io', desc: 'Oyun oynayaraq Solidity öyrənmək üçün interaktiv platforma.', lang: 'global' },
-            { type: 'doc', title: 'Solidity Docs', url: 'https://docs.soliditylang.org', desc: 'Dilin rəsmi və ən detallı sənədləri.', lang: 'global' },
-            { type: 'tool', title: 'Alchemy / Infura', url: 'https://alchemy.com', desc: 'Blokçeyn düyünlərinə (node) qoşulmaq üçün ən populyar API provayderləri.', lang: 'global' },
-            { type: 'tool', title: 'OpenZeppelin', url: 'https://openzeppelin.com/contracts/', desc: 'Təhlükəsiz smart kontrakt kitabxanaları (ERC standardları).', lang: 'global' }
-        ]
-    },
+    items: [
+        // YouTube Kanalları
+        { type: 'youtube', title: 'Patrick Collins', url: 'https://youtube.com/@PatrickAlphaC', desc: 'Blockchain dünyasının ən detallı Solidity və Smart Contract dərsləri.', lang: 'en' },
+        { type: 'youtube', title: 'EatTheBlocks', url: 'https://youtube.com/@EatTheBlocks', desc: 'DApp inkişafı və Web3 kitabxanaları üzrə qısa, konkret layihələr.', lang: 'en' },
+        { type: 'youtube', title: 'Smart Contract Programmer', url: 'https://youtube.com/@SmartContractProgrammer', desc: 'Solidity və Vyper dilinin incəliklərini təmiz kodla izah edən texniki kanal.', lang: 'en' },
+        { type: 'youtube', title: 'Dapp University', url: 'https://youtube.com/@DappUniversity', desc: 'Blockchain proqramçısı olmaq üçün bazar analizləri və real layihə nümunələri.', lang: 'en' },
+
+        // Sənədlər və Kurslar
+        { type: 'doc', title: 'Solidity Docs', url: 'https://docs.soliditylang.org/', desc: 'Smart kontrakt yazmaq üçün əsas dilin rəsmi bələdçisi.', lang: 'global' },
+        { type: 'course', title: 'Cyfrin Updraft', url: 'https://updraft.cyfrin.io', desc: 'Blockchain təhlükəsizliyi və inkişafı üzrə dünyanın ən keyfiyyətli pulsuz kurs platforması.', lang: 'en' },
+        { type: 'course', title: 'Alchemy University', url: 'https://university.alchemy.com', desc: 'Ethereum və JavaScript əsaslı Web3 proqramlaşdırma üzrə peşəkar bootcamp.', lang: 'en' },
+        { type: 'course', title: 'LearnWeb3 DAO', url: 'https://learnweb3.io', desc: 'Səviyyə-səviyyə (Freshman-dan Senior-a) Web3 öyrənmə yolu.', lang: 'en' },
+
+        // Alətlər (Tools)
+        { type: 'tool', title: 'Hardhat / Foundry', url: 'https://hardhat.org', desc: 'Smart kontraktları test etmək, deploy etmək və debug üçün əvəzolunmaz freymvorklar.', lang: 'global' },
+        { type: 'tool', title: 'Remix IDE', url: 'https://remix.ethereum.org', desc: 'Brauzer üzərindən heç bir şey quraşdırmadan Solidity yazmaq üçün mühit.', lang: 'global' },
+        { type: 'tool', title: 'OpenZeppelin', url: 'https://openzeppelin.com/contracts/', desc: 'Təhlükəsiz və audit olunmuş standart smart kontrakt kitabxanaları (ERC20, ERC721).', lang: 'global' },
+        { type: 'roadmap', title: 'Web3 Roadmap', url: 'https://roadmap.sh/blockchain', desc: 'Blockchain inkişafı üçün vizual və addım-addım yol xəritəsi.', lang: 'en' }
+    ]
+},
 
     // 3. JOBS & SALARY
     jobs: {
