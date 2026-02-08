@@ -8915,19 +8915,19 @@ export const glossary = [
 
 // 6. TOOL OF THE WEEK
 export const toolOfTheWeek = {
-    id: "notion",
-    title: "Notion",
-    category: { en: "Productivity", tr: "Verimlilik", az: "Məhsuldarlıq" },
-    icon: "📓",
+    id: "postman",
+    title: "Postman",
+    category: { en: "Development Tools", tr: "Geliştirici Araçları", az: "Tərtibatçı Alətləri" },
+    icon: "🚀",
     desc: {
-        en: "The all-in-one workspace for your notes, tasks, wikis, and databases. Essential for organized developers.",
-        tr: "Notlarınız, görevleriniz, vikileriniz ve veritabanlarınız için hepsi bir arada çalışma alanı. Düzenli yazılımcılar için vazgeçilmez.",
-        az: "Qeydləriniz, tapşırıqlarınız və verilənlər bazalarınız üçün hamısı bir yerdə iş sahəsi. Mütəşəkkil proqramçılar üçün əvəzolunmazdır."
+        en: "An API platform for building and using APIs. It simplifies each step of the API lifecycle and streamlines collaboration.",
+        tr: "API'ler oluşturmak ve kullanmak için bir API platformu. API yaşam döngüsünün her adımını basitleştirir ve iş birliğini kolaylaştırır.",
+        az: "API-lar yaratmaq və istifadə etmək üçün platforma. API həyat dövrünün hər bir addımını sadələşdirir və komanda işini asanlaşdırır."
     },
     whyCool: {
-        en: "Incredible flexibility with blocks, powerful databases, and massive community templates.",
-        tr: "Bloklarla inanılmaz esneklik, güçlü veritabanları ve devasa topluluk şablonları.",
-        az: "Bloklarla inanılmaz çeviklik, güclü verilənlər bazaları və böyük icma şablonları."
+        en: "Automated testing, clear documentation, and easy environment variable management.",
+        tr: "Otomatik testler, net dökümantasyon ve kolay ortam değişkenleri yönetimi.",
+        az: "Avtomatlaşdırılmış testlər, aydın sənədləşdirmə və asan mühit dəyişənləri (env) idarəetməsi."
     },
-    url: "https://www.notion.so"
+    url: "https://www.postman.com"
 };
