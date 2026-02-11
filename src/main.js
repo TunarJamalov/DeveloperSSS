@@ -270,7 +270,7 @@ const Footer = () => {
 
                 <div class="text-sm text-gray-400 font-medium">
                     Made with <span class="text-red-500 animate-pulse">❤️</span> by <a href="#" class="text-white hover:text-brand-blue transition-colors relative group">
-                        KodAuro
+                        KodAura
                         <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-blue transition-all group-hover:w-full"></span>
                     </a>
                 </div>
